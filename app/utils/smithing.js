@@ -1,0 +1,2722 @@
+export default class smithing extends skill {
+	constructor(level, experience, prestige) {
+		super("Smithing", level, experience, prestige)
+	}
+
+	experienceSources = [
+		{
+			"label": "Bronze Bar",
+			"level": 1,
+			"input": [
+				{
+					"name": "Copper Ore",
+					"inputAmount": 1
+				},
+				{
+					"name": "Tin Ore",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 2,
+			"baseCraftingTime": 2
+		},
+		{
+			"label": "Iron Bar",
+			"level": 8,
+			"input": [
+				{
+					"name": "Iron Ore",
+					"inputAmount": 2
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 3,
+			"baseCraftingTime": 2
+		},
+		{
+			"label": "Steel Bar",
+			"level": 16,
+			"input": [
+				{
+					"name": "Iron Ore",
+					"inputAmount": 1
+				},
+				{
+					"name": "Coal Ore",
+					"inputAmount": 2
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 5,
+			"baseCraftingTime": 2
+		},
+		{
+			"label": "Silver Bar",
+			"level": 21,
+			"input": [
+				{
+					"name": "Silver Ore",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 8,
+			"baseCraftingTime": 2
+		},
+		{
+			"label": "Mithril Bar",
+			"level": 24,
+			"input": [
+				{
+					"name": "Mithril Ore",
+					"inputAmount": 1
+				},
+				{
+					"name": "Coal Ore",
+					"inputAmount": 2
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 8,
+			"baseCraftingTime": 2
+		},
+		{
+			"label": "Adamantite Bar",
+			"level": 34,
+			"input": [
+				{
+					"name": "Adamantite Ore",
+					"inputAmount": 1
+				},
+				{
+					"name": "Coal Ore",
+					"inputAmount": 3
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 14,
+			"baseCraftingTime": 2
+		},
+		{
+			"label": "Gold Bar",
+			"level": 40,
+			"input": [
+				{
+					"name": "Gold Ore",
+					"inputAmount": 2
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 20,
+			"baseCraftingTime": 2
+		},
+		{
+			"label": "Cerulium Bar",
+			"level": 42,
+			"input": [
+				{
+					"name": "Cerulium Ore",
+					"inputAmount": 1
+				},
+				{
+					"name": "Luminous Ore",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 15,
+			"baseCraftingTime": 2
+		},
+		{
+			"label": "Sanguinite Bar",
+			"level": 52,
+			"input": [
+				{
+					"name": "Sanguinite Ore",
+					"inputAmount": 1
+				},
+				{
+					"name": "Luminous Ore",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 25,
+			"baseCraftingTime": 2
+		},
+		{
+			"label": "Aeronite Bar",
+			"level": 62,
+			"input": [
+				{
+					"name": "Aeronite Ore",
+					"inputAmount": 1
+				},
+				{
+					"name": "Luminous Ore",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 30,
+			"baseCraftingTime": 2
+		},
+		{
+			"label": "Necrosis Bar",
+			"level": 72,
+			"input": [
+				{
+					"name": "Necrosis Ore",
+					"inputAmount": 1
+				},
+				{
+					"name": "Luminous Ore",
+					"inputAmount": 2
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 35,
+			"baseCraftingTime": 2
+		},
+		{
+			"label": "Phantom Bar",
+			"level": 82,
+			"input": [
+				{
+					"name": "Phantom Ore",
+					"inputAmount": 1
+				},
+				{
+					"name": "Luminous Ore",
+					"inputAmount": 3
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 40,
+			"baseCraftingTime": 2
+		},
+		{
+			"label": "Karinite Bar",
+			"level": 92,
+			"input": [
+				{
+					"name": "Karinite Ore",
+					"inputAmount": 1
+				},
+				{
+					"name": "Ember Core",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 45,
+			"baseCraftingTime": 2
+		},
+		{
+			"label": "Taigite Bar",
+			"level": 125,
+			"input": [
+				{
+					"name": "Taigite Ore",
+					"inputAmount": 1
+				},
+				{
+					"name": "Ember Core",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 55,
+			"baseCraftingTime": 2
+		},
+		{
+			"label": "Cryxcite Bar",
+			"level": 175,
+			"input": [
+				{
+					"name": "Cryxcite Ore",
+					"inputAmount": 1
+				},
+				{
+					"name": "Ember Core",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 65,
+			"baseCraftingTime": 2
+		},
+		{
+			"label": "Bronze Axe",
+			"level": 1,
+			"input": [
+				{
+					"name": "Bronze Bar",
+					"inputAmount": 1
+				},
+				{
+					"name": "Logs",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 10,
+			"baseCraftingTime": 4
+		},
+		{
+			"label": "Bronze Pickaxe",
+			"level": 1,
+			"input": [
+				{
+					"name": "Bronze Bar",
+					"inputAmount": 1
+				},
+				{
+					"name": "Logs",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 10,
+			"baseCraftingTime": 4
+		},
+		{
+			"label": "Bronze Rod",
+			"level": 1,
+			"input": [
+				{
+					"name": "Bronze Bar",
+					"inputAmount": 1
+				},
+				{
+					"name": "Logs",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 10,
+			"baseCraftingTime": 4
+		},
+		{
+			"label": "Bronze Lens",
+			"level": 1,
+			"input": [
+				{
+					"name": "Bronze Bar",
+					"inputAmount": 1
+				},
+				{
+					"name": "Molten Glass",
+					"inputAmount": 10
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 10,
+			"baseCraftingTime": 4
+		},
+		{
+			"label": "Iron Axe",
+			"level": 8,
+			"input": [
+				{
+					"name": "Iron Bar",
+					"inputAmount": 1
+				},
+				{
+					"name": "Oak logs",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 15,
+			"baseCraftingTime": 4
+		},
+		{
+			"label": "Iron Pickaxe",
+			"level": 8,
+			"input": [
+				{
+					"name": "Iron Bar",
+					"inputAmount": 1
+				},
+				{
+					"name": "Oak logs",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 15,
+			"baseCraftingTime": 4
+		},
+		{
+			"label": "Iron Rod",
+			"level": 8,
+			"input": [
+				{
+					"name": "Iron Bar",
+					"inputAmount": 1
+				},
+				{
+					"name": "Oak logs",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 15,
+			"baseCraftingTime": 4
+		},
+		{
+			"label": "Iron Lens",
+			"level": 8,
+			"input": [
+				{
+					"name": "Iron Bar",
+					"inputAmount": 1
+				},
+				{
+					"name": "Molten Glass",
+					"inputAmount": 10
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 15,
+			"baseCraftingTime": 4
+		},
+		{
+			"label": "Steel Axe",
+			"level": 16,
+			"input": [
+				{
+					"name": "Steel Bar",
+					"inputAmount": 1
+				},
+				{
+					"name": "Willow logs",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 26,
+			"baseCraftingTime": 4
+		},
+		{
+			"label": "Steel Pickaxe",
+			"level": 16,
+			"input": [
+				{
+					"name": "Steel Bar",
+					"inputAmount": 1
+				},
+				{
+					"name": "Willow logs",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 26,
+			"baseCraftingTime": 4
+		},
+		{
+			"label": "Steel Rod",
+			"level": 16,
+			"input": [
+				{
+					"name": "Steel Bar",
+					"inputAmount": 1
+				},
+				{
+					"name": "Willow logs",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 26,
+			"baseCraftingTime": 4
+		},
+		{
+			"label": "Steel Lens",
+			"level": 16,
+			"input": [
+				{
+					"name": "Steel Bar",
+					"inputAmount": 1
+				},
+				{
+					"name": "Molten Glass",
+					"inputAmount": 26
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 0,
+			"baseCraftingTime": 4
+		},
+		{
+			"label": "Mithril Axe",
+			"level": 24,
+			"input": [
+				{
+					"name": "Mithril Bar",
+					"inputAmount": 1
+				},
+				{
+					"name": "Teak logs",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 29,
+			"baseCraftingTime": 4
+		},
+		{
+			"label": "Mithril Pickaxe",
+			"level": 24,
+			"input": [
+				{
+					"name": "Mithril Bar",
+					"inputAmount": 1
+				},
+				{
+					"name": "Teak logs",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 29,
+			"baseCraftingTime": 4
+		},
+		{
+			"label": "Mithril Rod",
+			"level": 24,
+			"input": [
+				{
+					"name": "Mithril Bar",
+					"inputAmount": 1
+				},
+				{
+					"name": "Teak logs",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 29,
+			"baseCraftingTime": 4
+		},
+		{
+			"label": "Mithril Lens",
+			"level": 24,
+			"input": [
+				{
+					"name": "Mithril Bar",
+					"inputAmount": 1
+				},
+				{
+					"name": "Molten Glass",
+					"inputAmount": 10
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 29,
+			"baseCraftingTime": 4
+		},
+		{
+			"label": "Adamantite Axe",
+			"level": 34,
+			"input": [
+				{
+					"name": "Adamantite Bar",
+					"inputAmount": 1
+				},
+				{
+					"name": "Maple logs",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 42,
+			"baseCraftingTime": 4
+		},
+		{
+			"label": "Adamantite Pickaxe",
+			"level": 34,
+			"input": [
+				{
+					"name": "Adamantite Bar",
+					"inputAmount": 1
+				},
+				{
+					"name": "Maple logs",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 42,
+			"baseCraftingTime": 4
+		},
+		{
+			"label": "Adamantite Rod",
+			"level": 34,
+			"input": [
+				{
+					"name": "Adamantite Bar",
+					"inputAmount": 1
+				},
+				{
+					"name": "Maple logs",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 42,
+			"baseCraftingTime": 4
+		},
+		{
+			"label": "Adamantite Lens",
+			"level": 34,
+			"input": [
+				{
+					"name": "Adamantite Bar",
+					"inputAmount": 1
+				},
+				{
+					"name": "Molten Glass",
+					"inputAmount": 10
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 42,
+			"baseCraftingTime": 4
+		},
+		{
+			"label": "Cerulium Axe",
+			"level": 42,
+			"input": [
+				{
+					"name": "Cerulium Bar",
+					"inputAmount": 1
+				},
+				{
+					"name": "Acadia logs",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 50,
+			"baseCraftingTime": 4
+		},
+		{
+			"label": "Cerulium Pickaxe",
+			"level": 42,
+			"input": [
+				{
+					"name": "Cerulium Bar",
+					"inputAmount": 1
+				},
+				{
+					"name": "Acadia logs",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 50,
+			"baseCraftingTime": 4
+		},
+		{
+			"label": "Cerulium Rod",
+			"level": 42,
+			"input": [
+				{
+					"name": "Cerulium Bar",
+					"inputAmount": 1
+				},
+				{
+					"name": "Acadia logs",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 50,
+			"baseCraftingTime": 4
+		},
+		{
+			"label": "Cerulium Lens",
+			"level": 42,
+			"input": [
+				{
+					"name": "Cerulium Bar",
+					"inputAmount": 1
+				},
+				{
+					"name": "Molten Glass",
+					"inputAmount": 10
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 50,
+			"baseCraftingTime": 4
+		},
+		{
+			"label": "Sanguinite Axe",
+			"level": 52,
+			"input": [
+				{
+					"name": "Sanguinite Bar",
+					"inputAmount": 1
+				},
+				{
+					"name": "Eucalyptus logs",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 65,
+			"baseCraftingTime": 4
+		},
+		{
+			"label": "Sanguinite Pickaxe",
+			"level": 52,
+			"input": [
+				{
+					"name": "Sanguinite Bar",
+					"inputAmount": 1
+				},
+				{
+					"name": "Eucalyptus logs",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 65,
+			"baseCraftingTime": 4
+		},
+		{
+			"label": "Sanguinite Rod",
+			"level": 52,
+			"input": [
+				{
+					"name": "Sanguinite Bar",
+					"inputAmount": 1
+				},
+				{
+					"name": "Eucalyptus logs",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 65,
+			"baseCraftingTime": 4
+		},
+		{
+			"label": "Sanguinite Lens",
+			"level": 52,
+			"input": [
+				{
+					"name": "Sanguinite Bar",
+					"inputAmount": 1
+				},
+				{
+					"name": "Molten Glass",
+					"inputAmount": 10
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 65,
+			"baseCraftingTime": 4
+		},
+		{
+			"label": "Aeronite Axe",
+			"level": 62,
+			"input": [
+				{
+					"name": "Aeronite Bar",
+					"inputAmount": 1
+				},
+				{
+					"name": "Yew logs",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 75,
+			"baseCraftingTime": 4
+		},
+		{
+			"label": "Aeronite Pickaxe",
+			"level": 62,
+			"input": [
+				{
+					"name": "Aeronite Bar",
+					"inputAmount": 1
+				},
+				{
+					"name": "Yew logs",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 75,
+			"baseCraftingTime": 4
+		},
+		{
+			"label": "Aeronite Rod",
+			"level": 62,
+			"input": [
+				{
+					"name": "Aeronite Bar",
+					"inputAmount": 1
+				},
+				{
+					"name": "Yew logs",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 75,
+			"baseCraftingTime": 4
+		},
+		{
+			"label": "Aeronite Lens",
+			"level": 62,
+			"input": [
+				{
+					"name": "Aeronite Bar",
+					"inputAmount": 1
+				},
+				{
+					"name": "Molten Glass",
+					"inputAmount": 10
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 75,
+			"baseCraftingTime": 4
+		},
+		{
+			"label": "Necrosis Axe",
+			"level": 72,
+			"input": [
+				{
+					"name": "Necrosis Bar",
+					"inputAmount": 1
+				},
+				{
+					"name": "Red maple logs",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 85,
+			"baseCraftingTime": 4
+		},
+		{
+			"label": "Necrosis Pickaxe",
+			"level": 72,
+			"input": [
+				{
+					"name": "Necrosis Bar",
+					"inputAmount": 1
+				},
+				{
+					"name": "Red maple logs",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 85,
+			"baseCraftingTime": 4
+		},
+		{
+			"label": "Necrosis Rod",
+			"level": 72,
+			"input": [
+				{
+					"name": "Necrosis Bar",
+					"inputAmount": 1
+				},
+				{
+					"name": "Red maple logs",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 85,
+			"baseCraftingTime": 4
+		},
+		{
+			"label": "Necrosis Lens",
+			"level": 72,
+			"input": [
+				{
+					"name": "Necrosis Bar",
+					"inputAmount": 1
+				},
+				{
+					"name": "Molten Glass",
+					"inputAmount": 10
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 85,
+			"baseCraftingTime": 4
+		},
+		{
+			"label": "Phantom Axe",
+			"level": 82,
+			"input": [
+				{
+					"name": "Phantom Bar",
+					"inputAmount": 1
+				},
+				{
+					"name": "Magic Logs",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 95,
+			"baseCraftingTime": 4
+		},
+		{
+			"label": "Phantom Pickaxe",
+			"level": 82,
+			"input": [
+				{
+					"name": "Phantom Bar",
+					"inputAmount": 1
+				},
+				{
+					"name": "Magic Logs",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 95,
+			"baseCraftingTime": 4
+		},
+		{
+			"label": "Phantom Rod",
+			"level": 82,
+			"input": [
+				{
+					"name": "Phantom Bar",
+					"inputAmount": 1
+				},
+				{
+					"name": "Magic Logs",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 95,
+			"baseCraftingTime": 4
+		},
+		{
+			"label": "Phantom Lens",
+			"level": 82,
+			"input": [
+				{
+					"name": "Phantom Bar",
+					"inputAmount": 1
+				},
+				{
+					"name": "Molten Glass",
+					"inputAmount": 10
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 95,
+			"baseCraftingTime": 4
+		},
+		{
+			"label": "Karinite Axe",
+			"level": 92,
+			"input": [
+				{
+					"name": "Karinite Bar",
+					"inputAmount": 1
+				},
+				{
+					"name": "Lunarwood Logs",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 105,
+			"baseCraftingTime": 4
+		},
+		{
+			"label": "Karinite Pickaxe",
+			"level": 92,
+			"input": [
+				{
+					"name": "Karinite Bar",
+					"inputAmount": 1
+				},
+				{
+					"name": "Lunarwood Logs",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 105,
+			"baseCraftingTime": 4
+		},
+		{
+			"label": "Karinite Rod",
+			"level": 92,
+			"input": [
+				{
+					"name": "Karinite Bar",
+					"inputAmount": 1
+				},
+				{
+					"name": "Lunarwood Logs",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 105,
+			"baseCraftingTime": 4
+		},
+		{
+			"label": "Karinite Lens",
+			"level": 92,
+			"input": [
+				{
+					"name": "Karinite Bar",
+					"inputAmount": 1
+				},
+				{
+					"name": "Molten Glass",
+					"inputAmount": 10
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 105,
+			"baseCraftingTime": 4
+		},
+		{
+			"label": "Taigite Axe",
+			"level": 125,
+			"input": [
+				{
+					"name": "Taigite Bar",
+					"inputAmount": 1
+				},
+				{
+					"name": "Spicebough Logs",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 130,
+			"baseCraftingTime": 4
+		},
+		{
+			"label": "Taigite Pickaxe",
+			"level": 126,
+			"input": [
+				{
+					"name": "Taigite Bar",
+					"inputAmount": 1
+				},
+				{
+					"name": "Spicebough Logs",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 130,
+			"baseCraftingTime": 4
+		},
+		{
+			"label": "Taigite Rod",
+			"level": 127,
+			"input": [
+				{
+					"name": "Taigite Bar",
+					"inputAmount": 1
+				},
+				{
+					"name": "Spicebough Logs",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 130,
+			"baseCraftingTime": 4
+		},
+		{
+			"label": "Taigite Lens",
+			"level": 128,
+			"input": [
+				{
+					"name": "Taigite Bar",
+					"inputAmount": 1
+				},
+				{
+					"name": "Molten Glass",
+					"inputAmount": 10
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 130,
+			"baseCraftingTime": 4
+		},
+		{
+			"label": "Cryxcite Axe",
+			"level": 175,
+			"input": [
+				{
+					"name": "Cryxcite Bar",
+					"inputAmount": 1
+				},
+				{
+					"name": "Bitterpine Logs",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 160,
+			"baseCraftingTime": 4
+		},
+		{
+			"label": "Cryxcite Pickaxe",
+			"level": 176,
+			"input": [
+				{
+					"name": "Cryxcite Bar",
+					"inputAmount": 1
+				},
+				{
+					"name": "Bitterpine Logs",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 160,
+			"baseCraftingTime": 4
+		},
+		{
+			"label": "Cryxcite Rod",
+			"level": 177,
+			"input": [
+				{
+					"name": "Cryxcite Bar",
+					"inputAmount": 1
+				},
+				{
+					"name": "Bitterpine Logs",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 160,
+			"baseCraftingTime": 4
+		},
+		{
+			"label": "Cryxcite Lens",
+			"level": 178,
+			"input": [
+				{
+					"name": "Cryxcite Bar",
+					"inputAmount": 1
+				},
+				{
+					"name": "Molten Glass",
+					"inputAmount": 10
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 160,
+			"baseCraftingTime": 4
+		},
+		{
+			"label": "Bronze Dagger",
+			"level": 2,
+			"input": [
+				{
+					"name": "Bronze Bar",
+					"inputAmount": 1
+				}
+			],
+			"baseExperience": 10,
+			"baseCraftingTime": 4,
+			"outputAmount": 1
+		},
+		{
+			"label": "Bronze Sword",
+			"level": 4,
+			"input": [
+				{
+					"name": "Bronze Bar",
+					"inputAmount": 1
+				}
+			],
+			"baseExperience": 10,
+			"baseCraftingTime": 4,
+			"outputAmount": 1
+		},
+		{
+			"label": "Bronze Scimitar",
+			"level": 6,
+			"input": [
+				{
+					"name": "Bronze Bar",
+					"inputAmount": 2
+				}
+			],
+			"baseExperience": 20,
+			"baseCraftingTime": 4,
+			"outputAmount": 1
+		},
+		{
+			"label": "Iron Dagger",
+			"level": 9,
+			"input": [
+				{
+					"name": "Iron Bar",
+					"inputAmount": 1
+				}
+			],
+			"baseExperience": 15,
+			"baseCraftingTime": 4,
+			"outputAmount": 1
+		},
+		{
+			"label": "Iron Sword",
+			"level": 10,
+			"input": [
+				{
+					"name": "Iron Bar",
+					"inputAmount": 1
+				}
+			],
+			"baseExperience": 15,
+			"baseCraftingTime": 4,
+			"outputAmount": 1
+		},
+		{
+			"label": "Iron Scimitar",
+			"level": 12,
+			"input": [
+				{
+					"name": "Iron Bar",
+					"inputAmount": 2
+				}
+			],
+			"baseExperience": 30,
+			"baseCraftingTime": 4,
+			"outputAmount": 1
+		},
+		{
+			"label": "Steel Dagger",
+			"level": 17,
+			"input": [
+				{
+					"name": "Steel Bar",
+					"inputAmount": 1
+				}
+			],
+			"baseExperience": 26,
+			"baseCraftingTime": 4,
+			"outputAmount": 1
+		},
+		{
+			"label": "Steel Sword",
+			"level": 18,
+			"input": [
+				{
+					"name": "Steel Bar",
+					"inputAmount": 1
+				}
+			],
+			"baseExperience": 26,
+			"baseCraftingTime": 4,
+			"outputAmount": 1
+		},
+		{
+			"label": "Steel Scimitar",
+			"level": 20,
+			"input": [
+				{
+					"name": "Steel Bar",
+					"inputAmount": 2
+				}
+			],
+			"baseExperience": 52,
+			"baseCraftingTime": 4,
+			"outputAmount": 1
+		},
+		{
+			"label": "Mithril Dagger",
+			"level": 25,
+			"input": [
+				{
+					"name": "Mithril Bar",
+					"inputAmount": 1
+				}
+			],
+			"baseExperience": 29,
+			"baseCraftingTime": 4,
+			"outputAmount": 1
+		},
+		{
+			"label": "Mithril Sword",
+			"level": 26,
+			"input": [
+				{
+					"name": "Mithril Bar",
+					"inputAmount": 1
+				}
+			],
+			"baseExperience": 29,
+			"baseCraftingTime": 4,
+			"outputAmount": 1
+		},
+		{
+			"label": "Mithril Scimitar",
+			"level": 28,
+			"input": [
+				{
+					"name": "Mithril Bar",
+					"inputAmount": 2
+				}
+			],
+			"baseExperience": 58,
+			"baseCraftingTime": 4,
+			"outputAmount": 1
+		},
+		{
+			"label": "Adamantite Dagger",
+			"level": 34,
+			"input": [
+				{
+					"name": "Adamantite Bar",
+					"inputAmount": 1
+				}
+			],
+			"baseExperience": 42,
+			"baseCraftingTime": 4,
+			"outputAmount": 1
+		},
+		{
+			"label": "Adamantite Sword",
+			"level": 35,
+			"input": [
+				{
+					"name": "Adamantite Bar",
+					"inputAmount": 1
+				}
+			],
+			"baseExperience": 42,
+			"baseCraftingTime": 4,
+			"outputAmount": 1
+		},
+		{
+			"label": "Adamantite Scimitar",
+			"level": 38,
+			"input": [
+				{
+					"name": "Adamantite Bar",
+					"inputAmount": 2
+				}
+			],
+			"baseExperience": 84,
+			"baseCraftingTime": 4,
+			"outputAmount": 1
+		},
+		{
+			"label": "Cerulium Dagger",
+			"level": 43,
+			"input": [
+				{
+					"name": "Cerulium Bar",
+					"inputAmount": 1
+				}
+			],
+			"baseExperience": 50,
+			"baseCraftingTime": 4,
+			"outputAmount": 1
+		},
+		{
+			"label": "Cerulium Sword",
+			"level": 44,
+			"input": [
+				{
+					"name": "Cerulium Bar",
+					"inputAmount": 1
+				}
+			],
+			"baseExperience": 50,
+			"baseCraftingTime": 4,
+			"outputAmount": 1
+		},
+		{
+			"label": "Cerulium Scimitar",
+			"level": 46,
+			"input": [
+				{
+					"name": "Cerulium Bar",
+					"inputAmount": 2
+				}
+			],
+			"baseExperience": 100,
+			"baseCraftingTime": 4,
+			"outputAmount": 1
+		},
+		{
+			"label": "Sanguinite Dagger",
+			"level": 53,
+			"input": [
+				{
+					"name": "Sanguinite Bar",
+					"inputAmount": 1
+				}
+			],
+			"baseExperience": 65,
+			"baseCraftingTime": 4,
+			"outputAmount": 1
+		},
+		{
+			"label": "Sanguinite Sword",
+			"level": 54,
+			"input": [
+				{
+					"name": "Sanguinite Bar",
+					"inputAmount": 1
+				}
+			],
+			"baseExperience": 65,
+			"baseCraftingTime": 4,
+			"outputAmount": 1
+		},
+		{
+			"label": "Sanguinite Scimitar",
+			"level": 56,
+			"input": [
+				{
+					"name": "Sanguinite Bar",
+					"inputAmount": 2
+				}
+			],
+			"baseExperience": 130,
+			"baseCraftingTime": 4,
+			"outputAmount": 1
+		},
+		{
+			"label": "Aeronite Dagger",
+			"level": 63,
+			"input": [
+				{
+					"name": "Aeronite Bar",
+					"inputAmount": 1
+				}
+			],
+			"baseExperience": 75,
+			"baseCraftingTime": 4,
+			"outputAmount": 1
+		},
+		{
+			"label": "Aeronite Sword",
+			"level": 64,
+			"input": [
+				{
+					"name": "Aeronite Bar",
+					"inputAmount": 1
+				}
+			],
+			"baseExperience": 75,
+			"baseCraftingTime": 4,
+			"outputAmount": 1
+		},
+		{
+			"label": "Aeronite Scimitar",
+			"level": 66,
+			"input": [
+				{
+					"name": "Aeronite Bar",
+					"inputAmount": 2
+				}
+			],
+			"baseExperience": 150,
+			"baseCraftingTime": 4,
+			"outputAmount": 1
+		},
+		{
+			"label": "Necrosis Dagger",
+			"level": 73,
+			"input": [
+				{
+					"name": "Necrosis Bar",
+					"inputAmount": 1
+				}
+			],
+			"baseExperience": 85,
+			"baseCraftingTime": 4,
+			"outputAmount": 1
+		},
+		{
+			"label": "Necrosis Sword",
+			"level": 74,
+			"input": [
+				{
+					"name": "Necrosis Bar",
+					"inputAmount": 1
+				}
+			],
+			"baseExperience": 85,
+			"baseCraftingTime": 4,
+			"outputAmount": 1
+		},
+		{
+			"label": "Necrosis Scimitar",
+			"level": 76,
+			"input": [
+				{
+					"name": "Necrosis Bar",
+					"inputAmount": 2
+				}
+			],
+			"baseExperience": 170,
+			"baseCraftingTime": 4,
+			"outputAmount": 1
+		},
+		{
+			"label": "Phantom Dagger",
+			"level": 83,
+			"input": [
+				{
+					"name": "Phantom Bar",
+					"inputAmount": 1
+				}
+			],
+			"baseExperience": 95,
+			"baseCraftingTime": 4,
+			"outputAmount": 1
+		},
+		{
+			"label": "Phantom Sword",
+			"level": 84,
+			"input": [
+				{
+					"name": "Phantom Bar",
+					"inputAmount": 1
+				}
+			],
+			"baseExperience": 95,
+			"baseCraftingTime": 4,
+			"outputAmount": 1
+		},
+		{
+			"label": "Phantom Scimitar",
+			"level": 86,
+			"input": [
+				{
+					"name": "Phantom Bar",
+					"inputAmount": 2
+				}
+			],
+			"baseExperience": 190,
+			"baseCraftingTime": 4,
+			"outputAmount": 1
+		},
+		{
+			"label": "Karinite Dagger",
+			"level": 93,
+			"input": [
+				{
+					"name": "Karinite Bar",
+					"inputAmount": 1
+				}
+			],
+			"baseExperience": 105,
+			"baseCraftingTime": 4,
+			"outputAmount": 1
+		},
+		{
+			"label": "Karinite Sword",
+			"level": 94,
+			"input": [
+				{
+					"name": "Karinite Bar",
+					"inputAmount": 1
+				}
+			],
+			"baseExperience": 105,
+			"baseCraftingTime": 4,
+			"outputAmount": 1
+		},
+		{
+			"label": "Karinite Scimitar",
+			"level": 96,
+			"input": [
+				{
+					"name": "Karinite Bar",
+					"inputAmount": 2
+				}
+			],
+			"baseExperience": 210,
+			"baseCraftingTime": 4,
+			"outputAmount": 1
+		},
+		{
+			"label": "Taigite Dagger",
+			"level": 129,
+			"input": [
+				{
+					"name": "Taigite Bar",
+					"inputAmount": 1
+				}
+			],
+			"baseExperience": 130,
+			"baseCraftingTime": 4,
+			"outputAmount": 1
+		},
+		{
+			"label": "Taigite Sword",
+			"level": 130,
+			"input": [
+				{
+					"name": "Taigite Bar",
+					"inputAmount": 1
+				}
+			],
+			"baseExperience": 130,
+			"baseCraftingTime": 4,
+			"outputAmount": 1
+		},
+		{
+			"label": "Taigite Scimitar",
+			"level": 132,
+			"input": [
+				{
+					"name": "Taigite Bar",
+					"inputAmount": 2
+				}
+			],
+			"baseExperience": 260,
+			"baseCraftingTime": 4,
+			"outputAmount": 1
+		},
+		{
+			"label": "Cryxcite Dagger",
+			"level": 179,
+			"input": [
+				{
+					"name": "Cryxcite Bar",
+					"inputAmount": 1
+				}
+			],
+			"baseExperience": 160,
+			"baseCraftingTime": 4,
+			"outputAmount": 1
+		},
+		{
+			"label": "Cryxcite Sword",
+			"level": 180,
+			"input": [
+				{
+					"name": "Cryxcite Bar",
+					"inputAmount": 1
+				}
+			],
+			"baseExperience": 160,
+			"baseCraftingTime": 4,
+			"outputAmount": 1
+		},
+		{
+			"label": "Cryxcite Scimitar",
+			"level": 182,
+			"input": [
+				{
+					"name": "Cryxcite Bar",
+					"inputAmount": 2
+				}
+			],
+			"baseExperience": 320,
+			"baseCraftingTime": 4,
+			"outputAmount": 1
+		},
+		{
+			"label": "Bronze Helm",
+			"level": 3,
+			"input": [
+				{
+					"name": "Bronze Bar",
+					"inputAmount": 1
+				}
+			],
+			"baseExperience": 20,
+			"baseCraftingTime": 4,
+			"outputAmount": 1
+		},
+		{
+			"label": "Bronze Gloves",
+			"level": 5,
+			"input": [
+				{
+					"name": "Bronze Bar",
+					"inputAmount": 1
+				}
+			],
+			"baseExperience": 20,
+			"baseCraftingTime": 4,
+			"outputAmount": 1
+		},
+		{
+			"label": "Bronze Boots",
+			"level": 8,
+			"input": [
+				{
+					"name": "Bronze Bar",
+					"inputAmount": 1
+				}
+			],
+			"baseExperience": 20,
+			"baseCraftingTime": 4,
+			"outputAmount": 1
+		},
+		{
+			"label": "Bronze Shield",
+			"level": 7,
+			"input": [
+				{
+					"name": "Bronze Bar",
+					"inputAmount": 3
+				}
+			],
+			"baseExperience": 30,
+			"baseCraftingTime": 4,
+			"outputAmount": 1
+		},
+		{
+			"label": "Bronze Body",
+			"level": 9,
+			"input": [
+				{
+					"name": "Bronze Bar",
+					"inputAmount": 5
+				}
+			],
+			"baseExperience": 50,
+			"baseCraftingTime": 4,
+			"outputAmount": 1
+		},
+		{
+			"label": "Iron Helm",
+			"level": 10,
+			"input": [
+				{
+					"name": "Iron Bar",
+					"inputAmount": 1
+				}
+			],
+			"baseExperience": 30,
+			"baseCraftingTime": 4,
+			"outputAmount": 1
+		},
+		{
+			"label": "Iron Gloves",
+			"level": 12,
+			"input": [
+				{
+					"name": "Iron Bar",
+					"inputAmount": 1
+				}
+			],
+			"baseExperience": 30,
+			"baseCraftingTime": 4,
+			"outputAmount": 1
+		},
+		{
+			"label": "Iron Boots",
+			"level": 13,
+			"input": [
+				{
+					"name": "Iron Bar",
+					"inputAmount": 1
+				}
+			],
+			"baseExperience": 30,
+			"baseCraftingTime": 4,
+			"outputAmount": 1
+		},
+		{
+			"label": "Iron Shield",
+			"level": 14,
+			"input": [
+				{
+					"name": "Iron Bar",
+					"inputAmount": 3
+				}
+			],
+			"baseExperience": 45,
+			"baseCraftingTime": 4,
+			"outputAmount": 1
+		},
+		{
+			"label": "Iron Body",
+			"level": 16,
+			"input": [
+				{
+					"name": "Iron Bar",
+					"inputAmount": 5
+				}
+			],
+			"baseExperience": 75,
+			"baseCraftingTime": 4,
+			"outputAmount": 1
+		},
+		{
+			"label": "Steel Helm",
+			"level": 18,
+			"input": [
+				{
+					"name": "Steel Bar",
+					"inputAmount": 1
+				}
+			],
+			"baseExperience": 52,
+			"baseCraftingTime": 4,
+			"outputAmount": 1
+		},
+		{
+			"label": "Steel Gloves",
+			"level": 20,
+			"input": [
+				{
+					"name": "Steel Bar",
+					"inputAmount": 1
+				}
+			],
+			"baseExperience": 52,
+			"baseCraftingTime": 4,
+			"outputAmount": 1
+		},
+		{
+			"label": "Steel Boots",
+			"level": 21,
+			"input": [
+				{
+					"name": "Steel Bar",
+					"inputAmount": 1
+				}
+			],
+			"baseExperience": 52,
+			"baseCraftingTime": 4,
+			"outputAmount": 1
+		},
+		{
+			"label": "Steel Shield",
+			"level": 22,
+			"input": [
+				{
+					"name": "Steel Bar",
+					"inputAmount": 3
+				}
+			],
+			"baseExperience": 78,
+			"baseCraftingTime": 4,
+			"outputAmount": 1
+		},
+		{
+			"label": "Steel Body",
+			"level": 24,
+			"input": [
+				{
+					"name": "Steel Bar",
+					"inputAmount": 5
+				}
+			],
+			"baseExperience": 130,
+			"baseCraftingTime": 4,
+			"outputAmount": 1
+		},
+		{
+			"label": "Mithril Helm",
+			"level": 26,
+			"input": [
+				{
+					"name": "Mithril Bar",
+					"inputAmount": 1
+				}
+			],
+			"baseExperience": 58,
+			"baseCraftingTime": 4,
+			"outputAmount": 1
+		},
+		{
+			"label": "Mithril Gloves",
+			"level": 28,
+			"input": [
+				{
+					"name": "Mithril Bar",
+					"inputAmount": 1
+				}
+			],
+			"baseExperience": 58,
+			"baseCraftingTime": 4,
+			"outputAmount": 1
+		},
+		{
+			"label": "Mithril Boots",
+			"level": 29,
+			"input": [
+				{
+					"name": "Mithril Bar",
+					"inputAmount": 1
+				}
+			],
+			"baseExperience": 58,
+			"baseCraftingTime": 4,
+			"outputAmount": 1
+		},
+		{
+			"label": "Mithril Shield",
+			"level": 30,
+			"input": [
+				{
+					"name": "Mithril Bar",
+					"inputAmount": 3
+				}
+			],
+			"baseExperience": 87,
+			"baseCraftingTime": 4,
+			"outputAmount": 1
+		},
+		{
+			"label": "Mithril Body",
+			"level": 32,
+			"input": [
+				{
+					"name": "Mithril Bar",
+					"inputAmount": 5
+				}
+			],
+			"baseExperience": 145,
+			"baseCraftingTime": 4,
+			"outputAmount": 1
+		},
+		{
+			"label": "Adamantite Helm",
+			"level": 36,
+			"input": [
+				{
+					"name": "Adamantite Bar",
+					"inputAmount": 1
+				}
+			],
+			"baseExperience": 84,
+			"baseCraftingTime": 4,
+			"outputAmount": 1
+		},
+		{
+			"label": "Adamantite Gloves",
+			"level": 38,
+			"input": [
+				{
+					"name": "Adamantite Bar",
+					"inputAmount": 1
+				}
+			],
+			"baseExperience": 84,
+			"baseCraftingTime": 4,
+			"outputAmount": 1
+		},
+		{
+			"label": "Adamantite Boots",
+			"level": 39,
+			"input": [
+				{
+					"name": "Adamantite Bar",
+					"inputAmount": 1
+				}
+			],
+			"baseExperience": 84,
+			"baseCraftingTime": 4,
+			"outputAmount": 1
+		},
+		{
+			"label": "Adamantite Shield",
+			"level": 40,
+			"input": [
+				{
+					"name": "Adamantite Bar",
+					"inputAmount": 3
+				}
+			],
+			"baseExperience": 126,
+			"baseCraftingTime": 4,
+			"outputAmount": 1
+		},
+		{
+			"label": "Adamantite Body",
+			"level": 42,
+			"input": [
+				{
+					"name": "Adamantite Bar",
+					"inputAmount": 5
+				}
+			],
+			"baseExperience": 208,
+			"baseCraftingTime": 4,
+			"outputAmount": 1
+		},
+		{
+			"label": "Cerulium Helm",
+			"level": 44,
+			"input": [
+				{
+					"name": "Cerulium Bar",
+					"inputAmount": 1
+				}
+			],
+			"baseExperience": 100,
+			"baseCraftingTime": 4,
+			"outputAmount": 1
+		},
+		{
+			"label": "Cerulium Gloves",
+			"level": 46,
+			"input": [
+				{
+					"name": "Cerulium Bar",
+					"inputAmount": 1
+				}
+			],
+			"baseExperience": 100,
+			"baseCraftingTime": 4,
+			"outputAmount": 1
+		},
+		{
+			"label": "Cerulium Boots",
+			"level": 47,
+			"input": [
+				{
+					"name": "Cerulium Bar",
+					"inputAmount": 1
+				}
+			],
+			"baseExperience": 100,
+			"baseCraftingTime": 4,
+			"outputAmount": 1
+		},
+		{
+			"label": "Cerulium Shield",
+			"level": 48,
+			"input": [
+				{
+					"name": "Cerulium Bar",
+					"inputAmount": 3
+				}
+			],
+			"baseExperience": 150,
+			"baseCraftingTime": 4,
+			"outputAmount": 1
+		},
+		{
+			"label": "Cerulium Body",
+			"level": 50,
+			"input": [
+				{
+					"name": "Cerulium Bar",
+					"inputAmount": 5
+				}
+			],
+			"baseExperience": 250,
+			"baseCraftingTime": 4,
+			"outputAmount": 1
+		},
+		{
+			"label": "Sanguinite Helm",
+			"level": 54,
+			"input": [
+				{
+					"name": "Sanguinite Bar",
+					"inputAmount": 1
+				}
+			],
+			"baseExperience": 130,
+			"baseCraftingTime": 4,
+			"outputAmount": 1
+		},
+		{
+			"label": "Sanguinite Gloves",
+			"level": 56,
+			"input": [
+				{
+					"name": "Sanguinite Bar",
+					"inputAmount": 1
+				}
+			],
+			"baseExperience": 130,
+			"baseCraftingTime": 4,
+			"outputAmount": 1
+		},
+		{
+			"label": "Sanguinite Boots",
+			"level": 57,
+			"input": [
+				{
+					"name": "Sanguinite Bar",
+					"inputAmount": 1
+				}
+			],
+			"baseExperience": 130,
+			"baseCraftingTime": 4,
+			"outputAmount": 1
+		},
+		{
+			"label": "Sanguinite Shield",
+			"level": 58,
+			"input": [
+				{
+					"name": "Sanguinite Bar",
+					"inputAmount": 3
+				}
+			],
+			"baseExperience": 195,
+			"baseCraftingTime": 4,
+			"outputAmount": 1
+		},
+		{
+			"label": "Sanguinite Body",
+			"level": 60,
+			"input": [
+				{
+					"name": "Sanguinite Bar",
+					"inputAmount": 5
+				}
+			],
+			"baseExperience": 325,
+			"baseCraftingTime": 4,
+			"outputAmount": 1
+		},
+		{
+			"label": "Aeronite Helm",
+			"level": 64,
+			"input": [
+				{
+					"name": "Aeronite Bar",
+					"inputAmount": 1
+				}
+			],
+			"baseExperience": 150,
+			"baseCraftingTime": 4,
+			"outputAmount": 1
+		},
+		{
+			"label": "Aeronite Gloves",
+			"level": 66,
+			"input": [
+				{
+					"name": "Aeronite Bar",
+					"inputAmount": 1
+				}
+			],
+			"baseExperience": 150,
+			"baseCraftingTime": 4,
+			"outputAmount": 1
+		},
+		{
+			"label": "Aeronite Boots",
+			"level": 67,
+			"input": [
+				{
+					"name": "Aeronite Bar",
+					"inputAmount": 1
+				}
+			],
+			"baseExperience": 150,
+			"baseCraftingTime": 4,
+			"outputAmount": 1
+		},
+		{
+			"label": "Aeronite Shield",
+			"level": 68,
+			"input": [
+				{
+					"name": "Aeronite Bar",
+					"inputAmount": 3
+				}
+			],
+			"baseExperience": 225,
+			"baseCraftingTime": 4,
+			"outputAmount": 1
+		},
+		{
+			"label": "Aeronite Body",
+			"level": 70,
+			"input": [
+				{
+					"name": "Aeronite Bar",
+					"inputAmount": 5
+				}
+			],
+			"baseExperience": 375,
+			"baseCraftingTime": 4,
+			"outputAmount": 1
+		},
+		{
+			"label": "Necrosis Helm",
+			"level": 74,
+			"input": [
+				{
+					"name": "Necrosis Bar",
+					"inputAmount": 1
+				}
+			],
+			"baseExperience": 170,
+			"baseCraftingTime": 4,
+			"outputAmount": 1
+		},
+		{
+			"label": "Necrosis Gloves",
+			"level": 76,
+			"input": [
+				{
+					"name": "Necrosis Bar",
+					"inputAmount": 1
+				}
+			],
+			"baseExperience": 170,
+			"baseCraftingTime": 4,
+			"outputAmount": 1
+		},
+		{
+			"label": "Necrosis Boots",
+			"level": 77,
+			"input": [
+				{
+					"name": "Necrosis Bar",
+					"inputAmount": 1
+				}
+			],
+			"baseExperience": 170,
+			"baseCraftingTime": 4,
+			"outputAmount": 1
+		},
+		{
+			"label": "Necrosis Shield",
+			"level": 78,
+			"input": [
+				{
+					"name": "Necrosis Bar",
+					"inputAmount": 3
+				}
+			],
+			"baseExperience": 255,
+			"baseCraftingTime": 4,
+			"outputAmount": 1
+		},
+		{
+			"label": "Necrosis Body",
+			"level": 80,
+			"input": [
+				{
+					"name": "Necrosis Bar",
+					"inputAmount": 5
+				}
+			],
+			"baseExperience": 425,
+			"baseCraftingTime": 4,
+			"outputAmount": 1
+		},
+		{
+			"label": "Phantom Helm",
+			"level": 84,
+			"input": [
+				{
+					"name": "Phantom Bar",
+					"inputAmount": 1
+				}
+			],
+			"baseExperience": 190,
+			"baseCraftingTime": 4,
+			"outputAmount": 1
+		},
+		{
+			"label": "Phantom Gloves",
+			"level": 86,
+			"input": [
+				{
+					"name": "Phantom Bar",
+					"inputAmount": 1
+				}
+			],
+			"baseExperience": 190,
+			"baseCraftingTime": 4,
+			"outputAmount": 1
+		},
+		{
+			"label": "Phantom Boots",
+			"level": 87,
+			"input": [
+				{
+					"name": "Phantom Bar",
+					"inputAmount": 1
+				}
+			],
+			"baseExperience": 190,
+			"baseCraftingTime": 4,
+			"outputAmount": 1
+		},
+		{
+			"label": "Phantom Shield",
+			"level": 88,
+			"input": [
+				{
+					"name": "Phantom Bar",
+					"inputAmount": 3
+				}
+			],
+			"baseExperience": 285,
+			"baseCraftingTime": 4,
+			"outputAmount": 1
+		},
+		{
+			"label": "Phantom Body",
+			"level": 90,
+			"input": [
+				{
+					"name": "Phantom Bar",
+					"inputAmount": 5
+				}
+			],
+			"baseExperience": 475,
+			"baseCraftingTime": 4,
+			"outputAmount": 1
+		},
+		{
+			"label": "Karinite Helm",
+			"level": 94,
+			"input": [
+				{
+					"name": "Karinite Bar",
+					"inputAmount": 1
+				}
+			],
+			"baseExperience": 210,
+			"baseCraftingTime": 4,
+			"outputAmount": 1
+		},
+		{
+			"label": "Karinite Gloves",
+			"level": 96,
+			"input": [
+				{
+					"name": "Karinite Bar",
+					"inputAmount": 1
+				}
+			],
+			"baseExperience": 210,
+			"baseCraftingTime": 4,
+			"outputAmount": 1
+		},
+		{
+			"label": "Karinite Boots",
+			"level": 97,
+			"input": [
+				{
+					"name": "Karinite Bar",
+					"inputAmount": 1
+				}
+			],
+			"baseExperience": 210,
+			"baseCraftingTime": 4,
+			"outputAmount": 1
+		},
+		{
+			"label": "Karinite Shield",
+			"level": 98,
+			"input": [
+				{
+					"name": "Karinite Bar",
+					"inputAmount": 3
+				}
+			],
+			"baseExperience": 315,
+			"baseCraftingTime": 4,
+			"outputAmount": 1
+		},
+		{
+			"label": "Karinite Body",
+			"level": 100,
+			"input": [
+				{
+					"name": "Karinite Bar",
+					"inputAmount": 5
+				}
+			],
+			"baseExperience": 525,
+			"baseCraftingTime": 4,
+			"outputAmount": 1
+		},
+		{
+			"label": "Taigite Helm",
+			"level": 134,
+			"input": [
+				{
+					"name": "Taigite Bar",
+					"inputAmount": 1
+				}
+			],
+			"baseExperience": 260,
+			"baseCraftingTime": 4,
+			"outputAmount": 1
+		},
+		{
+			"label": "Taigite Gloves",
+			"level": 136,
+			"input": [
+				{
+					"name": "Taigite Bar",
+					"inputAmount": 1
+				}
+			],
+			"baseExperience": 260,
+			"baseCraftingTime": 4,
+			"outputAmount": 1
+		},
+		{
+			"label": "Taigite Boots",
+			"level": 138,
+			"input": [
+				{
+					"name": "Taigite Bar",
+					"inputAmount": 1
+				}
+			],
+			"baseExperience": 260,
+			"baseCraftingTime": 4,
+			"outputAmount": 1
+		},
+		{
+			"label": "Taigite Shield",
+			"level": 140,
+			"input": [
+				{
+					"name": "Taigite Bar",
+					"inputAmount": 3
+				}
+			],
+			"baseExperience": 390,
+			"baseCraftingTime": 4,
+			"outputAmount": 1
+		},
+		{
+			"label": "Taigite Body",
+			"level": 144,
+			"input": [
+				{
+					"name": "Taigite Bar",
+					"inputAmount": 5
+				}
+			],
+			"baseExperience": 650,
+			"baseCraftingTime": 4,
+			"outputAmount": 1
+		},
+		{
+			"label": "Cryxcite Helm",
+			"level": 184,
+			"input": [
+				{
+					"name": "Cryxcite Bar",
+					"inputAmount": 1
+				}
+			],
+			"baseExperience": 320,
+			"baseCraftingTime": 4,
+			"outputAmount": 1
+		},
+		{
+			"label": "Cryxcite Gloves",
+			"level": 186,
+			"input": [
+				{
+					"name": "Cryxcite Bar",
+					"inputAmount": 1
+				}
+			],
+			"baseExperience": 320,
+			"baseCraftingTime": 4,
+			"outputAmount": 1
+		},
+		{
+			"label": "Cryxcite Boots",
+			"level": 188,
+			"input": [
+				{
+					"name": "Cryxcite Bar",
+					"inputAmount": 1
+				}
+			],
+			"baseExperience": 320,
+			"baseCraftingTime": 4,
+			"outputAmount": 1
+		},
+		{
+			"label": "Cryxcite Shield",
+			"level": 190,
+			"input": [
+				{
+					"name": "Cryxcite Bar",
+					"inputAmount": 3
+				}
+			],
+			"baseExperience": 480,
+			"baseCraftingTime": 4,
+			"outputAmount": 1
+		},
+		{
+			"label": "Cryxcite Body",
+			"level": 194,
+			"input": [
+				{
+					"name": "Cryxcite Bar",
+					"inputAmount": 5
+				}
+			],
+			"baseExperience": 800,
+			"baseCraftingTime": 4,
+			"outputAmount": 1
+		},
+		{
+			"label": "Bronze Arrow Tips",
+			"level": 1,
+			"input": [
+				{
+					"name": "Bronze Bar",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 15,
+			"baseExperience": 10,
+			"baseCraftingTime": 2.5
+		},
+		{
+			"label": "Iron Arrow Tips",
+			"level": 8,
+			"input": [
+				{
+					"name": "Iron Bar",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 15,
+			"baseExperience": 15,
+			"baseCraftingTime": 2.5
+		},
+		{
+			"label": "Steel Arrow Tips",
+			"level": 16,
+			"input": [
+				{
+					"name": "Steel Bar",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 15,
+			"baseExperience": 26,
+			"baseCraftingTime": 2.5
+		},
+		{
+			"label": "Mithril Arrow Tips",
+			"level": 29,
+			"input": [
+				{
+					"name": "Mithril Bar",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 15,
+			"baseExperience": 29,
+			"baseCraftingTime": 2.5
+		},
+		{
+			"label": "Adamantite Arrow Tips",
+			"level": 34,
+			"input": [
+				{
+					"name": "Adamantite Bar",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 15,
+			"baseExperience": 42,
+			"baseCraftingTime": 2.5
+		},
+		{
+			"label": "Cerulium Arrow Tips",
+			"level": 42,
+			"input": [
+				{
+					"name": "Cerulium Bar",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 15,
+			"baseExperience": 50,
+			"baseCraftingTime": 2.5
+		},
+		{
+			"label": "Sanguinite Arrow Tips",
+			"level": 52,
+			"input": [
+				{
+					"name": "Sanguinite Bar",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 15,
+			"baseExperience": 65,
+			"baseCraftingTime": 2.5
+		},
+		{
+			"label": "Aeronite Arrow Tips",
+			"level": 62,
+			"input": [
+				{
+					"name": "Aeronite Bar",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 15,
+			"baseExperience": 75,
+			"baseCraftingTime": 2.5
+		},
+		{
+			"label": "Necrosis Arrow Tips",
+			"level": 72,
+			"input": [
+				{
+					"name": "Necrosis Bar",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 15,
+			"baseExperience": 85,
+			"baseCraftingTime": 2.5
+		},
+		{
+			"label": "Phantom Arrow Tips",
+			"level": 82,
+			"input": [
+				{
+					"name": "Phantom Bar",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 15,
+			"baseExperience": 95,
+			"baseCraftingTime": 2.5
+		},
+		{
+			"label": "Karinite Arrow Tips",
+			"level": 92,
+			"input": [
+				{
+					"name": "Karinite Bar",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 15,
+			"baseExperience": 105,
+			"baseCraftingTime": 2.5
+		},
+		{
+			"label": "Taigite Arrow Tips",
+			"level": 125,
+			"input": [
+				{
+					"name": "Taigite Bar",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 15,
+			"baseExperience": 130,
+			"baseCraftingTime": 2.5
+		},
+		{
+			"label": "Cryxcite Arrow Tips",
+			"level": 175,
+			"input": [
+				{
+					"name": "Cryxcite Bar",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 15,
+			"baseExperience": 160,
+			"baseCraftingTime": 2.5
+		},
+		{
+			"label": "Lockpick",
+			"level": 10,
+			"input": [
+				{
+					"name": "Iron Bar",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 3,
+			"baseExperience": 0,
+			"baseCraftingTime": 2.5
+		},
+		{
+			"label": "Metal Trap",
+			"level": 20,
+			"input": [
+				{
+					"name": "Steel Bar",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 3,
+			"baseExperience": 0,
+			"baseCraftingTime": 2.5
+		},
+		{
+			"label": "Cage",
+			"level": 10,
+			"input": [
+				{
+					"name": "Steel Bar",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 3,
+			"baseExperience": 0,
+			"baseCraftingTime": 2.5
+		},
+		{
+			"label": "Mithril Trap",
+			"level": 30,
+			"input": [
+				{
+					"name": "Mithril Bar",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 3,
+			"baseExperience": 0,
+			"baseCraftingTime": 2.5
+		},
+		{
+			"label": "Phantom Cage",
+			"level": 83,
+			"input": [
+				{
+					"name": "Phantom Bar",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 3,
+			"baseExperience": 0,
+			"baseCraftingTime": 2.5
+		}
+	]
+
+}
