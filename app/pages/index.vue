@@ -55,8 +55,9 @@
     }
 
     var subCraftExperience = 0
-    if (includeSubCrafts && !experienceSource.label.includes("Bar")) {
-      subCraftExperience = findSubCraft(experienceSource.input[0].name, skill).baseExperience * experienceSource.input[0].inputAmount ?? 0
+    const baseMaterial = findSubCraft(experienceSource.input[0].name, skill)
+    if (includeSubCrafts && baseMaterial != null) {
+      subCraftExperience = baseMaterial.baseExperience * experienceSource.input[0].inputAmount ?? 0
     }
     return (experienceSource["baseExperience"] + subCraftExperience) * prestigeBonus * (invocationBonus + 1)
   }
@@ -65,8 +66,8 @@
     const potionTimeReduction = activePotion.timeReduction ?? 0
 
     var durationInSeconds = iterations * (experienceSource.baseCraftingTime - potionTimeReduction)
-    if (includeSubCrafts && !experienceSource.label.includes("Bar")) {
-      const baseMaterial = findSubCraft(experienceSource.input[0].name, skill)
+    const baseMaterial = findSubCraft(experienceSource.input[0].name, skill)
+    if (includeSubCrafts && baseMaterial != null) {
       const subCraftDuration = iterations * experienceSource.input[0].inputAmount * (baseMaterial.baseCraftingTime - potionTimeReduction)
       durationInSeconds += subCraftDuration
     }
