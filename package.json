@@ -7,7 +7,9 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "predeploy": "npm run generate",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@nuxt/image": "^1.10.0",
@@ -19,6 +21,7 @@
     "vue-router": "^4.5.1"
   },
   "devDependencies": {
-    "@iconify-json/lucide": "^1.2.57"
+    "@iconify-json/lucide": "^1.2.57",
+    "gh-pages": "^6.3.0"
   }
 }
