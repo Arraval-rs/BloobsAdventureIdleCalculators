@@ -1,6 +1,6 @@
-# Nuxt Minimal Starter
+# Bloobs Adventure Idle Calculators
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+The page is live at 
 
 ## Setup
 
@@ -72,4 +72,8 @@ yarn preview
 bun run preview
 ```
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+## Deploy new gh-pages from branch (with permissions)
+
+```bash
+npm run deploy
+```
