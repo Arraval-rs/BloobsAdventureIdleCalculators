@@ -7,14 +7,6 @@ export default class skill {
 		return this.levelExperience[level-1]
 	}
 
-	getPrestigeMultiplier() {
-		if (this.skillPrestige = 10) {
-			return 15
-		} else {
-			return this.skillPrestige + 1
-		}
-	}
-
 	async readSkillJson() {
 		const data = await import(`@/assets/skillData/${this.skillName}.json`)
 		this.experienceSources = data.experienceSources
