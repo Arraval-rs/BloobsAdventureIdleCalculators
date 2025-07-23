@@ -1,12 +1,9 @@
 export default class skill {
-	constructor(name, level, experience, prestige) {
+	constructor(name) {
 		this.skillName = name
-		this.skillLevel = level
-		this.skillExperience = experience
-		this.skillPrestige = prestige
 	}
 
-	getExperience(level) {
+	getExperienceFromLevel(level) {
 		return this.levelExperience[level-1]
 	}
 
@@ -18,9 +15,14 @@ export default class skill {
 		}
 	}
 
-	invocations;
-	potions;
-	experienceSources;
+	async readSkillJson() {
+		const data = await import(`@/assets/skillData/${this.skillName}.json`)
+		this.experienceSources = data.experienceSources
+		this.invocations = data.invocations
+		this.potions = data.potions
+		this.invocations.push({"label": "None"})
+		this.potions.push({"label": "None"})
+	}
 
 	levelExperience = [
 		0,
