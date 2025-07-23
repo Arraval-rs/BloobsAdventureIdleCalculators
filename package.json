@@ -6,7 +6,8 @@
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
-    "preview": "nuxt preview",
+    "prepreview": "npm run generate",
+    "preview": "npx serve dist",
     "postinstall": "nuxt prepare",
     "predeploy": "npm run generate",
     "deploy": "gh-pages -d dist"
