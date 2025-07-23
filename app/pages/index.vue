@@ -3,6 +3,28 @@
   const maxLevel = 1000
   const maxExperience = 2000000000
 
+  const activeSkill = ref({
+    "label": "smithing"
+  })
+  const skillList = [
+    {
+      "label": "smithing"
+    },
+    {
+      "label": "crafting"
+    }
+  ]
+  const smithingSkill = new smithing(0, 0, 0)
+  const craftingSkill = new crafting(0, 0, 0)
+
+  function setActiveClass() {
+    if (activeSkill.value.label == "crafting") {
+      skillClass.value = craftingSkill
+    } else {
+      skillClass.value = smithingSkill
+    }
+  }
+
   const experienceSource = ref({
     "label": "Select item to craft"
   })
@@ -17,7 +39,7 @@
 
   const includeBaseMaterials = ref(false)
 
-  const smithingSkill = ref(new smithing(0, 0, 0))
+  const skillClass = ref(smithingSkill)
   const currentPrestige = ref(0)
   const currentExperience = ref(0)
   const goalLevel = ref(0)
@@ -34,16 +56,16 @@
   ])
 
   function calculateResults(event) {
-    const goalExperience = smithingSkill.value.getExperience(goalLevel.value)
+    const goalExperience = skillClass.value.getExperience(goalLevel.value)
     const requiredExperience = goalExperience - currentExperience.value
-    const iterationExperience = calculateIterationExperince(experienceSource.value, currentPrestige.value, activeInvocation.value, includeBaseMaterials.value, smithingSkill.value)
+    const iterationExperience = calculateIterationExperince(experienceSource.value, currentPrestige.value, activeInvocation.value, includeBaseMaterials.value, skillClass.value)
     const totalIterations = Math.ceil(requiredExperience/iterationExperience)
 
     calculatorOutput.value[0]["experience source"] = experienceSource.value.label
     calculatorOutput.value[0]["experience required"] = requiredExperience
     calculatorOutput.value[0]["experience per iteration"] = iterationExperience
     calculatorOutput.value[0]["required iterations"] = totalIterations
-    calculatorOutput.value[0]["estimated time"] = calculateCraftingTime(totalIterations, experienceSource.value, activePotion.value, includeBaseMaterials.value, smithingSkill.value)
+    calculatorOutput.value[0]["estimated time"] = calculateCraftingTime(totalIterations, experienceSource.value, activePotion.value, includeBaseMaterials.value, skillClass.value)
     calculatorOutput.value[0]["required materials"] = generateMaterialString(experienceSource.value.input, totalIterations)
   }
 
@@ -113,6 +135,9 @@
 </script>
 
 <template>
+  <UFormField label="Selected Skill">
+    <USelectMenu v-model="activeSkill" :items="skillList" @change="setActiveClass" class="w-48" />
+  </UFormField>
   <UFormField label="Current prestige">
     <UInputNumber v-model="currentPrestige" placeholder="Enter current prestige" :min=0 :max=maxPrestige />
   </UFormField>
@@ -120,13 +145,13 @@
     <UInputNumber v-model="currentExperience" placeholder="Enter current experience" :min=0 :max=maxExperience />
   </UFormField>
   <UFormField label="Experience source">
-    <USelectMenu v-model="experienceSource" :items="smithingSkill.experienceSources" class="w-48" />
+    <USelectMenu v-model="experienceSource" :items="skillClass.experienceSources" class="w-48" />
   </UFormField>
     <UFormField label="Active Invocation">
-    <USelectMenu v-model="activeInvocation" :items="smithingSkill.invocations" class="w-48" />
+    <USelectMenu v-model="activeInvocation" :items="skillClass.invocations" class="w-48" />
   </UFormField>
     <UFormField label="Active Potion">
-    <USelectMenu v-model="activePotion" :items="smithingSkill.potions" class="w-48" />
+    <USelectMenu v-model="activePotion" :items="skillClass.potions" class="w-48" />
   </UFormField>
   <UFormField label="Goal Level">
     <UInputNumber v-model="goalLevel" placeholder="Enter goal level" :min=0 :max=maxLevel />
