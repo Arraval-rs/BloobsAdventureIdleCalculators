@@ -1,6 +1,6 @@
 # Bloobs Adventure Idle Calculators
 
-The page is live at 
+The page is live at https://arraval-rs.github.io/BloobsAdventureIdleCalculators
 
 ## Setup
 
