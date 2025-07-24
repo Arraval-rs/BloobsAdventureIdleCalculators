@@ -1,9 +1,5 @@
-export default class smithing extends skill {
-	constructor(level, experience, prestige) {
-		super("Smithing", level, experience, prestige)
-	}
-
-	invocations = [
+{
+		"invocations": [
 		{
 			"label": "Blacksmith's Blessing",
 			"bonusExperience": 0.05
@@ -16,13 +12,10 @@ export default class smithing extends skill {
 			"label": "Metalworker's Blessing",
 			"bonusExperience": 0.15,
 			"bonusProduct": 0.25
-		},
-		{
-			"label": "None"
 		}
-	]
+	],
 
-	potions = [
+	"potions": [
 		{
 			"label": "Forge Potion",
 			"timeReduction": 0.25
@@ -30,13 +23,10 @@ export default class smithing extends skill {
 		{
 			"label": "Super Forge Potion",
 			"timeReduction": 0.50
-		},
-		{
-			"label": "None"
 		}
-	]
-
-	experienceSources = [
+	],
+	
+	"experienceSources": [
 		{
 			"label": "Bronze Bar",
 			"level": 1,
@@ -2751,5 +2741,4 @@ export default class smithing extends skill {
 			"baseCraftingTime": 2.5
 		}
 	]
-
 }

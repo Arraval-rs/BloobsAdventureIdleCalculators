@@ -1,2 +1,14 @@
 @import "tailwindcss";
 @import "@nuxt/ui";
+
+.header {
+	padding: 2vh;
+  text-align: center;
+  background-color: #172440;
+  margin: 5px;
+}
+
+.body {
+	height:  100%;
+	margin: 5px;
+}

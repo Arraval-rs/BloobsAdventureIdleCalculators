@@ -1,9 +1,5 @@
-export default class crafting extends skill {
-	constructor(level, experience, prestige) {
-		super("Crafting", level, experience, prestige)
-	}
-
-	invocations = [
+{
+	"invocations": [
 		{
 			"label": "Artisan's Edge",
 			"bonusExperience": 0.05
@@ -16,23 +12,17 @@ export default class crafting extends skill {
 			"label": "Resourceful Touch",
 			"bonusExperience": 0.15,
 			"bonusProduct": 0.25
-		},
-		{
-			"label": "None"
 		}
-	]
+	],
 
-	potions = [
+	"potions": [
 		{
 			"label": "Artisan Potion",
 			"timeReduction": 0.25
-		},
-		{
-			"label": "None"
 		}
-	]
+	],
 
-	experienceSources = [
+	"experienceSources": [
 		{
 			"label": "Soft Clay",
 			"level": 1,

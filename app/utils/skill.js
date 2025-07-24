@@ -1,26 +1,29 @@
 export default class skill {
-	constructor(name, level, experience, prestige) {
+	constructor(name) {
 		this.skillName = name
-		this.skillLevel = level
-		this.skillExperience = experience
-		this.skillPrestige = prestige
 	}
 
-	getExperience(level) {
+	getExperienceFromLevel(level) {
 		return this.levelExperience[level-1]
 	}
 
-	getPrestigeMultiplier() {
-		if (this.skillPrestige = 10) {
-			return 15
-		} else {
-			return this.skillPrestige + 1
-		}
+	async readSkillJson() {
+		const data = await import(`@/assets/skillData/${this.skillName}.json`)
+		this.experienceSources = data.experienceSources
+		this.invocations = data.invocations
+		this.potions = data.potions
+		this.invocations.push({"label": "None"})
+		this.potions.push({"label": "None"})
 	}
 
-	invocations;
-	potions;
-	experienceSources;
+  findSubCraft(experienceSourceName) {
+    for (const source of this.experienceSources) {
+      if (source.label == experienceSourceName) {
+        return source
+      }
+    }
+    return null
+  }
 
 	levelExperience = [
 		0,
