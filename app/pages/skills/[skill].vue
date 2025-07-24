@@ -59,7 +59,7 @@
     }
 
     var subCraftExperience = 0
-    const baseMaterial = findSubCraft(experienceSource.input[0].name, skill)
+    const baseMaterial = skill.findSubCraft(experienceSource.input[0].name)
     if (includeSubCrafts && baseMaterial != null) {
       subCraftExperience = baseMaterial.baseExperience * experienceSource.input[0].inputAmount ?? 0
     }
@@ -70,7 +70,7 @@
     const potionTimeReduction = activePotion.timeReduction ?? 0
 
     var durationInSeconds = iterations * (experienceSource.baseCraftingTime - potionTimeReduction)
-    const baseMaterial = findSubCraft(experienceSource.input[0].name, skill)
+    const baseMaterial = skill.findSubCraft(experienceSource.input[0].name)
     if (includeSubCrafts && baseMaterial != null) {
       const subCraftDuration = iterations * experienceSource.input[0].inputAmount * (baseMaterial.baseCraftingTime - potionTimeReduction)
       durationInSeconds += subCraftDuration
@@ -103,15 +103,6 @@
       materialString += material.inputAmount * iterations + " " + material.name + "\n"
     }
     return materialString
-  }
-
-  function findSubCraft(experienceSourceName, skill) {
-    for (const source of skill.experienceSources) {
-      if (source.label == experienceSourceName) {
-        return source
-      }
-    }
-    return null
   }
 
 </script>

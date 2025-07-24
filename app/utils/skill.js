@@ -16,6 +16,15 @@ export default class skill {
 		this.potions.push({"label": "None"})
 	}
 
+  findSubCraft(experienceSourceName) {
+    for (const source of this.experienceSources) {
+      if (source.label == experienceSourceName) {
+        return source
+      }
+    }
+    return null
+  }
+
 	levelExperience = [
 		0,
 		83,
