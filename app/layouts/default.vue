@@ -15,9 +15,7 @@
           to: "/skills/smithing" 
         },{
           label: "Herbology",
-          to: "/skills/herbology",
-          description: "Not implemented",
-          disabled: true
+          to: "/skills/herbology"
         },
         {
           label: "Crafting",
@@ -26,8 +24,7 @@
         {
           label: "Cooking",
           to: "/skills/cooking",
-          description: "Not implemented",
-          disabled: true
+          description: "Currently assumes 0% burn rate"
         },
         {
           label: "Bowcrafting",

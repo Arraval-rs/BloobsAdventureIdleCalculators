@@ -1,0 +1,1719 @@
+{
+	"invocations": [
+		{
+			"label": "Botanical Insight",
+			"bonusExperience": 0.05
+		},
+		{
+			"label": "Verdant Mastery",
+			"bonusProduct": 0.20
+		},
+		{
+			"label": "Whisper of Roots",
+			"bonusExperience": 0.15,
+			"bonusProduct": 0.25
+		}
+	],
+
+	"potions": [
+		{
+			"label": "Botanist Potion",
+			"bonusExperience": 0.10
+		},
+		{
+			"label": "Flourishing Potion",
+			"bonusExperience": 0.15
+		},
+		{
+			"label": "Super Botanist Potion",
+			"bonusExperience": 0.25
+		}
+	],
+	
+	"experienceSources": [
+		{
+			"label": "Vial of Water",
+			"level": 1,
+			"input": [
+				{
+					"name": "Vial",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 1,
+			"baseCraftingTime": 1
+		},
+		{
+			"label": "Flask of Water",
+			"level": 4,
+			"input": [
+				{
+					"name": "Flask",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 2,
+			"baseCraftingTime": 1
+		},
+		{
+			"label": "Bottle of Water",
+			"level": 7,
+			"input": [
+				{
+					"name": "Bottle",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 3,
+			"baseCraftingTime": 1
+		},
+		{
+			"label": "Decanter of Water",
+			"level": 10,
+			"input": [
+				{
+					"name": "Decanter",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 4,
+			"baseCraftingTime": 1
+		},
+		{
+			"label": "Meadow Cress Vial (unf)",
+			"level": 1,
+			"input": [
+				{
+					"name": "Vial of Water",
+					"inputAmount": 1
+				},
+				{
+					"name": "Meadow Cress",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 1,
+			"baseCraftingTime": 1
+		},
+		{
+			"label": "Meadow Cress Flask (unf)",
+			"level": 4,
+			"input": [
+				{
+					"name": "Flask of Water",
+					"inputAmount": 1
+				},
+				{
+					"name": "Meadow Cress",
+					"inputAmount": 2
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 2,
+			"baseCraftingTime": 1
+		},
+		{
+			"label": "Meadow Cress Bottle (unf)",
+			"level": 7,
+			"input": [
+				{
+					"name": "Bottle of Water",
+					"inputAmount": 1
+				},
+				{
+					"name": "Meadow Cress",
+					"inputAmount": 3
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 2,
+			"baseCraftingTime": 1
+		},
+		{
+			"label": "Meadow Cress Decanter (unf)",
+			"level": 10,
+			"input": [
+				{
+					"name": "Decanter of Water",
+					"inputAmount": 1
+				},
+				{
+					"name": "Meadow Cress",
+					"inputAmount": 4
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 3,
+			"baseCraftingTime": 1
+		},
+		{
+			"label": "Sunsnap Vial (unf)",
+			"level": 11,
+			"input": [
+				{
+					"name": "Vial of Water",
+					"inputAmount": 1
+				},
+				{
+					"name": "Sunsnap",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 2,
+			"baseCraftingTime": 1
+		},
+		{
+			"label": "Sunsnap Flask (unf)",
+			"level": 14,
+			"input": [
+				{
+					"name": "Flask of Water",
+					"inputAmount": 1
+				},
+				{
+					"name": "Sunsnap",
+					"inputAmount": 2
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 3,
+			"baseCraftingTime": 1
+		},
+		{
+			"label": "Sunsnap Bottle (unf)",
+			"level": 17,
+			"input": [
+				{
+					"name": "Bottle of Water",
+					"inputAmount": 1
+				},
+				{
+					"name": "Sunsnap",
+					"inputAmount": 3
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 4,
+			"baseCraftingTime": 1
+		},
+		{
+			"label": "Sunsnap Decanter (unf)",
+			"level": 20,
+			"input": [
+				{
+					"name": "Decanter of Water",
+					"inputAmount": 1
+				},
+				{
+					"name": "Sunsnap",
+					"inputAmount": 4
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 5,
+			"baseCraftingTime": 1
+		},
+		{
+			"label": "Emerald Glory Vial (unf)",
+			"level": 21,
+			"input": [
+				{
+					"name": "Vial of Water",
+					"inputAmount": 1
+				},
+				{
+					"name": "Emerald Glory",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 2,
+			"baseCraftingTime": 1
+		},
+		{
+			"label": "Emerald Glory Flask (unf)",
+			"level": 24,
+			"input": [
+				{
+					"name": "Flask of Water",
+					"inputAmount": 1
+				},
+				{
+					"name": "Emerald Glory",
+					"inputAmount": 2
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 3,
+			"baseCraftingTime": 1
+		},
+		{
+			"label": "Emerald Glory Bottle (unf)",
+			"level": 27,
+			"input": [
+				{
+					"name": "Bottle of Water",
+					"inputAmount": 1
+				},
+				{
+					"name": "Emerald Glory",
+					"inputAmount": 3
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 4,
+			"baseCraftingTime": 1
+		},
+		{
+			"label": "Emerald Glory Decanter (unf)",
+			"level": 30,
+			"input": [
+				{
+					"name": "Decanter of Water",
+					"inputAmount": 1
+				},
+				{
+					"name": "Emerald Glory",
+					"inputAmount": 4
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 5,
+			"baseCraftingTime": 1
+		},
+		{
+			"label": "Thornfoot Vial (unf)",
+			"level": 31,
+			"input": [
+				{
+					"name": "Vial of Water",
+					"inputAmount": 1
+				},
+				{
+					"name": "Thornfoot",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 3,
+			"baseCraftingTime": 1
+		},
+		{
+			"label": "Thornfoot Flask (unf)",
+			"level": 34,
+			"input": [
+				{
+					"name": "Flask of Water",
+					"inputAmount": 1
+				},
+				{
+					"name": "Thornfoot",
+					"inputAmount": 2
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 4,
+			"baseCraftingTime": 1
+		},
+		{
+			"label": "Thornfoot Bottle (unf)",
+			"level": 37,
+			"input": [
+				{
+					"name": "Bottle of Water",
+					"inputAmount": 1
+				},
+				{
+					"name": "Thornfoot",
+					"inputAmount": 3
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 4,
+			"baseCraftingTime": 1
+		},
+		{
+			"label": "Thornfoot Decanter (unf)",
+			"level": 40,
+			"input": [
+				{
+					"name": "Decanter of Water",
+					"inputAmount": 1
+				},
+				{
+					"name": "Thornfoot",
+					"inputAmount": 4
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 6,
+			"baseCraftingTime": 1
+		},
+		{
+			"label": "Softeye Vial (unf)",
+			"level": 41,
+			"input": [
+				{
+					"name": "Vial of Water",
+					"inputAmount": 1
+				},
+				{
+					"name": "Softeye",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 3,
+			"baseCraftingTime": 1
+		},
+		{
+			"label": "Softeye Flask (unf)",
+			"level": 44,
+			"input": [
+				{
+					"name": "Flask of Water",
+					"inputAmount": 1
+				},
+				{
+					"name": "Softeye",
+					"inputAmount": 2
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 4,
+			"baseCraftingTime": 1
+		},
+		{
+			"label": "Softeye Bottle (unf)",
+			"level": 47,
+			"input": [
+				{
+					"name": "Bottle of Water",
+					"inputAmount": 1
+				},
+				{
+					"name": "Softeye",
+					"inputAmount": 3
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 5,
+			"baseCraftingTime": 1
+		},
+		{
+			"label": "Softeye Decanter (unf)",
+			"level": 50,
+			"input": [
+				{
+					"name": "Decanter of Water",
+					"inputAmount": 1
+				},
+				{
+					"name": "Softeye",
+					"inputAmount": 4
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 6,
+			"baseCraftingTime": 1
+		},
+		{
+			"label": "Yellow Comb Vial (unf)",
+			"level": 51,
+			"input": [
+				{
+					"name": "Vial of Water",
+					"inputAmount": 1
+				},
+				{
+					"name": "Yellow Comb",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 4,
+			"baseCraftingTime": 1
+		},
+		{
+			"label": "Yellow Comb Flask (unf)",
+			"level": 54,
+			"input": [
+				{
+					"name": "Flask of Water",
+					"inputAmount": 1
+				},
+				{
+					"name": "Yellow Comb",
+					"inputAmount": 2
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 5,
+			"baseCraftingTime": 1
+		},
+		{
+			"label": "Yellow Comb Bottle (unf)",
+			"level": 57,
+			"input": [
+				{
+					"name": "Bottle of Water",
+					"inputAmount": 1
+				},
+				{
+					"name": "Yellow Comb",
+					"inputAmount": 3
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 6,
+			"baseCraftingTime": 1
+		},
+		{
+			"label": "Yellow Comb Decanter (unf)",
+			"level": 60,
+			"input": [
+				{
+					"name": "Decanter of Water",
+					"inputAmount": 1
+				},
+				{
+					"name": "Yellow Comb",
+					"inputAmount": 4
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 6,
+			"baseCraftingTime": 1
+		},
+		{
+			"label": "Bloodmoss Vial (unf)",
+			"level": 61,
+			"input": [
+				{
+					"name": "Vial of Water",
+					"inputAmount": 1
+				},
+				{
+					"name": "Bloodmoss",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 7,
+			"baseCraftingTime": 1
+		},
+		{
+			"label": "Bloodmoss Flask (unf)",
+			"level": 64,
+			"input": [
+				{
+					"name": "Flask of Water",
+					"inputAmount": 1
+				},
+				{
+					"name": "Bloodmoss",
+					"inputAmount": 2
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 8,
+			"baseCraftingTime": 1
+		},
+		{
+			"label": "Bloodmoss Bottle (unf)",
+			"level": 67,
+			"input": [
+				{
+					"name": "Bottle of Water",
+					"inputAmount": 1
+				},
+				{
+					"name": "Bloodmoss",
+					"inputAmount": 3
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 9,
+			"baseCraftingTime": 1
+		},
+		{
+			"label": "Bloodmoss Decanter (unf)",
+			"level": 70,
+			"input": [
+				{
+					"name": "Decanter of Water",
+					"inputAmount": 1
+				},
+				{
+					"name": "Bloodmoss",
+					"inputAmount": 4
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 10,
+			"baseCraftingTime": 1
+		},
+		{
+			"label": "Starshade Vial (unf)",
+			"level": 71,
+			"input": [
+				{
+					"name": "Vial of Water",
+					"inputAmount": 1
+				},
+				{
+					"name": "Starshade",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 10,
+			"baseCraftingTime": 1
+		},
+		{
+			"label": "Starshade Flask (unf)",
+			"level": 74,
+			"input": [
+				{
+					"name": "Flask of Water",
+					"inputAmount": 1
+				},
+				{
+					"name": "Starshade",
+					"inputAmount": 2
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 12,
+			"baseCraftingTime": 1
+		},
+		{
+			"label": "Starshade Bottle (unf)",
+			"level": 77,
+			"input": [
+				{
+					"name": "Bottle of Water",
+					"inputAmount": 1
+				},
+				{
+					"name": "Starshade",
+					"inputAmount": 3
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 13,
+			"baseCraftingTime": 1
+		},
+		{
+			"label": "Starshade Decanter (unf)",
+			"level": 80,
+			"input": [
+				{
+					"name": "Decanter of Water",
+					"inputAmount": 1
+				},
+				{
+					"name": "Starshade",
+					"inputAmount": 4
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 14,
+			"baseCraftingTime": 1
+		},
+		{
+			"label": "Emberplume Vial (unf)",
+			"level": 81,
+			"input": [
+				{
+					"name": "Vial of Water",
+					"inputAmount": 1
+				},
+				{
+					"name": "Emberplume",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 14,
+			"baseCraftingTime": 1
+		},
+		{
+			"label": "Emberplume Flask (unf)",
+			"level": 84,
+			"input": [
+				{
+					"name": "Flask of Water",
+					"inputAmount": 1
+				},
+				{
+					"name": "Emberplume",
+					"inputAmount": 2
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 15,
+			"baseCraftingTime": 1
+		},
+		{
+			"label": "Emberplume Bottle (unf)",
+			"level": 87,
+			"input": [
+				{
+					"name": "Bottle of Water",
+					"inputAmount": 1
+				},
+				{
+					"name": "Emberplume",
+					"inputAmount": 3
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 16,
+			"baseCraftingTime": 1
+		},
+		{
+			"label": "Emberplume Decanter (unf)",
+			"level": 90,
+			"input": [
+				{
+					"name": "Decanter of Water",
+					"inputAmount": 1
+				},
+				{
+					"name": "Emberplume",
+					"inputAmount": 4
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 17,
+			"baseCraftingTime": 1
+		},
+		{
+			"label": "Witch Moss Vial (unf)",
+			"level": 91,
+			"input": [
+				{
+					"name": "Vial of Water",
+					"inputAmount": 1
+				},
+				{
+					"name": "Witch Moss",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 17,
+			"baseCraftingTime": 1
+		},
+		{
+			"label": "Witch Moss Flask (unf)",
+			"level": 94,
+			"input": [
+				{
+					"name": "Flask of Water",
+					"inputAmount": 1
+				},
+				{
+					"name": "Witch Moss",
+					"inputAmount": 2
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 18,
+			"baseCraftingTime": 1
+		},
+		{
+			"label": "Witch Moss Bottle (unf)",
+			"level": 97,
+			"input": [
+				{
+					"name": "Bottle of Water",
+					"inputAmount": 1
+				},
+				{
+					"name": "Witch Moss",
+					"inputAmount": 3
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 19,
+			"baseCraftingTime": 1
+		},
+		{
+			"label": "Witch Moss Decanter (unf)",
+			"level": 100,
+			"input": [
+				{
+					"name": "Decanter of Water",
+					"inputAmount": 1
+				},
+				{
+					"name": "Witch Moss",
+					"inputAmount": 4
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 20,
+			"baseCraftingTime": 1
+		},
+		{
+			"label": "Hoarfrost Vial (unf)",
+			"level": 105,
+			"input": [
+				{
+					"name": "Vial of Water",
+					"inputAmount": 1
+				},
+				{
+					"name": "Hoarfrost",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 22,
+			"baseCraftingTime": 1
+		},
+		{
+			"label": "Hoarfrost Flask (unf)",
+			"level": 115,
+			"input": [
+				{
+					"name": "Flask of Water",
+					"inputAmount": 1
+				},
+				{
+					"name": "Hoarfrost",
+					"inputAmount": 2
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 26,
+			"baseCraftingTime": 1
+		},
+		{
+			"label": "Hoarfrost Bottle (unf)",
+			"level": 125,
+			"input": [
+				{
+					"name": "Bottle of Water",
+					"inputAmount": 1
+				},
+				{
+					"name": "Hoarfrost",
+					"inputAmount": 3
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 30,
+			"baseCraftingTime": 1
+		},
+		{
+			"label": "Hoarfrost Decanter (unf)",
+			"level": 135,
+			"input": [
+				{
+					"name": "Decanter of Water",
+					"inputAmount": 1
+				},
+				{
+					"name": "Hoarfrost",
+					"inputAmount": 4
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 34,
+			"baseCraftingTime": 1
+		},
+		{
+			"label": "Coldsnap Vial (unf)",
+			"level": 145,
+			"input": [
+				{
+					"name": "Vial of Water",
+					"inputAmount": 1
+				},
+				{
+					"name": "Coldsnap",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 40,
+			"baseCraftingTime": 1
+		},
+		{
+			"label": "Coldsnap Flask (unf)",
+			"level": 155,
+			"input": [
+				{
+					"name": "Flask of Water",
+					"inputAmount": 1
+				},
+				{
+					"name": "Coldsnap",
+					"inputAmount": 2
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 44,
+			"baseCraftingTime": 1
+		},
+		{
+			"label": "Coldsnap Bottle (unf)",
+			"level": 165,
+			"input": [
+				{
+					"name": "Bottle of Water",
+					"inputAmount": 1
+				},
+				{
+					"name": "Coldsnap",
+					"inputAmount": 3
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 48,
+			"baseCraftingTime": 1
+		},
+		{
+			"label": "Coldsnap Decanter (unf)",
+			"level": 175,
+			"input": [
+				{
+					"name": "Decanter of Water",
+					"inputAmount": 1
+				},
+				{
+					"name": "Coldsnap",
+					"inputAmount": 4
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 52,
+			"baseCraftingTime": 1
+		},
+		{
+			"label": "Timber Potion",
+			"level": 1,
+			"input": [
+				{
+					"name": "Meadow Cress Vial (unf)",
+					"inputAmount": 1
+				},
+				{
+					"name": "Sticks",
+					"inputAmount": 2
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 8,
+			"baseCraftingTime": 2
+		},
+		{
+			"label": "Excavation Potion",
+			"level": 4,
+			"input": [
+				{
+					"name": "Meadow Cress Flask (unf)",
+					"inputAmount": 1
+				},
+				{
+					"name": "Stones",
+					"inputAmount": 2
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 12,
+			"baseCraftingTime": 2
+		},
+		{
+			"label": "Angling Potion",
+			"level": 7,
+			"input": [
+				{
+					"name": "Meadow Cress Bottle (unf)",
+					"inputAmount": 1
+				},
+				{
+					"name": "Worm",
+					"inputAmount": 2
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 15,
+			"baseCraftingTime": 2
+		},
+		{
+			"label": "Forge Potion",
+			"level": 10,
+			"input": [
+				{
+					"name": "Meadow Cress Decanter (unf)",
+					"inputAmount": 1
+				},
+				{
+					"name": "Scarlet Sporecap",
+					"inputAmount": 2
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 18,
+			"baseCraftingTime": 2
+		},
+		{
+			"label": "Blaze Potion",
+			"level": 11,
+			"input": [
+				{
+					"name": "Sunsnap Vial (unf)",
+					"inputAmount": 1
+				},
+				{
+					"name": "Ashes",
+					"inputAmount": 2
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 23,
+			"baseCraftingTime": 2
+		},
+		{
+			"label": "Chef's Potion",
+			"level": 14,
+			"input": [
+				{
+					"name": "Sunsnap Flask (unf)",
+					"inputAmount": 1
+				},
+				{
+					"name": "Egg",
+					"inputAmount": 2
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 26,
+			"baseCraftingTime": 2
+		},
+		{
+			"label": "Artisan Potion",
+			"level": 17,
+			"input": [
+				{
+					"name": "Sunsnap Bottle (unf)",
+					"inputAmount": 1
+				},
+				{
+					"name": "Papyrus Fibers",
+					"inputAmount": 2
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 29,
+			"baseCraftingTime": 2
+		},
+		{
+			"label": "Vanquisher Potion",
+			"level": 20,
+			"input": [
+				{
+					"name": "Sunsnap Decanter (unf)",
+					"inputAmount": 1
+				},
+				{
+					"name": "Azure Starshroom",
+					"inputAmount": 2
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 32,
+			"baseCraftingTime": 2
+		},
+		{
+			"label": "Fletcher Potion",
+			"level": 21,
+			"input": [
+				{
+					"name": "Emerald Glory Vial (unf)",
+					"inputAmount": 1
+				},
+				{
+					"name": "Orange Bloobberries",
+					"inputAmount": 2
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 34,
+			"baseCraftingTime": 2
+		},
+		{
+			"label": "Saturation Potion",
+			"level": 24,
+			"input": [
+				{
+					"name": "Emerald Glory Flask (unf)",
+					"inputAmount": 1
+				},
+				{
+					"name": "Imbued Glory",
+					"inputAmount": 2
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 38,
+			"baseCraftingTime": 2
+		},
+		{
+			"label": "Precision Potion",
+			"level": 27,
+			"input": [
+				{
+					"name": "Emerald Glory Bottle (unf)",
+					"inputAmount": 1
+				},
+				{
+					"name": "Undead Eye",
+					"inputAmount": 2
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 43,
+			"baseCraftingTime": 2
+		},
+		{
+			"label": "Vigor Potion",
+			"level": 30,
+			"input": [
+				{
+					"name": "Emerald Glory Decanter (unf)",
+					"inputAmount": 1
+				},
+				{
+					"name": "Golden Sunfungus",
+					"inputAmount": 2
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 47,
+			"baseCraftingTime": 2
+		},
+		{
+			"label": "Rogue Potion",
+			"level": 31,
+			"input": [
+				{
+					"name": "Thornfoot Vial (unf)",
+					"inputAmount": 1
+				},
+				{
+					"name": "Gold Ore",
+					"inputAmount": 2
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 51,
+			"baseCraftingTime": 2
+		},
+		{
+			"label": "Huntsman's Potion",
+			"level": 34,
+			"input": [
+				{
+					"name": "Thornfoot Flask (unf)",
+					"inputAmount": 1
+				},
+				{
+					"name": "Yellow Bloobberries",
+					"inputAmount": 2
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 55,
+			"baseCraftingTime": 2
+		},
+		{
+			"label": "Acuity Potion",
+			"level": 37,
+			"input": [
+				{
+					"name": "Thornfoot Bottle (unf)",
+					"inputAmount": 1
+				},
+				{
+					"name": "Undead Eye",
+					"inputAmount": 2
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 59,
+			"baseCraftingTime": 2
+		},
+		{
+			"label": "Ranger Potion",
+			"level": 40,
+			"input": [
+				{
+					"name": "Thornfoot Decanter (unf)",
+					"inputAmount": 1
+				},
+				{
+					"name": "Twilight Orchidshroom",
+					"inputAmount": 2
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 63,
+			"baseCraftingTime": 2
+		},
+		{
+			"label": "Gatherer Potion",
+			"level": 41,
+			"input": [
+				{
+					"name": "Softeye Vial (unf)",
+					"inputAmount": 1
+				},
+				{
+					"name": "White Bloobberries",
+					"inputAmount": 2
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 63,
+			"baseCraftingTime": 2
+		},
+		{
+			"label": "Botanist Potion",
+			"level": 44,
+			"input": [
+				{
+					"name": "Softeye Flask (unf)",
+					"inputAmount": 1
+				},
+				{
+					"name": "Thornfoot Vial (unf)",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 67,
+			"baseCraftingTime": 2
+		},
+		{
+			"label": "Seer Potion",
+			"level": 47,
+			"input": [
+				{
+					"name": "Softeye Bottle (unf)",
+					"inputAmount": 1
+				},
+				{
+					"name": "Undead Eye",
+					"inputAmount": 2
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 71,
+			"baseCraftingTime": 2
+		},
+		{
+			"label": "Spellbinding Potion",
+			"level": 50,
+			"input": [
+				{
+					"name": "Softeye Decanter (unf)",
+					"inputAmount": 1
+				},
+				{
+					"name": "Golden Chestnutcap",
+					"inputAmount": 2
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 76,
+			"baseCraftingTime": 2
+		},
+		{
+			"label": "Charge Potion",
+			"level": 51,
+			"input": [
+				{
+					"name": "Yellow Comb Vial (unf)",
+					"inputAmount": 1
+				},
+				{
+					"name": "Crushed Gem",
+					"inputAmount": 2
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 80,
+			"baseCraftingTime": 2
+		},
+		{
+			"label": "Faith Potion",
+			"level": 54,
+			"input": [
+				{
+					"name": "Yellow Comb Flask (unf)",
+					"inputAmount": 1
+				},
+				{
+					"name": "Spectral Dust",
+					"inputAmount": 2
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 86,
+			"baseCraftingTime": 2
+		},
+		{
+			"label": "Swiftness Potion",
+			"level": 57,
+			"input": [
+				{
+					"name": "Yellow Comb Bottle (unf)",
+					"inputAmount": 1
+				},
+				{
+					"name": "Feather",
+					"inputAmount": 6
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 91,
+			"baseCraftingTime": 2
+		},
+		{
+			"label": "Fortitude Potion",
+			"level": 60,
+			"input": [
+				{
+					"name": "Yellow Comb Decanter (unf)",
+					"inputAmount": 1
+				},
+				{
+					"name": "Amethyst Glowstalk",
+					"inputAmount": 2
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 99,
+			"baseCraftingTime": 2
+		},
+		{
+			"label": "Firemaker's Potion",
+			"level": 61,
+			"input": [
+				{
+					"name": "Bloodmoss Vial (unf)",
+					"inputAmount": 1
+				},
+				{
+					"name": "Blaze Potion",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 107,
+			"baseCraftingTime": 2
+		},
+		{
+			"label": "Beastmaster's Potion",
+			"level": 64,
+			"input": [
+				{
+					"name": "Bloodmoss Flask (unf)",
+					"inputAmount": 1
+				},
+				{
+					"name": "Vanquisher Potion",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 115,
+			"baseCraftingTime": 2
+		},
+		{
+			"label": "Flourishing Potion",
+			"level": 67,
+			"input": [
+				{
+					"name": "Bloodmoss Bottle (unf)",
+					"inputAmount": 1
+				},
+				{
+					"name": "Botanist Potion",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 123,
+			"baseCraftingTime": 2
+		},
+		{
+			"label": "Imbuer's Potion",
+			"level": 70,
+			"input": [
+				{
+					"name": "Bloodmoss Decanter (unf)",
+					"inputAmount": 1
+				},
+				{
+					"name": "Charge Potion",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 132,
+			"baseCraftingTime": 2
+		},
+		{
+			"label": "Sanctified Grace Potion",
+			"level": 71,
+			"input": [
+				{
+					"name": "Starshade Vial (unf)",
+					"inputAmount": 1
+				},
+				{
+					"name": "Faith Potion",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 140,
+			"baseCraftingTime": 2
+		},
+		{
+			"label": "Savage Power Potion",
+			"level": 74,
+			"input": [
+				{
+					"name": "Starshade Flask (unf)",
+					"inputAmount": 1
+				},
+				{
+					"name": "Redmire Fungus",
+					"inputAmount": 4
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 148,
+			"baseCraftingTime": 2
+		},
+		{
+			"label": "Marksman's Might Potion",
+			"level": 77,
+			"input": [
+				{
+					"name": "Starshade Bottle (unf)",
+					"inputAmount": 1
+				},
+				{
+					"name": "Leafshade Shroom",
+					"inputAmount": 4
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 156,
+			"baseCraftingTime": 2
+		},
+		{
+			"label": "Wizard's Wisdom Potion",
+			"level": 80,
+			"input": [
+				{
+					"name": "Starshade Decanter (unf)",
+					"inputAmount": 1
+				},
+				{
+					"name": "Grey Bloobberries",
+					"inputAmount": 4
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 165,
+			"baseCraftingTime": 2
+		},
+		{
+			"label": "Super Firemaker's Potion",
+			"level": 81,
+			"input": [
+				{
+					"name": "Emberplume Vial (unf)",
+					"inputAmount": 1
+				},
+				{
+					"name": "Firemaker's Potion",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 168,
+			"baseCraftingTime": 2
+		},
+		{
+			"label": "Super Swiftness Potion",
+			"level": 84,
+			"input": [
+				{
+					"name": "Emberplume Flask (unf)",
+					"inputAmount": 1
+				},
+				{
+					"name": "Bluelume Spore",
+					"inputAmount": 4
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 173,
+			"baseCraftingTime": 2
+		},
+		{
+			"label": "Super Botanist Potion",
+			"level": 87,
+			"input": [
+				{
+					"name": "Emberplume Bottle (unf)",
+					"inputAmount": 1
+				},
+				{
+					"name": "Flourishing Potion",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 181,
+			"baseCraftingTime": 2
+		},
+		{
+			"label": "Super Beastmaster's Potion",
+			"level": 90,
+			"input": [
+				{
+					"name": "Emberplume Decanter (unf)",
+					"inputAmount": 1
+				},
+				{
+					"name": "Beastmaster's Potion",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 198,
+			"baseCraftingTime": 2
+		},
+		{
+			"label": "Super Forge Potion",
+			"level": 91,
+			"input": [
+				{
+					"name": "Witch Moss Vial (unf)",
+					"inputAmount": 1
+				},
+				{
+					"name": "Forge Potion",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 209,
+			"baseCraftingTime": 2
+		},
+		{
+			"label": "Super Imbuer's Potion",
+			"level": 94,
+			"input": [
+				{
+					"name": "Witch Moss Flask (unf)",
+					"inputAmount": 1
+				},
+				{
+					"name": "Void Spore",
+					"inputAmount": 4
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 224,
+			"baseCraftingTime": 2
+		},
+		{
+			"label": "Super Sanctified Grace Potion",
+			"level": 97,
+			"input": [
+				{
+					"name": "Witch Moss Bottle (unf)",
+					"inputAmount": 1
+				},
+				{
+					"name": "Flourishing Potion",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 238,
+			"baseCraftingTime": 2
+		},
+		{
+			"label": "Super Fortitude Potion",
+			"level": 100,
+			"input": [
+				{
+					"name": "Witch Moss Decanter (unf)",
+					"inputAmount": 1
+				},
+				{
+					"name": "Void Spore",
+					"inputAmount": 4
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 252,
+			"baseCraftingTime": 2
+		},
+		{
+			"label": "Lumberjack's Potion",
+			"level": 110,
+			"input": [
+				{
+					"name": "Hoarfrost Vial (unf)",
+					"inputAmount": 1
+				},
+				{
+					"name": "Rime Salt",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 292,
+			"baseCraftingTime": 2
+		},
+		{
+			"label": "Oreheart Potion",
+			"level": 120,
+			"input": [
+				{
+					"name": "Hoarfrost Flask (unf)",
+					"inputAmount": 1
+				},
+				{
+					"name": "Rime Salt",
+					"inputAmount": 3
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 322,
+			"baseCraftingTime": 2
+		},
+		{
+			"label": "Tidecaller Potion",
+			"level": 130,
+			"input": [
+				{
+					"name": "Hoarfrost Bottle (unf)",
+					"inputAmount": 1
+				},
+				{
+					"name": "Frost Ear",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 342,
+			"baseCraftingTime": 2
+		},
+		{
+			"label": "Mossfoot Potion",
+			"level": 140,
+			"input": [
+				{
+					"name": "Hoarfrost Decanter (unf)",
+					"inputAmount": 1
+				},
+				{
+					"name": "Frost Ear",
+					"inputAmount": 2
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 362,
+			"baseCraftingTime": 2
+		},
+		{
+			"label": "Vaning Potion",
+			"level": 150,
+			"input": [
+				{
+					"name": "Coldsnap Vial (unf)",
+					"inputAmount": 1
+				},
+				{
+					"name": "Rime Salt",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 382,
+			"baseCraftingTime": 2
+		},
+		{
+			"label": "Grilling Potion",
+			"level": 160,
+			"input": [
+				{
+					"name": "Coldsnap Flask (unf)",
+					"inputAmount": 1
+				},
+				{
+					"name": "Rime Salt",
+					"inputAmount": 3
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 402,
+			"baseCraftingTime": 2
+		},
+		{
+			"label": "Infusion Potion",
+			"level": 170,
+			"input": [
+				{
+					"name": "Coldsnap Bottle (unf)",
+					"inputAmount": 1
+				},
+				{
+					"name": "Frost Ear",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 422,
+			"baseCraftingTime": 2
+		},
+		{
+			"label": "Quickness Potion",
+			"level": 180,
+			"input": [
+				{
+					"name": "Coldsnap Decanter (unf)",
+					"inputAmount": 1
+				},
+				{
+					"name": "Frost Ear",
+					"inputAmount": 2
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 442,
+			"baseCraftingTime": 2
+		}
+	]
+}

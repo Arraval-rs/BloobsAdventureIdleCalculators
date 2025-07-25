@@ -40,7 +40,7 @@
   function calculateResults(event) {
     const goalExperience = skillClass.value.getExperienceFromLevel(goalLevel.value)
     const requiredExperience = goalExperience - currentExperience.value
-    const iterationExperience = calculateIterationExperince(experienceSource.value, currentPrestige.value, activeInvocation.value, includeBaseMaterials.value, skillClass.value)
+    const iterationExperience = calculateIterationExperince(experienceSource.value, currentPrestige.value, activeInvocation.value, activePotion.value, includeBaseMaterials.value, skillClass.value)
     const totalIterations = Math.ceil(requiredExperience/iterationExperience)
 
     calculatorOutput.value[0]["experience source"] = experienceSource.value.label
@@ -51,8 +51,9 @@
     calculatorOutput.value[0]["required materials"] = generateMaterialString(experienceSource.value.input, totalIterations)
   }
 
-    function calculateIterationExperince(experienceSource, prestigeCount, activeInvocation, includeSubCrafts, skill) {
+    function calculateIterationExperince(experienceSource, prestigeCount, activeInvocation, activePotion, includeSubCrafts, skill) {
     const invocationBonus = activeInvocation.bonusExperience ?? 0
+    const potionBonus = activePotion.bonusExperience ?? 0
     var prestigeBonus = prestigeCount + 1
     if (prestigeCount == 10) {
       prestigeBonus = 15
@@ -63,7 +64,7 @@
     if (includeSubCrafts && baseMaterial != null) {
       subCraftExperience = baseMaterial.baseExperience * experienceSource.input[0].inputAmount ?? 0
     }
-    return (experienceSource["baseExperience"] + subCraftExperience) * prestigeBonus * (invocationBonus + 1)
+    return (experienceSource["baseExperience"] + subCraftExperience) * prestigeBonus * (invocationBonus + potionBonus + 1)
   }
 
   function calculateCraftingTime(iterations, experienceSource, activePotion, includeSubCrafts, skill) {

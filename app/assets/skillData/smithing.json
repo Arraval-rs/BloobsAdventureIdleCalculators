@@ -2685,7 +2685,7 @@
 				}
 			],
 			"outputAmount": 3,
-			"baseExperience": 0,
+			"baseExperience": 15,
 			"baseCraftingTime": 2.5
 		},
 		{
@@ -2698,7 +2698,7 @@
 				}
 			],
 			"outputAmount": 3,
-			"baseExperience": 0,
+			"baseExperience": 26,
 			"baseCraftingTime": 2.5
 		},
 		{
@@ -2711,7 +2711,7 @@
 				}
 			],
 			"outputAmount": 3,
-			"baseExperience": 0,
+			"baseExperience": 26,
 			"baseCraftingTime": 2.5
 		},
 		{
@@ -2724,7 +2724,7 @@
 				}
 			],
 			"outputAmount": 3,
-			"baseExperience": 0,
+			"baseExperience": 29,
 			"baseCraftingTime": 2.5
 		},
 		{
@@ -2737,7 +2737,7 @@
 				}
 			],
 			"outputAmount": 3,
-			"baseExperience": 0,
+			"baseExperience": 95,
 			"baseCraftingTime": 2.5
 		}
 	]
