@@ -8,7 +8,7 @@
   const goalLevel = ref(0)
 
   const route = useRoute()
-  const skillObject = new skill(route.params.skill)
+  const skillObject = new skill(route.params.skill, "Artisan")
   await skillObject.readSkillJson()
   const skillClass = ref(skillObject)
 
@@ -47,7 +47,7 @@
     calculatorOutput.value[0]["experience required"] = requiredExperience
     calculatorOutput.value[0]["experience per iteration"] = iterationExperience
     calculatorOutput.value[0]["required iterations"] = totalIterations
-    calculatorOutput.value[0]["estimated time"] = skillClass.value.calculateCraftingTime(totalIterations, experienceSource.value, activePotion.value, includeBaseMaterials.value)
+    calculatorOutput.value[0]["estimated time"] = skillClass.value.calculateTotalTime(totalIterations, experienceSource.value, activePotion.value, includeBaseMaterials.value)
     calculatorOutput.value[0]["required materials"] = generateMaterialString(experienceSource.value.input, totalIterations)
   }
 

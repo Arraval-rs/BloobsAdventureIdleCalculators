@@ -1,6 +1,7 @@
 export default class skill {
-	constructor(name) {
+	constructor(name, type) {
 		this.skillName = name
+		this.skillType = type
 	}
 
 	getExperienceFromLevel(level) {
@@ -41,6 +42,12 @@ export default class skill {
       subCraftExperience = baseMaterial.baseExperience * experienceSource.input[0].inputAmount ?? 0
     }
     return (experienceSource["baseExperience"] + subCraftExperience) * prestigeBonus * (invocationBonus + potionBonus + 1)
+  }
+
+  calculateTotalTime(iterations, experienceSource, activePotion, includeSubCrafts) {
+  	if (this.skillType == "Artisan") {
+  		return calculateCraftingTime(iterations, experienceSource, activePotion, includeSubCrafts)
+  	}
   }
 
   calculateCraftingTime(iterations, experienceSource, activePotion, includeSubCrafts) {
