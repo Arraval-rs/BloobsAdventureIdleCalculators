@@ -1,0 +1,862 @@
+{
+	"invocations": [
+		{
+			"label": "Bowyer's Blessing",
+			"bonusExperience": 0.05
+		},
+		{
+			"label": "Twin Tension",
+			"bonusProduct": 0.20
+		},
+		{
+			"label": "Bowcrafter's Greed",
+			"bonusExperience": 0.15,
+			"bonusProduct": 0.25
+		}
+	],
+
+	"potions": [
+		{
+			"label": "Fletcher Potion",
+			"timeReduction": 0.25
+		},
+		{
+			"label": "Vaning Potion",
+			"timeReduction": 0.50
+		}
+	],
+
+	"experienceSources": [
+		{
+			"label": "Shortbow",
+			"level": 1,
+			"input": [
+				{
+					"name": "Shortbow U",
+					"inputAmount": 1
+				},
+				{
+					"name": "Bowstring",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 10.5,
+			"baseCraftingTime": 2
+		},
+		{
+			"label": "Oak Shortbow",
+			"level": 10,
+			"input": [
+				{
+					"name": "Oak Shortbow U",
+					"inputAmount": 1
+				},
+				{
+					"name": "Bowstring",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 30,
+			"baseCraftingTime": 2
+		},
+		{
+			"label": "Willow Shortbow",
+			"level": 20,
+			"input": [
+				{
+					"name": "Willow Shortbow U",
+					"inputAmount": 1
+				},
+				{
+					"name": "Bowstring",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 49.5,
+			"baseCraftingTime": 2
+		},
+		{
+			"label": "Teak Shortbow",
+			"level": 30,
+			"input": [
+				{
+					"name": "Teak Shortbow U",
+					"inputAmount": 1
+				},
+				{
+					"name": "Bowstring",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 69,
+			"baseCraftingTime": 2
+		},
+		{
+			"label": "Maple Shortbow",
+			"level": 40,
+			"input": [
+				{
+					"name": "Maple Shortbow U",
+					"inputAmount": 1
+				},
+				{
+					"name": "Bowstring",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 88,
+			"baseCraftingTime": 2
+		},
+		{
+			"label": "Acadia Shortbow",
+			"level": 50,
+			"input": [
+				{
+					"name": "Acadia Shortbow U",
+					"inputAmount": 1
+				},
+				{
+					"name": "Bowstring",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 107,
+			"baseCraftingTime": 2
+		},
+		{
+			"label": "Eucalyptus Shortbow",
+			"level": 60,
+			"input": [
+				{
+					"name": "Eucalyptus Shortbow U",
+					"inputAmount": 1
+				},
+				{
+					"name": "Bowstring",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 127,
+			"baseCraftingTime": 2
+		},
+		{
+			"label": "Yew Shortbow",
+			"level": 70,
+			"input": [
+				{
+					"name": "Yew Shortbow U",
+					"inputAmount": 1
+				},
+				{
+					"name": "Bowstring",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 147,
+			"baseCraftingTime": 2
+		},
+		{
+			"label": "Red Maple Shortbow",
+			"level": 80,
+			"input": [
+				{
+					"name": "Red Maple Shortbow U",
+					"inputAmount": 1
+				},
+				{
+					"name": "Bowstring",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 166,
+			"baseCraftingTime": 2
+		},
+		{
+			"label": "Magic Shortbow",
+			"level": 90,
+			"input": [
+				{
+					"name": "Magic Shortbow U",
+					"inputAmount": 1
+				},
+				{
+					"name": "Bowstring",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 205,
+			"baseCraftingTime": 2
+		},
+		{
+			"label": "Lunarwood Shortbow",
+			"level": 100,
+			"input": [
+				{
+					"name": "Lunarwood Shortbow U",
+					"inputAmount": 1
+				},
+				{
+					"name": "Bowstring",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 245,
+			"baseCraftingTime": 2
+		},
+		{
+			"label": "Spicebough Shortbow",
+			"level": 125,
+			"input": [
+				{
+					"name": "Spicebough Shortbow U",
+					"inputAmount": 1
+				},
+				{
+					"name": "Bowstring",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 285,
+			"baseCraftingTime": 2
+		},
+		{
+			"label": "Bitterpine Shortbow",
+			"level": 175,
+			"input": [
+				{
+					"name": "Bitterpine Shortbow U",
+					"inputAmount": 1
+				},
+				{
+					"name": "Bowstring",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 325,
+			"baseCraftingTime": 2
+		},
+		{
+			"label": "Shortbow",
+			"level": 1,
+			"input": [
+				{
+					"name": "Logs",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 6.5,
+			"baseCraftingTime": 2
+		},
+		{
+			"label": "Oak Shortbow U",
+			"level": 10,
+			"input": [
+				{
+					"name": "Oak Logs",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 20,
+			"baseCraftingTime": 2
+		},
+		{
+			"label": "Willow Shortbow U",
+			"level": 20,
+			"input": [
+				{
+					"name": "Willow Logs",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 32.5,
+			"baseCraftingTime": 2
+		},
+		{
+			"label": "Teak Shortbow U",
+			"level": 30,
+			"input": [
+				{
+					"name": "Teak Logs",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 45.5,
+			"baseCraftingTime": 2
+		},
+		{
+			"label": "Maple Shortbow U",
+			"level": 40,
+			"input": [
+				{
+					"name": "Maple Logs",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 59,
+			"baseCraftingTime": 2
+		},
+		{
+			"label": "Acadia Shortbow U",
+			"level": 50,
+			"input": [
+				{
+					"name": "Acadia Logs",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 71.5,
+			"baseCraftingTime": 2
+		},
+		{
+			"label": "Eucalyptus Shortbow U",
+			"level": 60,
+			"input": [
+				{
+					"name": "Eucalyptus Logs",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 85,
+			"baseCraftingTime": 2
+		},
+		{
+			"label": "Yew Shortbow U",
+			"level": 70,
+			"input": [
+				{
+					"name": "Yew Logs",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 97.5,
+			"baseCraftingTime": 2
+		},
+		{
+			"label": "Red Maple Shortbow U",
+			"level": 80,
+			"input": [
+				{
+					"name": "Red Maple Logs",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 110,
+			"baseCraftingTime": 2
+		},
+		{
+			"label": "Magic Shortbow U",
+			"level": 90,
+			"input": [
+				{
+					"name": "Magic Logs",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 136,
+			"baseCraftingTime": 2
+		},
+		{
+			"label": "Lunarwood Shortbow U",
+			"level": 100,
+			"input": [
+				{
+					"name": "Lunarwood Logs",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 162,
+			"baseCraftingTime": 2
+		},
+		{
+			"label": "Spicebough Shortbow U",
+			"level": 125,
+			"input": [
+				{
+					"name": "Spicebough Logs",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 190,
+			"baseCraftingTime": 2
+		},
+		{
+			"label": "Bitterpine Shortbow U",
+			"level": 175,
+			"input": [
+				{
+					"name": "Bitterpine Logs",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 1,
+			"baseExperience": 216,
+			"baseCraftingTime": 2
+		},
+		{
+			"label": "Headless Arrows",
+			"level": 1,
+			"input": [
+				{
+					"name": "Arrow Shafts",
+					"inputAmount": 15
+				},
+				{
+					"name": "Feathers",
+					"inputAmount": 15
+				}
+			],
+			"outputAmount": 15,
+			"baseExperience": 10,
+			"baseCraftingTime": 1
+		},
+		{
+			"label": "Headless Arrows (Spicebough)",
+			"level": 125,
+			"input": [
+				{
+					"name": "Spicebough Logs",
+					"inputAmount": 1
+				},
+				{
+					"name": "Feathers",
+					"inputAmount": 75
+				}
+			],
+			"outputAmount": 75,
+			"baseExperience": 60,
+			"baseCraftingTime": 1
+		},
+		{
+			"label": "Headless Arrows (Bitterpine)",
+			"level": 175,
+			"input": [
+				{
+					"name": "Bitterpine Logs",
+					"inputAmount": 1
+				},
+				{
+					"name": "Feathers",
+					"inputAmount": 75
+				}
+			],
+			"outputAmount": 75,
+			"baseExperience": 75,
+			"baseCraftingTime": 1
+		},
+		{
+			"label": "Bronze Arrows",
+			"level": 1,
+			"input": [
+				{
+					"name": "Headless Arrows",
+					"inputAmount": 15
+				},
+				{
+					"name": "Bronze Arrow Tips",
+					"inputAmount": 15
+				}
+			],
+			"outputAmount": 15,
+			"baseExperience": 15,
+			"baseCraftingTime": 2
+		},
+		{
+			"label": "Iron Arrows",
+			"level": 10,
+			"input": [
+				{
+					"name": "Headless Arrows",
+					"inputAmount": 15
+				},
+				{
+					"name": "Iron Arrow Tips",
+					"inputAmount": 15
+				}
+			],
+			"outputAmount": 15,
+			"baseExperience": 25,
+			"baseCraftingTime": 2
+		},
+		{
+			"label": "Steel Arrows",
+			"level": 20,
+			"input": [
+				{
+					"name": "Headless Arrows",
+					"inputAmount": 15
+				},
+				{
+					"name": "Steel Arrow Tips",
+					"inputAmount": 15
+				}
+			],
+			"outputAmount": 15,
+			"baseExperience": 35,
+			"baseCraftingTime": 2
+		},
+		{
+			"label": "Mithril Arrows",
+			"level": 30,
+			"input": [
+				{
+					"name": "Headless Arrows",
+					"inputAmount": 15
+				},
+				{
+					"name": "Mithril Arrow Tips",
+					"inputAmount": 15
+				}
+			],
+			"outputAmount": 15,
+			"baseExperience": 45,
+			"baseCraftingTime": 2
+		},
+		{
+			"label": "Adamantite Arrows",
+			"level": 40,
+			"input": [
+				{
+					"name": "Headless Arrows",
+					"inputAmount": 15
+				},
+				{
+					"name": "Adamantite Arrow Tips",
+					"inputAmount": 15
+				}
+			],
+			"outputAmount": 15,
+			"baseExperience": 55,
+			"baseCraftingTime": 2
+		},
+		{
+			"label": "Cerulium Arrows",
+			"level": 50,
+			"input": [
+				{
+					"name": "Headless Arrows",
+					"inputAmount": 15
+				},
+				{
+					"name": "Cerulium Arrow Tips",
+					"inputAmount": 15
+				}
+			],
+			"outputAmount": 15,
+			"baseExperience": 65,
+			"baseCraftingTime": 2
+		},
+		{
+			"label": "Sanguinite Arrows",
+			"level": 60,
+			"input": [
+				{
+					"name": "Headless Arrows",
+					"inputAmount": 15
+				},
+				{
+					"name": "Sanguinite Arrow Tips",
+					"inputAmount": 15
+				}
+			],
+			"outputAmount": 15,
+			"baseExperience": 75,
+			"baseCraftingTime": 2
+		},
+		{
+			"label": "Aeronite Arrows",
+			"level": 70,
+			"input": [
+				{
+					"name": "Headless Arrows",
+					"inputAmount": 15
+				},
+				{
+					"name": "Aeronite Arrow Tips",
+					"inputAmount": 15
+				}
+			],
+			"outputAmount": 15,
+			"baseExperience": 87,
+			"baseCraftingTime": 2
+		},
+		{
+			"label": "Necrosis Arrows",
+			"level": 80,
+			"input": [
+				{
+					"name": "Headless Arrows",
+					"inputAmount": 15
+				},
+				{
+					"name": "Necrosis Arrow Tips",
+					"inputAmount": 15
+				}
+			],
+			"outputAmount": 15,
+			"baseExperience": 98,
+			"baseCraftingTime": 2
+		},
+		{
+			"label": "Phantom Arrows",
+			"level": 90,
+			"input": [
+				{
+					"name": "Headless Arrows",
+					"inputAmount": 15
+				},
+				{
+					"name": "Phantom Arrow Tips",
+					"inputAmount": 15
+				}
+			],
+			"outputAmount": 15,
+			"baseExperience": 110,
+			"baseCraftingTime": 2
+		},
+		{
+			"label": "Karinite Arrows",
+			"level": 100,
+			"input": [
+				{
+					"name": "Headless Arrows",
+					"inputAmount": 15
+				},
+				{
+					"name": "Karinite Arrow Tips",
+					"inputAmount": 15
+				}
+			],
+			"outputAmount": 15,
+			"baseExperience": 122,
+			"baseCraftingTime": 2
+		},
+		{
+			"label": "Taigite Arrows",
+			"level": 125,
+			"input": [
+				{
+					"name": "Headless Arrows",
+					"inputAmount": 15
+				},
+				{
+					"name": "Taigite Arrow Tips",
+					"inputAmount": 15
+				}
+			],
+			"outputAmount": 15,
+			"baseExperience": 162,
+			"baseCraftingTime": 2
+		},
+		{
+			"label": "Cryxcite Arrows",
+			"level": 175,
+			"input": [
+				{
+					"name": "Headless Arrows",
+					"inputAmount": 15
+				},
+				{
+					"name": "Cryxcite Arrow Tips",
+					"inputAmount": 15
+				}
+			],
+			"outputAmount": 15,
+			"baseExperience": 198,
+			"baseCraftingTime": 2
+		},
+		{
+			"label": "Arrow Shafts",
+			"level": 1,
+			"input": [
+				{
+					"name": "Logs",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 5,
+			"baseExperience": 2,
+			"baseCraftingTime": 1
+		},
+		{
+			"label": "Arrow Shafts (Sticks)",
+			"level": 5,
+			"input": [
+				{
+					"name": "Sticks",
+					"inputAmount": 5
+				}
+			],
+			"outputAmount": 5,
+			"baseExperience": 4,
+			"baseCraftingTime": 1
+		},
+		{
+			"label": "Arrow Shafts (Oak)",
+			"level": 10,
+			"input": [
+				{
+					"name": "Oak Logs",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 10,
+			"baseExperience": 3,
+			"baseCraftingTime": 1
+		},
+		{
+			"label": "Arrow Shafts (Willow)",
+			"level": 20,
+			"input": [
+				{
+					"name": "Willow Logs",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 15,
+			"baseExperience": 4,
+			"baseCraftingTime": 1
+		},
+		{
+			"label": "Arrow Shafts (Teak)",
+			"level": 30,
+			"input": [
+				{
+					"name": "Teak Logs",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 20,
+			"baseExperience": 5,
+			"baseCraftingTime": 1
+		},
+		{
+			"label": "Arrow Shafts (Maple)",
+			"level": 40,
+			"input": [
+				{
+					"name": "Maple Logs",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 25,
+			"baseExperience": 6,
+			"baseCraftingTime": 1
+		},
+		{
+			"label": "Arrow Shafts (Acadia)",
+			"level": 50,
+			"input": [
+				{
+					"name": "Acadia Logs",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 30,
+			"baseExperience": 7,
+			"baseCraftingTime": 1
+		},
+		{
+			"label": "Arrow Shafts (Eucalyptus)",
+			"level": 60,
+			"input": [
+				{
+					"name": "Eucalyptus Logs",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 35,
+			"baseExperience": 8,
+			"baseCraftingTime": 1
+		},
+		{
+			"label": "Arrow Shafts (Rubra)",
+			"level": 65,
+			"input": [
+				{
+					"name": "Rubra Logs",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 40,
+			"baseExperience": 9,
+			"baseCraftingTime": 1
+		},
+		{
+			"label": "Arrow Shafts (Yew)",
+			"level": 70,
+			"input": [
+				{
+					"name": "Yew Logs",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 45,
+			"baseExperience": 10,
+			"baseCraftingTime": 1
+		},
+		{
+			"label": "Arrow Shafts (Red Maple)",
+			"level": 80,
+			"input": [
+				{
+					"name": "Red Maple Logs",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 60,
+			"baseExperience": 12,
+			"baseCraftingTime": 1
+		},
+		{
+			"label": "Arrow Shafts (Magic)",
+			"level": 90,
+			"input": [
+				{
+					"name": "Magic Logs",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 70,
+			"baseExperience": 14,
+			"baseCraftingTime": 1
+		},
+		{
+			"label": "Arrow Shafts (Lunarwood)",
+			"level": 100,
+			"input": [
+				{
+					"name": "Lunarwood Logs",
+					"inputAmount": 1
+				}
+			],
+			"outputAmount": 100,
+			"baseExperience": 16,
+			"baseCraftingTime": 1
+		}
+	]
+}

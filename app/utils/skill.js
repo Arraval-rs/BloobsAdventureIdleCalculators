@@ -12,7 +12,7 @@ export default class skill {
 		this.experienceSources = data.experienceSources
 		this.invocations = data.invocations
 		this.potions = data.potions
-		if (this.invocations[this.invocations.length - 1].label != "None") {
+		if (this.invocations.length == 0 || this.invocations[this.invocations.length - 1].label != "None") {
 			this.invocations.push({"label": "None"})
 			this.potions.push({"label": "None"})
 		}

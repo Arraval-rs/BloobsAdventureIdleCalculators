@@ -28,21 +28,15 @@
         },
         {
           label: "Bowcrafting",
-          to: "/skills/bowcrafting",
-          description: "Not implemented",
-          disabled: true
+          to: "/skills/bowcrafting"
         },
         {
           label: "Imbuing",
-          to: "/skills/imbuing",
-          description: "Not implemented",
-          disabled: true
+          to: "/skills/imbuing"
         },
         {
           label: "Firemaking",
-          to: "/skills/firemaking",
-          description: "Not implemented",
-          disabled: true
+          to: "/skills/firemaking"
         }
       ]
     },
