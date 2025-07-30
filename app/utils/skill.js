@@ -27,6 +27,53 @@ export default class skill {
     return null
   }
 
+  calculateIterationExperince(experienceSource, prestigeCount, activeInvocation, activePotion, includeSubCrafts) {
+    const invocationBonus = activeInvocation.bonusExperience ?? 0
+    const potionBonus = activePotion.bonusExperience ?? 0
+    var prestigeBonus = prestigeCount + 1
+    if (prestigeCount == 10) {
+      prestigeBonus = 15
+    }
+
+    var subCraftExperience = 0
+    const baseMaterial = this.findSubCraft(experienceSource.input[0].name)
+    if (includeSubCrafts && baseMaterial != null) {
+      subCraftExperience = baseMaterial.baseExperience * experienceSource.input[0].inputAmount ?? 0
+    }
+    return (experienceSource["baseExperience"] + subCraftExperience) * prestigeBonus * (invocationBonus + potionBonus + 1)
+  }
+
+  calculateCraftingTime(iterations, experienceSource, activePotion, includeSubCrafts) {
+    const potionTimeReduction = activePotion.timeReduction ?? 0
+
+    var durationInSeconds = iterations * (experienceSource.baseCraftingTime - potionTimeReduction)
+    const baseMaterial = this.findSubCraft(experienceSource.input[0].name)
+    if (includeSubCrafts && baseMaterial != null) {
+      const subCraftDuration = iterations * experienceSource.input[0].inputAmount * (baseMaterial.baseCraftingTime - potionTimeReduction)
+      durationInSeconds += subCraftDuration
+    }
+    const days = Math.floor(durationInSeconds / (24 * 60 * 60))
+    durationInSeconds - days * (24 * 60 * 60)
+
+    const duration = new Date(0)
+    duration.setSeconds(durationInSeconds - days * (24 * 60 * 60))
+    try {
+      const timeString = duration.toISOString().substring(11, 19)
+      switch (days) {
+        case 0:
+          return timeString
+        case 1:
+          return days + " day " + timeString
+        default: 
+          return days + " days " + timeString
+      }
+    }
+    catch(err) {
+      console.error(err)
+      return "Error calulating time"
+    }
+  }
+
 	levelExperience = [
 		0,
 		83,
