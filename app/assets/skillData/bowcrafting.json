@@ -1,7 +1,30 @@
 {
-	"invocations": [],
+	"invocations": [
+		{
+			"label": "Bowyer's Blessing",
+			"bonusExperience": 0.05
+		},
+		{
+			"label": "Twin Tension",
+			"bonusProduct": 0.20
+		},
+		{
+			"label": "Bowcrafter's Greed",
+			"bonusExperience": 0.15,
+			"bonusProduct": 0.25
+		}
+	],
 
-	"potions": [],
+	"potions": [
+		{
+			"label": "Fletcher Potion",
+			"timeReduction": 0.25
+		},
+		{
+			"label": "Vaning Potion",
+			"timeReduction": 0.50
+		}
+	],
 
 	"experienceSources": [
 		{
