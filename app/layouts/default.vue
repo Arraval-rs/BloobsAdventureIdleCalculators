@@ -28,9 +28,7 @@
         },
         {
           label: "Bowcrafting",
-          to: "/skills/bowcrafting",
-          description: "Not implemented",
-          disabled: true
+          to: "/skills/bowcrafting"
         },
         {
           label: "Imbuing",
