@@ -262,7 +262,7 @@
 			"baseCraftingTime": 2
 		},
 		{
-			"label": "Oak Shortbow",
+			"label": "Oak Shortbow U",
 			"level": 10,
 			"input": [
 				{
@@ -275,7 +275,7 @@
 			"baseCraftingTime": 2
 		},
 		{
-			"label": "Willow Shortbow",
+			"label": "Willow Shortbow U",
 			"level": 20,
 			"input": [
 				{
@@ -288,7 +288,7 @@
 			"baseCraftingTime": 2
 		},
 		{
-			"label": "Teak Shortbow",
+			"label": "Teak Shortbow U",
 			"level": 30,
 			"input": [
 				{
@@ -301,7 +301,7 @@
 			"baseCraftingTime": 2
 		},
 		{
-			"label": "Maple Shortbow",
+			"label": "Maple Shortbow U",
 			"level": 40,
 			"input": [
 				{
@@ -314,7 +314,7 @@
 			"baseCraftingTime": 2
 		},
 		{
-			"label": "Acadia Shortbow",
+			"label": "Acadia Shortbow U",
 			"level": 50,
 			"input": [
 				{
@@ -327,7 +327,7 @@
 			"baseCraftingTime": 2
 		},
 		{
-			"label": "Eucalyptus Shortbow",
+			"label": "Eucalyptus Shortbow U",
 			"level": 60,
 			"input": [
 				{
@@ -340,7 +340,7 @@
 			"baseCraftingTime": 2
 		},
 		{
-			"label": "Yew Shortbow",
+			"label": "Yew Shortbow U",
 			"level": 70,
 			"input": [
 				{
@@ -353,7 +353,7 @@
 			"baseCraftingTime": 2
 		},
 		{
-			"label": "Red Maple Shortbow",
+			"label": "Red Maple Shortbow U",
 			"level": 80,
 			"input": [
 				{
@@ -366,7 +366,7 @@
 			"baseCraftingTime": 2
 		},
 		{
-			"label": "Magic Shortbow",
+			"label": "Magic Shortbow U",
 			"level": 90,
 			"input": [
 				{
@@ -379,7 +379,7 @@
 			"baseCraftingTime": 2
 		},
 		{
-			"label": "Lunarwood Shortbow",
+			"label": "Lunarwood Shortbow U",
 			"level": 100,
 			"input": [
 				{
@@ -392,7 +392,7 @@
 			"baseCraftingTime": 2
 		},
 		{
-			"label": "Spicebough Shortbow",
+			"label": "Spicebough Shortbow U",
 			"level": 125,
 			"input": [
 				{
@@ -405,7 +405,7 @@
 			"baseCraftingTime": 2
 		},
 		{
-			"label": "Bitterpine Shortbow",
+			"label": "Bitterpine Shortbow U",
 			"level": 175,
 			"input": [
 				{
