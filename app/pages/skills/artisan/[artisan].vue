@@ -8,7 +8,7 @@
   const goalLevel = ref(0)
 
   const route = useRoute()
-  const skillObject = new skill(route.params.skill, "Artisan")
+  const skillObject = new skill(route.params.artisan, "Artisan")
   await skillObject.readSkillJson()
   const skillClass = ref(skillObject)
 
@@ -65,21 +65,27 @@
   <UFormField label="Current prestige">
     <UInputNumber v-model="currentPrestige" placeholder="Enter current prestige" :min=0 :max=maxPrestige />
   </UFormField>
+  
   <UFormField label="Current experience">
     <UInputNumber v-model="currentExperience" placeholder="Enter current experience" :min=0 :max=maxExperience />
   </UFormField>
+
   <UFormField label="Experience source">
     <USelectMenu v-model="experienceSource" :items="skillClass.experienceSources" class="w-48" />
   </UFormField>
-    <UFormField label="Active Invocation">
+
+  <UFormField label="Active Invocation">
     <USelectMenu v-model="activeInvocation" :items="skillClass.invocations" class="w-48" />
   </UFormField>
-    <UFormField label="Active Potion">
+
+  <UFormField label="Active Potion">
     <USelectMenu v-model="activePotion" :items="skillClass.potions" class="w-48" />
   </UFormField>
+
   <UFormField label="Goal Level">
     <UInputNumber v-model="goalLevel" placeholder="Enter goal level" :min=0 :max=maxLevel />
   </UFormField>
+
   <UCheckbox label="Include Base Material Experience" v-model=includeBaseMaterials />
   <UButton label="Submit" icon="i-lucide-calculator" @click="calculateResults"/>
   <UTable :data="calculatorOutput" class="flex-1" />
