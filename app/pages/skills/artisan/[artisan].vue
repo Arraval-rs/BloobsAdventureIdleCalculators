@@ -52,6 +52,9 @@
   }
 
   function generateMaterialString(inputMaterialsArray, iterations) {
+    if(inputMaterialsArray == null || inputMaterialsArray.length == 0) {
+      return "None"
+    }
     var materialString = ""
     for (const material of inputMaterialsArray) {
       materialString += material.inputAmount * iterations + " " + material.name + "\n"

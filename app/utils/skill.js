@@ -111,6 +111,65 @@ export default class skill {
   	return timePerAction * actionsPerResource * iterations
   }
 
+  equipmentTiers = [
+    {
+      "label": "Bronze",
+      "progress": 15
+    },
+    {
+      "label": "Iron",
+      "progress": 20
+    },
+    {
+      "label": "Steel",
+      "progress": 25
+    },
+    {
+      "label": "Mithril",
+      "progress": 30
+    },
+    {
+      "label": "Adamantite",
+      "progress": 35
+    },
+    {
+      "label": "Cerulium",
+      "progress": 40
+    },
+    {
+      "label": "Sanguinite",
+      "progress": 50
+    },
+    {
+      "label": "Aeronite",
+      "progress": 60
+    },
+    {
+      "label": "Necrosis",
+      "progress": 70
+    },
+    {
+      "label": "Phantom",
+      "progress": 80
+    },
+    {
+      "label": "Karinite",
+      "progress": 90
+    },
+    {
+      "label": "Taigite",
+      "progress": 100
+    },
+    {
+      "label": "Cryxcite",
+      "progress": 110
+    },
+    {
+      "label": "Golden",
+      "progress": 55
+    }
+  ]
+
 	levelExperience = [
 		0,
 		83,
