@@ -471,7 +471,7 @@
 				}
 			],
 			"outputAmount": 1,
-			"baseExperience": 0,
+			"baseExperience": 15,
 			"baseCraftingTime": 4
 		},
 		{
