@@ -45,9 +45,7 @@
       children: [
         {
           label: "Mining",
-          to: "/skills/gathering/mining",
-          description: "Not implemented",
-          disabled: true
+          to: "/skills/gathering/mining"
         },
         {
           label: "Foraging",
