@@ -1,0 +1,207 @@
+{
+	"baseActionTime": 2,
+
+	"levelSpeedIncrease": 0,
+
+	"invocations": [
+		{
+			"label": "Thief's Luck",
+			"bonusExperience": 0.05
+		},
+		{
+			"label": "Rogue's Advantage",
+			"bonusProduct": 0.20
+		},
+		{
+			"label": "Lucky Hand",
+			"bonusExperience": 0.15,
+			"bonusProduct": 0.25
+		}
+	],
+
+	"potions": [
+		{
+			"label": "Rogue Potion",
+			"bonusSuccessChance": 0.05
+		}
+	],
+	
+	"experienceSources": [
+		{
+			"label": "Vegetable Stall",
+			"level": 1,
+			"baseExperience": 13
+		},
+		{
+			"label": "Bakery Stall",
+			"level": 15,
+			"baseExperience": 38
+		},
+		{
+			"label": "Butcher Stall",
+			"level": 25,
+			"baseExperience": 63
+		},
+		{
+			"label": "Fish Stall",
+			"level": 40,
+			"baseExperience": 88
+		},
+		{
+			"label": "Ore Stall",
+			"level": 55,
+			"baseExperience": 113
+		},
+		{
+			"label": "Herbology Stall",
+			"level": 65,
+			"baseExperience": 150
+		},
+		{
+			"label": "Arrow/Slate Stall",
+			"level": 75,
+			"baseExperience": 218
+		},
+		{
+			"label": "Lumber Stall",
+			"level": 85,
+			"baseExperience": 268
+		},
+		{
+			"label": "Gem Stall",
+			"level": 95,
+			"baseExperience": 368
+		},
+		{
+			"label": "Winter Goods Stall",
+			"level": 120,
+			"baseExperience": 600
+		},
+		{
+			"label": "Winter Specialty Goods Stall",
+			"level": 160,
+			"baseExperience": 700
+		},
+		{
+			"label": "Rusted Lockbox",
+			"level": 8,
+			"input": [
+				{
+					"name": "Lockpick",
+					"inputAmount": 1
+				}
+			],
+			"baseExperience": 26
+		},
+		{
+			"label": "Abandoned Crate",
+			"level": 20,
+			"input": [
+				{
+					"name": "Lockpick",
+					"inputAmount": 1
+				}
+			],
+			"baseExperience": 50
+		},
+		{
+			"label": "Wooden Trunk",
+			"level": 30,
+			"input": [
+				{
+					"name": "Lockpick",
+					"inputAmount": 1
+				}
+			],
+			"baseExperience": 74
+		},
+		{
+			"label": "Mossy Container",
+			"level": 45,
+			"input": [
+				{
+					"name": "Lockpick",
+					"inputAmount": 1
+				}
+			],
+			"baseExperience": 100
+		},
+		{
+			"label": "Seaworthy Casket",
+			"level": 60,
+			"input": [
+				{
+					"name": "Lockpick",
+					"inputAmount": 1
+				}
+			],
+			"baseExperience": 125
+		},
+		{
+			"label": "Ancient Casket",
+			"level": 70,
+			"input": [
+				{
+					"name": "Lockpick",
+					"inputAmount": 1
+				}
+			],
+			"baseExperience": 180
+		},
+		{
+			"label": "Forgetten Chest",
+			"level": 80,
+			"input": [
+				{
+					"name": "Lockpick",
+					"inputAmount": 1
+				}
+			],
+			"baseExperience": 242
+		},
+		{
+			"label": "Emberlock Chest",
+			"level": 90,
+			"input": [
+				{
+					"name": "Lockpick",
+					"inputAmount": 1
+				}
+			],
+			"baseExperience": 305
+		},
+		{
+			"label": "Mycelial Coffer",
+			"level": 100,
+			"input": [
+				{
+					"name": "Lockpick",
+					"inputAmount": 1
+				}
+			],
+			"baseExperience": 550
+		},
+		{
+			"label": "Frostfall Lockbox",
+			"level": 140,
+			"input": [
+				{
+					"name": "Lockpick",
+					"inputAmount": 1
+				}
+			],
+			"baseExperience": 650
+		},
+		{
+			"label": "Glacial Crate",
+			"level": 180,
+			"input": [
+				{
+					"name": "Lockpick",
+					"inputAmount": 1
+				}
+			],
+			"baseExperience": 750
+		}
+	]
+}
