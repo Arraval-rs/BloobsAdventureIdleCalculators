@@ -49,33 +49,25 @@
         },
         {
           label: "Foraging",
-          to: "/skills/gathering/foraging",
-          description: "Not implemented",
-          disabled: true
+          to: "/skills/gathering/foraging"
         },
         {
           label: "Fishing",
-          to: "/skills/gathering/fishing",
-          description: "Not implemented",
-          disabled: true
+          to: "/skills/gathering/fishing"
         },
         {
           label: "Woodcutting",
-          to: "/skills/gathering/woodcutting",
-          description: "Not implemented",
-          disabled: true
+          to: "/skills/gathering/woodcutting"
         },
         {
           label: "Thieving",
           to: "/skills/gathering/thieving",
-          description: "Not implemented",
-          disabled: true
+          description: "Currently assumes 100% success rate"
         },
         {
           label: "Tracking",
           to: "/skills/gathering/tracking",
-          description: "Not implemented",
-          disabled: true
+          description: "Currently assumes 100% success rate"
         }
       ]
     },
