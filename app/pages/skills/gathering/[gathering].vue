@@ -14,7 +14,7 @@
   const skillClass = ref(skillObject)
 
   const experienceSource = ref({
-    "label": "Select item to craft"
+    "label": "Select item to gather"
   })
 
   const activeInvocation = ref({
