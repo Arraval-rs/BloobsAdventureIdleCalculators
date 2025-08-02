@@ -1690,7 +1690,7 @@
 					"inputAmount": 1
 				},
 				{
-					"name": "Frost Ear",
+					"name": "Winter Oyster",
 					"inputAmount": 1
 				}
 			],
@@ -1707,8 +1707,8 @@
 					"inputAmount": 1
 				},
 				{
-					"name": "Frost Ear",
-					"inputAmount": 2
+					"name": "Winter Oyster",
+					"inputAmount": 3
 				}
 			],
 			"outputAmount": 1,
