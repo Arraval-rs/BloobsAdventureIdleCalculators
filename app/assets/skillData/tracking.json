@@ -1,0 +1,246 @@
+{
+	"baseActionTime": 2,
+
+	"levelSpeedIncrease": 0,
+
+	"invocations": [
+		{
+			"label": "Warden's Insight",
+			"bonusExperience": 0.05
+		},
+		{
+			"label": "Tracker's Greed",
+			"bonusProduct": 0.20
+		},
+		{
+			"label": "Pathfinder's Luck",
+			"bonusExperience": 0.15,
+			"bonusProduct": 0.25
+		}
+	],
+
+	"potions": [
+		{
+			"label": "Huntsman's Potion",
+			"bonusSuccessChance": 0.05
+		}
+	],
+	
+	"experienceSources": [
+		{
+			"label": "Bloobbird",
+			"level": 1,
+			"input": [
+				{
+					"name": "Worms",
+					"inputAmount": 1
+				}
+			],
+			"baseExperience": 20
+		},
+		{
+			"label": "Orange Bloobbird",
+			"level": 10,
+			"input": [
+				{
+					"name": "Worms",
+					"inputAmount": 1
+				}
+			],
+			"baseExperience": 36
+		},
+		{
+			"label": "Silk Moth",
+			"level": 15,
+			"input": [
+				{
+					"name": "Oak Logs",
+					"inputAmount": 1
+				}
+			],
+			"baseExperience": 46
+		},
+		{
+			"label": "Imbued Bloobbird",
+			"level": 20,
+			"input": [
+				{
+					"name": "Golden Sunfungus",
+					"inputAmount": 1
+				}
+			],
+			"baseExperience": 62
+		},
+		{
+			"label": "Wild Boar",
+			"level": 25,
+			"input": [
+				{
+					"name": "Metal Trap",
+					"inputAmount": 1
+				},
+				{
+					"name": "Twilight Orchidshroom",
+					"inputAmount": 1
+				}
+			],
+			"baseExperience": 75
+		},
+		{
+			"label": "Elderglow Spider",
+			"level": 30,
+			"input": [
+				{
+					"name": "Cage",
+					"inputAmount": 1
+				}
+			],
+			"baseExperience": 85
+		},
+		{
+			"label": "Fireweave Spider",
+			"level": 40,
+			"input": [
+				{
+					"name": "Cage",
+					"inputAmount": 1
+				}
+			],
+			"baseExperience": 111
+		},
+		{
+			"label": "Void Bear",
+			"level": 45,
+			"input": [
+				{
+					"name": "Metal Trap",
+					"inputAmount": 1
+				},
+				{
+					"name": "Raw Salmon",
+					"inputAmount": 1
+				}
+			],
+			"baseExperience": 150
+		},
+		{
+			"label": "Shadowweave Buffalo",
+			"level": 55,
+			"input": [
+				{
+					"name": "Metal Trap",
+					"inputAmount": 1
+				},
+				{
+					"name": "Purple Bloobberries",
+					"inputAmount": 1
+				}
+			],
+			"baseExperience": 195
+		},
+		{
+			"label": "Ashen Moth",
+			"level": 65,
+			"input": [
+				{
+					"name": "Rubra Logs",
+					"inputAmount": 1
+				}
+			],
+			"baseExperience": 234
+		},
+		{
+			"label": "Stormhorn Yak",
+			"level": 75,
+			"input": [
+				{
+					"name": "Mithril Trap",
+					"inputAmount": 1
+				},
+				{
+					"name": "Grey Bloobberries",
+					"inputAmount": 1
+				}
+			],
+			"baseExperience": 280
+		},
+		{
+			"label": "Solar Moth",
+			"level": 85,
+			"input": [
+				{
+					"name": "Yew Logs",
+					"inputAmount": 1
+				}
+			],
+			"baseExperience": 375
+		},
+		{
+			"label": "Cerasilk Spider",
+			"level": 95,
+			"input": [
+				{
+					"name": "Phantom Cage",
+					"inputAmount": 1
+				}
+			],
+			"baseExperience": 450
+		},
+		{
+			"label": "Insulated Bloobbird",
+			"level": 115,
+			"input": [
+				{
+					"name": "Frost Worms",
+					"inputAmount": 1
+				}
+			],
+			"baseExperience": 715
+		},
+		{
+			"label": "Polar Bear",
+			"level": 125,
+			"input": [
+				{
+					"name": "Mithril Trap",
+					"inputAmount": 1
+				},
+				{
+					"name": "Frosted Bloobberries",
+					"inputAmount": 1
+				}
+			],
+			"baseExperience": 750
+		},
+		{
+			"label": "Boreal Yak",
+			"level": 175,
+			"input": [
+				{
+					"name": "Mithril Trap",
+					"inputAmount": 1
+				},
+				{
+					"name": "Frosted Bloobberries",
+					"inputAmount": 1
+				}
+			],
+			"baseExperience": 820
+		},
+		{
+			"label": "Skeletal Hound",
+			"level": 75,
+			"input": [
+				{
+					"name": "Mithril Trap",
+					"inputAmount": 1
+				},
+				{
+					"name": "Fish Bones",
+					"inputAmount": 1
+				}
+			],
+			"baseExperience": 840
+		}
+	]
+}

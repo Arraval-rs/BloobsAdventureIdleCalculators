@@ -1,0 +1,115 @@
+{
+	"baseActionTime": 1.495,
+
+	"levelSpeedIncrease": 0.01,
+
+	"invocations": [
+		{
+			"label": "Forester's Delight",
+			"bonusExperience": 0.05
+		},
+		{
+			"label": "Forester's Fantasy",
+			"bonusProduct": 0.20
+		},
+		{
+			"label": "Woodcutter's Season",
+			"bonusExperience": 0.15,
+			"bonusProduct": 0.25
+		}
+	],
+
+	"potions": [
+		{
+			"label": "Timber Potion",
+			"bonusProgress": 10
+		},
+		{
+			"label": "Lumberjack's Potion",
+			"bonusProgress": 20
+		}
+	],
+
+	"experienceSources": [
+		{
+			"label": "Regular Tree",
+			"level": 1,
+			"baseExperience": 15
+		},
+		{
+			"label": "Imbued Tree",
+			"level": 5,
+			"baseExperience": 10
+		},
+		{
+			"label": "Oak Tree",
+			"level": 10,
+			"baseExperience": 25
+		},
+		{
+			"label": "Willow Tree",
+			"level": 20,
+			"baseExperience": 35
+		},
+		{
+			"label": "Teak Tree",
+			"level": 30,
+			"baseExperience": 48
+		},
+		{
+			"label": "Maple Tree",
+			"level": 40,
+			"baseExperience": 60
+		},
+		{
+			"label": "Acadia Tree",
+			"level": 50,
+			"baseExperience": 73
+		},
+		{
+			"label": "Eucalyptus Tree",
+			"level": 58,
+			"baseExperience": 82
+		},
+		{
+			"label": "Rubra Tree",
+			"level": 65,
+			"baseExperience": 95
+		},
+		{
+			"label": "Yew Tree",
+			"level": 70,
+			"baseExperience": 102
+		},
+		{
+			"label": "Red Maple Tree",
+			"level": 80,
+			"baseExperience": 128
+		},
+		{
+			"label": "Magic Tree",
+			"level": 90,
+			"baseExperience": 165
+		},
+		{
+			"label": "Lunarwood Tree",
+			"level": 100,
+			"baseExperience": 185
+		},
+		{
+			"label": "Aether Tree",
+			"level": 115,
+			"baseExperience": 225
+		},
+		{
+			"label": "Spicebough Tree",
+			"level": 125,
+			"baseExperience": 245
+		},
+		{
+			"label": "Bitterpine Tree",
+			"level": 175,
+			"baseExperience": 270
+		}
+	]
+}

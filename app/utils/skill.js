@@ -1,6 +1,7 @@
 export default class skill {
-	constructor(name) {
+	constructor(name, type) {
 		this.skillName = name
+		this.skillType = type
 	}
 
 	getExperienceFromLevel(level) {
@@ -12,6 +13,8 @@ export default class skill {
 		this.experienceSources = data.experienceSources
 		this.invocations = data.invocations
 		this.potions = data.potions
+		this.baseActionTime = data.baseActionTime
+		this.levelSpeedIncrease = data.levelSpeedIncrease
 		if (this.invocations.length == 0 || this.invocations[this.invocations.length - 1].label != "None") {
 			this.invocations.push({"label": "None"})
 			this.potions.push({"label": "None"})
@@ -26,6 +29,146 @@ export default class skill {
     }
     return null
   }
+
+  calculateIterationExperince(experienceSource, prestigeCount, activeInvocation, activePotion, includeSubCrafts) {
+    const invocationBonus = activeInvocation.bonusExperience ?? 0
+    const potionBonus = activePotion.bonusExperience ?? 0
+    var prestigeBonus = prestigeCount + 1
+    if (prestigeCount == 10) {
+      prestigeBonus = 15
+    }
+
+    var subCraftExperience = 0
+    if (includeSubCrafts) {
+    	const baseMaterial = this.findSubCraft(experienceSource.input[0].name)
+    	if(baseMaterial != null) {
+    		subCraftExperience = baseMaterial.baseExperience * experienceSource.input[0].inputAmount ?? 0
+    	}
+    }
+    return (experienceSource["baseExperience"] + subCraftExperience) * prestigeBonus * (invocationBonus + potionBonus + 1)
+  }
+
+  generateTimeString(durationInSeconds) {
+  	const days = Math.floor(durationInSeconds / (24 * 60 * 60))
+    durationInSeconds - days * (24 * 60 * 60)
+
+    const duration = new Date(0)
+    duration.setSeconds(durationInSeconds - days * (24 * 60 * 60))
+    try {
+      const timeString = duration.toISOString().substring(11, 19)
+      switch (days) {
+        case 0:
+          return timeString
+        case 1:
+          return days + " day " + timeString
+        default: 
+          return days + " days " + timeString
+      }
+    }
+    catch(err) {
+      console.error(err + " " + durationInSeconds)
+      return "Error calulating time"
+    }
+  }
+
+  getLevel(experience) {
+  	for (let index = 0; index < this.levelExperience.length; index++) {
+  		if (experience <= this.levelExperience[index]) {
+  			return Math.max(1, index)
+  		}
+  	}
+  	return this.levelExperience.length
+  }
+
+  calculateTotalTime(iterations, experienceSource, activePotion, includeSubCrafts, equipmentProgress, currentExperience) {
+  	var calculatedTime = 0
+  	if (this.skillType == "Artisan") {
+  		calculatedTime = this.calculateCraftingTime(iterations, experienceSource, activePotion, includeSubCrafts)
+  	}
+  	if (this.skillType == "Gathering") {
+  		calculatedTime = this.calculateGatheringTime(iterations, experienceSource, activePotion, equipmentProgress, currentExperience)
+  	}
+  	return this.generateTimeString(calculatedTime)
+  }
+
+  calculateCraftingTime(iterations, experienceSource, activePotion, includeSubCrafts) {
+    const potionTimeReduction = activePotion.timeReduction ?? 0
+
+    var duration = iterations * (experienceSource.baseCraftingTime - potionTimeReduction)
+    const baseMaterial = this.findSubCraft(experienceSource.input[0].name)
+    if (includeSubCrafts && baseMaterial != null) {
+      const subCraftDuration = iterations * experienceSource.input[0].inputAmount * (baseMaterial.baseCraftingTime - potionTimeReduction)
+      duration += subCraftDuration
+    }
+    return duration
+  }
+
+  calculateGatheringTime(iterations, experienceSource, activePotion, equipmentProgress, currentExperience) {
+  	const potionProgress = activePotion.bonusProgress ?? 0
+
+  	const timePerAction = this.baseActionTime - this.levelSpeedIncrease * this.getLevel(currentExperience)
+  	const actionsPerResource = 100 / (equipmentProgress + potionProgress)
+  	return timePerAction * actionsPerResource * iterations
+  }
+
+  equipmentTiers = [
+    {
+      "label": "Bronze",
+      "progress": 15
+    },
+    {
+      "label": "Iron",
+      "progress": 20
+    },
+    {
+      "label": "Steel",
+      "progress": 25
+    },
+    {
+      "label": "Mithril",
+      "progress": 30
+    },
+    {
+      "label": "Adamantite",
+      "progress": 35
+    },
+    {
+      "label": "Cerulium",
+      "progress": 40
+    },
+    {
+      "label": "Sanguinite",
+      "progress": 50
+    },
+    {
+      "label": "Aeronite",
+      "progress": 60
+    },
+    {
+      "label": "Necrosis",
+      "progress": 70
+    },
+    {
+      "label": "Phantom",
+      "progress": 80
+    },
+    {
+      "label": "Karinite",
+      "progress": 90
+    },
+    {
+      "label": "Taigite",
+      "progress": 100
+    },
+    {
+      "label": "Cryxcite",
+      "progress": 110
+    },
+    {
+      "label": "Golden",
+      "progress": 55
+    }
+  ]
 
 	levelExperience = [
 		0,
