@@ -27,12 +27,17 @@
     const iterationExperience = props.skillClass.calculateIterationExperince(experienceSource.value, currentPrestige.value, activeInvocation.value, activePotion.value, props.includeBaseMaterials)
     const totalIterations = Math.ceil(requiredExperience/iterationExperience)
 
-    props.calculatorOutput[0]["experience source"] = experienceSource.value.label
-    props.calculatorOutput[0]["experience required"] = requiredExperience
-    props.calculatorOutput[0]["experience per iteration"] = iterationExperience
-    props.calculatorOutput[0]["required iterations"] = totalIterations
-    props.calculatorOutput[0]["estimated time"] = props.skillClass.calculateTotalTime(totalIterations, experienceSource.value, activePotion.value, props.includeBaseMaterials, props.equipmentTier.progress, currentExperience.value)
-    props.calculatorOutput[0]["required materials"] = generateMaterialString(experienceSource.value.input, totalIterations)
+    var calculatedData = {}
+
+    calculatedData[calculatorColumns.id] = experienceSource.value.label + Date.now()
+    calculatedData[calculatorColumns.experienceSource] = experienceSource.value.label
+    calculatedData[calculatorColumns.experienceRequired] = requiredExperience
+    calculatedData[calculatorColumns.experiencePerIteration] = iterationExperience
+    calculatedData[calculatorColumns.requiredIterations] = totalIterations
+    calculatedData[calculatorColumns.estimatedTime] = props.skillClass.calculateTotalTime(totalIterations, experienceSource.value, activePotion.value, props.includeBaseMaterials, props.equipmentTier.progress, currentExperience.value)
+    calculatedData[calculatorColumns.requiredMaterials] = generateMaterialString(experienceSource.value.input, totalIterations)
+
+    props.calculatorOutput.push(calculatedData)
   }
 
   function generateMaterialString(inputMaterialsArray, iterations) {
