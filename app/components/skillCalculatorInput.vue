@@ -58,7 +58,11 @@
     var effectString = ""
     for (const arg of arguments) {
       if (arg != null && arg.label != null && arg.label != "None"){
-        effectString += " " + arg.label
+        if (effectString.length == 0) {
+          effectString += arg.label
+        } else {
+          effectString += ", " + arg.label
+        }
       }
     }
     if(effectString.length != 0) {
