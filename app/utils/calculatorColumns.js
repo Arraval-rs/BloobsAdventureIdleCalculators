@@ -9,5 +9,6 @@ export const calculatorColumns = {
   startLevel: "Start Level",
   endLevel: "End Level",
   startExperience: "Start Experience",
-  endExperience: "End Experience"
+  endExperience: "End Experience",
+  effects: "Active Effects"
 }

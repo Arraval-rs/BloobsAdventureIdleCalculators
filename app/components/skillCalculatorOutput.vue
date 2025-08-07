@@ -11,6 +11,9 @@
 			accessorKey: calculatorColumns.experienceSource
 		},
 		{
+			accessorKey: calculatorColumns.effects
+		},
+		{
 			accessorKey: calculatorColumns.startExperience
 		},
 		{

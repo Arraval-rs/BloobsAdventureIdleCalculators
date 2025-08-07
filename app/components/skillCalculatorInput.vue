@@ -31,6 +31,7 @@
 
     calculatedData[calculatorColumns.id] = experienceSource.value.label + Date.now()
     calculatedData[calculatorColumns.experienceSource] = experienceSource.value.label
+    calculatedData[calculatorColumns.effects] = generateEffectString(activeInvocation.value, activePotion.value, props.equipmentTier)
     calculatedData[calculatorColumns.experienceRequired] = requiredExperience
     calculatedData[calculatorColumns.experiencePerIteration] = iterationExperience
     calculatedData[calculatorColumns.startExperience] = currentExperience
@@ -51,6 +52,19 @@
       materialString += material.inputAmount * iterations + " " + material.name + "\n"
     }
     return materialString
+  }
+
+  function generateEffectString(invocation, potion, equipment)  {
+    var effectString = ""
+    for (const arg of arguments) {
+      if (arg != null && arg.label != null && arg.label != "None"){
+        effectString += " " + arg.label
+      }
+    }
+    if(effectString.length != 0) {
+      return effectString
+    }
+    return "None"
   }
 </script>
 
