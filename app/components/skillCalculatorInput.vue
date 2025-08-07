@@ -34,7 +34,7 @@
     calculatedData[calculatorColumns.experienceRequired] = requiredExperience
     calculatedData[calculatorColumns.experiencePerIteration] = iterationExperience
     calculatedData[calculatorColumns.requiredIterations] = totalIterations
-    calculatedData[calculatorColumns.estimatedTime] = props.skillClass.calculateTotalTime(totalIterations, experienceSource.value, activePotion.value, props.includeBaseMaterials, props.equipmentTier.progress, currentExperience.value)
+    calculatedData[calculatorColumns.estimatedTime] = props.skillClass.calculateTotalTime(totalIterations, experienceSource.value, activePotion.value, props.includeBaseMaterials, props.equipmentTier, currentExperience.value)
     calculatedData[calculatorColumns.requiredMaterials] = generateMaterialString(experienceSource.value.input, totalIterations)
 
     props.calculatorOutput.push(calculatedData)
@@ -76,6 +76,8 @@
   <UFormField label="Goal Level">
     <UInputNumber v-model="goalLevel" placeholder="Enter goal level" :min=0 :max=maxLevel />
   </UFormField>
+
+  <slot></slot>
 
   <UButton label="Submit" icon="i-lucide-calculator" @click="calculateResults"/>
 </template>

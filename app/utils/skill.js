@@ -80,13 +80,13 @@ export default class skill {
   	return this.levelExperience.length
   }
 
-  calculateTotalTime(iterations, experienceSource, activePotion, includeSubCrafts, equipmentProgress, currentExperience) {
+  calculateTotalTime(iterations, experienceSource, activePotion, includeSubCrafts, equipment, currentExperience) {
   	var calculatedTime = 0
   	if (this.skillType == "Artisan") {
   		calculatedTime = this.calculateCraftingTime(iterations, experienceSource, activePotion, includeSubCrafts)
   	}
   	if (this.skillType == "Gathering") {
-  		calculatedTime = this.calculateGatheringTime(iterations, experienceSource, activePotion, equipmentProgress, currentExperience)
+  		calculatedTime = this.calculateGatheringTime(iterations, experienceSource, activePotion, equipment.progress, currentExperience)
   	}
   	return this.generateTimeString(calculatedTime)
   }
