@@ -33,6 +33,8 @@
     calculatedData[calculatorColumns.experienceSource] = experienceSource.value.label
     calculatedData[calculatorColumns.experienceRequired] = requiredExperience
     calculatedData[calculatorColumns.experiencePerIteration] = iterationExperience
+    calculatedData[calculatorColumns.startExperience] = currentExperience
+    calculatedData[calculatorColumns.endLevel] = goalLevel.value
     calculatedData[calculatorColumns.requiredIterations] = totalIterations
     calculatedData[calculatorColumns.estimatedTime] = props.skillClass.calculateTotalTime(totalIterations, experienceSource.value, activePotion.value, props.includeBaseMaterials, props.equipmentTier, currentExperience.value)
     calculatedData[calculatorColumns.requiredMaterials] = generateMaterialString(experienceSource.value.input, totalIterations)

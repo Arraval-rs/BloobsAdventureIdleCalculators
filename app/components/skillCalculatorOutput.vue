@@ -11,10 +11,10 @@
 			accessorKey: calculatorColumns.experienceSource
 		},
 		{
-			accessorKey: calculatorColumns.experienceRequired
+			accessorKey: calculatorColumns.startExperience
 		},
 		{
-			accessorKey: calculatorColumns.experiencePerIteration
+			accessorKey: calculatorColumns.endLevel
 		},
 		{
 			accessorKey: calculatorColumns.requiredIterations
