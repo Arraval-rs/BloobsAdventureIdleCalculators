@@ -1,7 +1,6 @@
 export default class calculatorResult {
-  constructor(experienceSource, currentPrestige) {
+  constructor(experienceSource) {
     this.experienceSource = experienceSource
-    this.id = experienceSource.label + Date.now()
   }
 
   startExperience;
@@ -23,7 +22,11 @@ export default class calculatorResult {
   includeBaseMaterials;
 
   calculateResults(skill) {
-    this.startLevel = skill.getLevelFromExperience(this.startExperience)
+    if(this.startLevel == null) {
+      this.startLevel = skill.getLevelFromExperience(this.startExperience)
+    } else {
+      this.startExperience = skill.getExperienceFromLevel(this.startLevel)
+    }
     this.endExperience = skill.getExperienceFromLevel(this.endLevel)
     this.experienceRequired = this.endExperience - this.startExperience
     this.experiencePerIteration = this.calculateIterationExperince(skill)

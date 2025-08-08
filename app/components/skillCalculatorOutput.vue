@@ -18,7 +18,11 @@
 		},
 		{
 			accessorKey: "startExperience",
-			header: "Starting Experience",
+			header: "Starting Experience"
+		},
+		{
+			accessorKey: "startLevel",
+			header: "Starting Level",
 			cell: ({row}) => {
 				return h(
 					'div',
@@ -26,10 +30,20 @@
 					h(
 						UInputNumber,
 						{
-							modelValue: row.startExperience,
-							defaultValue: row.original.startExperience,
+							modelValue: props.calculatorOutput[row.id].startLevel,
 							orientation: "vertical",
-							disabled: true
+							increment: {
+								onClick() {
+									props.calculatorOutput[row.id].startLevel++
+									props.calculatorOutput[row.id].calculateResults(props.skillClass)
+								}
+							},
+							decrement: {
+								onClick() {
+									props.calculatorOutput[row.id].startLevel--
+									props.calculatorOutput[row.id].calculateResults(props.skillClass)
+								}
+							}
 						}
 					)
 				)
@@ -45,10 +59,20 @@
 					h(
 						UInputNumber,
 						{
-							modelValue: row.endLevel,
-							defaultValue: row.original.endLevel,
+							modelValue: props.calculatorOutput[row.id].endLevel,
 							orientation: "vertical",
-							disabled: true
+							increment: {
+								onClick() {
+									props.calculatorOutput[row.id].endLevel++
+									props.calculatorOutput[row.id].calculateResults(props.skillClass)
+								}
+							},
+							decrement: {
+								onClick() {
+									props.calculatorOutput[row.id].endLevel--
+									props.calculatorOutput[row.id].calculateResults(props.skillClass)
+								}
+							}
 						}
 					)
 				)
@@ -94,7 +118,7 @@
 			{
 				"label": "Remove Row",
 				onSelect() {
-					props.calculatorOutput.splice(props.calculatorOutput.indexOf(row.original), 1)
+					props.calculatorOutput.splice(row.id, 1)
 				}
 			}
 		]
