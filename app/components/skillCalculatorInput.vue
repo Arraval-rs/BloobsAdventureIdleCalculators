@@ -1,10 +1,6 @@
 <script setup>
 	const props = defineProps(['skillClass', 'includeBaseMaterials', 'equipmentTier', 'calculatorOutput'])
 
-  const maxPrestige = 10
-  const maxExperience = 2000000000
-  const maxLevel = 1000
-
   const currentPrestige = ref(0)
   const currentExperience = ref(0)
   const goalLevel = ref(0)
@@ -21,64 +17,29 @@
     "label": "None"
   })
 
-  function calculateResults(event) {
-    const goalExperience = props.skillClass.getExperienceFromLevel(goalLevel.value)
-    const requiredExperience = goalExperience - currentExperience.value
-    const iterationExperience = props.skillClass.calculateIterationExperince(experienceSource.value, currentPrestige.value, activeInvocation.value, activePotion.value, props.includeBaseMaterials)
-    const totalIterations = Math.ceil(requiredExperience/iterationExperience)
+  function addCalculatorResult(event) {
+    var calculatedData = new calculatorResults(experienceSource.value)
+    calculatedData.currentPrestige = currentPrestige.value
+    calculatedData.startExperience = currentExperience.value
+    calculatedData.endLevel = goalLevel.value
+    calculatedData.invocation = activeInvocation.value
+    calculatedData.potion = activePotion.value
+    calculatedData.equipment = props.equipmentTier
+    calculatedData.includeBaseMaterials = props.includeBaseMaterials
 
-    var calculatedData = {}
 
-    calculatedData[calculatorColumns.id] = experienceSource.value.label + Date.now()
-    calculatedData[calculatorColumns.experienceSource] = experienceSource.value.label
-    calculatedData[calculatorColumns.effects] = generateEffectString(activeInvocation.value, activePotion.value, props.equipmentTier)
-    calculatedData[calculatorColumns.experienceRequired] = requiredExperience
-    calculatedData[calculatorColumns.experiencePerIteration] = iterationExperience
-    calculatedData[calculatorColumns.startExperience] = currentExperience
-    calculatedData[calculatorColumns.endLevel] = goalLevel.value
-    calculatedData[calculatorColumns.requiredIterations] = totalIterations
-    calculatedData[calculatorColumns.estimatedTime] = props.skillClass.calculateTotalTime(totalIterations, experienceSource.value, activePotion.value, props.includeBaseMaterials, props.equipmentTier, currentExperience.value)
-    calculatedData[calculatorColumns.requiredMaterials] = generateMaterialString(experienceSource.value.input, totalIterations)
-
+    calculatedData.calculateResults(props.skillClass)
     props.calculatorOutput.push(calculatedData)
-  }
-
-  function generateMaterialString(inputMaterialsArray, iterations) {
-    if(inputMaterialsArray == null || inputMaterialsArray.length == 0) {
-      return "None"
-    }
-    var materialString = ""
-    for (const material of inputMaterialsArray) {
-      materialString += material.inputAmount * iterations + " " + material.name + "\n"
-    }
-    return materialString
-  }
-
-  function generateEffectString(invocation, potion, equipment)  {
-    var effectString = ""
-    for (const arg of arguments) {
-      if (arg != null && arg.label != null && arg.label != "None"){
-        if (effectString.length == 0) {
-          effectString += arg.label
-        } else {
-          effectString += ", " + arg.label
-        }
-      }
-    }
-    if(effectString.length != 0) {
-      return effectString
-    }
-    return "None"
   }
 </script>
 
 <template>
 	<UFormField label="Current prestige">
-    <UInputNumber v-model="currentPrestige" placeholder="Enter current prestige" :min=0 :max=maxPrestige />
+    <UInputNumber v-model="currentPrestige" placeholder="Enter current prestige" :min=0 :max="props.skillClass.maxPrestige" />
   </UFormField>
 
   <UFormField label="Current experience">
-    <UInputNumber v-model="currentExperience" placeholder="Enter current experience" :min=0 :max=maxExperience />
+    <UInputNumber v-model="currentExperience" placeholder="Enter current experience" :min=0 :max="props.skillClass.maxExperience" />
   </UFormField>
 
   <UFormField label="Experience source">
@@ -94,10 +55,10 @@
   </UFormField>
 
   <UFormField label="Goal Level">
-    <UInputNumber v-model="goalLevel" placeholder="Enter goal level" :min=0 :max=maxLevel />
+    <UInputNumber v-model="goalLevel" placeholder="Enter goal level" :min=0 :max="props.skillClass.maxLevel" />
   </UFormField>
 
   <slot></slot>
 
-  <UButton label="Submit" icon="i-lucide-calculator" @click="calculateResults"/>
+  <UButton label="Submit" icon="i-lucide-calculator" @click="addCalculatorResult"/>
 </template>

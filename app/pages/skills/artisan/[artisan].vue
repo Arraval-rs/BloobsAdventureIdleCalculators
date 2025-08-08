@@ -17,5 +17,5 @@
     <UCheckbox label="Include Base Material Experience" v-model=includeBaseMaterials />
   </skillCalculatorInput>
 
-  <skillCalculatorOutput :calculatorOutput="calculatorOutput" />
+  <skillCalculatorOutput :skillclass="skillClass" :calculatorOutput="calculatorOutput" />
 </template>

@@ -1,32 +1,66 @@
 <script setup>
 	import { resolveComponent } from 'vue'
 
-	const props = defineProps(['calculatorOutput'])
+	const props = defineProps(['skillClass', 'calculatorOutput'])
 
 	const UDropdownMenu = resolveComponent('UDropdownMenu')
+	const UInputNumber = resolveComponent('UInputNumber')
 	const UButton = resolveComponent('UButton')
 
 	const columns = [
 		{
-			accessorKey: calculatorColumns.experienceSource
+			accessorKey: "experienceSource.label",
+			header: "Experience Source"
 		},
 		{
-			accessorKey: calculatorColumns.effects
+			accessorKey: "effects",
+			header: "Active Effects"
 		},
 		{
-			accessorKey: calculatorColumns.startExperience
+			accessorKey: "startExperience",
+			header: "Starting Experience",
+			cell: ({row}) => {
+				return h(
+					'div',
+					{},
+					h(
+						UInputNumber,
+						{
+							modelValue: row.startExperience,
+							defaultValue: row.original.startExperience,
+							orientation: "vertical",
+							disabled: true
+						}
+					)
+				)
+			}
 		},
 		{
-			accessorKey: calculatorColumns.endLevel
+			accessorKey: "endLevel",
+			header: "Goal Level",
+			cell: ({row}) => {
+				return h(
+					'div',
+					{},
+					h(
+						UInputNumber,
+						{
+							modelValue: row.endLevel,
+							defaultValue: row.original.endLevel,
+							orientation: "vertical",
+							disabled: true
+						}
+					)
+				)
+			}
 		},
 		{
-			accessorKey: calculatorColumns.requiredIterations
+			accessorKey: "estimatedTime",
+			header: "Estimated Time"
 		},
 		{
-			accessorKey: calculatorColumns.estimatedTime
-		},
-		{
-			accessorKey: calculatorColumns.requiredMaterials
+			accessorKey: "requiredMaterials",
+			header: "Required Materials"
 		},
 		{
 			accessorKey: "actions",
@@ -39,14 +73,7 @@
 						UDropdownMenu,
 						{
 							content: {},
-							items: [
-								{
-									"label": "Remove Row",
-									onSelect() {
-										props.calculatorOutput.splice(props.calculatorOutput.indexOf(row.original), 1)
-									}
-								}
-							]
+							items: actionItems(row)
 						},
 						() => h(
 							UButton, 
@@ -61,6 +88,17 @@
 			}
 		}
 	]
+
+	function actionItems(row) {
+		return [
+			{
+				"label": "Remove Row",
+				onSelect() {
+					props.calculatorOutput.splice(props.calculatorOutput.indexOf(row.original), 1)
+				}
+			}
+		]
+	}
 	
 </script>
 

@@ -22,5 +22,5 @@
     </UFormField>
   </skillCalculatorInput>
 
-  <skillCalculatorOutput :calculatorOutput="calculatorOutput" />
+  <skillCalculatorOutput :skillClass="skillClass" :calculatorOutput="calculatorOutput" />
 </template>
