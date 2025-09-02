@@ -108,7 +108,8 @@ export default class calculatorResult {
   calculateGatheringTime(skill) {
     const potionProgress = this.potion.bonusProgress ?? 0
 
-    const timePerAction = skill.baseActionTime - skill.levelSpeedIncrease * this.startLevel
+    const timePerAction = Math.max(skill.baseActionTime - skill.levelSpeedIncrease * this.startLevel, skill.minimumActionTime)
+    console.log(timePerAction)
     const actionsPerResource = 100 / (this.equipment.progress + potionProgress)
     return timePerAction * actionsPerResource * this.requiredIterations
   }
