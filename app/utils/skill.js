@@ -14,11 +14,11 @@ export default class skill {
 
 	getLevelFromExperience(experience) {
   	for (let index = 0; index < this.levelExperience.length; index++) {
-  		if (experience <= this.levelExperience[index]) {
+  		if (experience < this.levelExperience[index]) {
   			return Math.max(1, index)
   		}
   	}
-  	return this.levelExperience.length
+  	return this.levelExperience.length 
   }
 
 	async readSkillJson() {
