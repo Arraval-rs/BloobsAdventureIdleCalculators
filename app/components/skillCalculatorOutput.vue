@@ -4,7 +4,7 @@
 	const props = defineProps(['skillClass', 'calculatorOutput'])
 
 	const UDropdownMenu = resolveComponent('UDropdownMenu')
-	const UInputNumber = resolveComponent('UInputNumber')
+	const tableInputNumber = resolveComponent('tableInputNumber')
 	const UButton = resolveComponent('UButton')
 
 	const columns = [
@@ -18,36 +18,27 @@
 		},
 		{
 			accessorKey: "startExperience",
-			header: "Starting Experience"
-		},
-		{
-			accessorKey: "startLevel",
-			header: "Starting Level",
+			header: "Starting Experience",
 			cell: ({row}) => {
 				return h(
 					'div',
 					{},
 					h(
-						UInputNumber,
+						tableInputNumber,
 						{
-							modelValue: props.calculatorOutput[row.id].startLevel,
-							orientation: "vertical",
-							increment: {
-								onClick() {
-									props.calculatorOutput[row.id].startLevel++
-									props.calculatorOutput[row.id].calculateResults(props.skillClass)
-								}
-							},
-							decrement: {
-								onClick() {
-									props.calculatorOutput[row.id].startLevel--
-									props.calculatorOutput[row.id].calculateResults(props.skillClass)
-								}
+							initialValue: props.calculatorOutput[row.id].startExperience,
+							onUpdateParent(newValue) {
+								props.calculatorOutput[row.id].startExperience = newValue
+								props.calculatorOutput[row.id].calculateResults(props.skillClass)
 							}
 						}
 					)
 				)
 			}
+		},
+		{
+			accessorKey: "startLevel",
+			header: "Starting Level"
 		},
 		{
 			accessorKey: "endLevel",
@@ -57,26 +48,21 @@
 					'div',
 					{},
 					h(
-						UInputNumber,
+						tableInputNumber,
 						{
-							modelValue: props.calculatorOutput[row.id].endLevel,
-							orientation: "vertical",
-							increment: {
-								onClick() {
-									props.calculatorOutput[row.id].endLevel++
-									props.calculatorOutput[row.id].calculateResults(props.skillClass)
-								}
-							},
-							decrement: {
-								onClick() {
-									props.calculatorOutput[row.id].endLevel--
-									props.calculatorOutput[row.id].calculateResults(props.skillClass)
-								}
+							initialValue: props.calculatorOutput[row.id].endLevel,
+							onUpdateParent(newValue) {
+								props.calculatorOutput[row.id].endLevel = newValue
+								props.calculatorOutput[row.id].calculateResults(props.skillClass)
 							}
 						}
 					)
 				)
 			}
+		},
+		{
+			accessorKey: "requiredIterations",
+			header: "Required Iterations"
 		},
 		{
 			accessorKey: "estimatedTime",

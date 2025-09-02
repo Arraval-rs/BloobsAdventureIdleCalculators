@@ -22,11 +22,7 @@ export default class calculatorResult {
   includeBaseMaterials;
 
   calculateResults(skill) {
-    if(this.startLevel == null) {
-      this.startLevel = skill.getLevelFromExperience(this.startExperience)
-    } else {
-      this.startExperience = skill.getExperienceFromLevel(this.startLevel)
-    }
+    this.startLevel = skill.getLevelFromExperience(this.startExperience)
     this.endExperience = skill.getExperienceFromLevel(this.endLevel)
     this.experienceRequired = this.endExperience - this.startExperience
     this.experiencePerIteration = this.calculateIterationExperince(skill)
@@ -109,7 +105,6 @@ export default class calculatorResult {
     const potionProgress = this.potion.bonusProgress ?? 0
 
     const timePerAction = Math.max(skill.baseActionTime - skill.levelSpeedIncrease * this.startLevel, skill.minimumActionTime)
-    console.log(timePerAction)
     const actionsPerResource = 100 / (this.equipment.progress + potionProgress)
     return timePerAction * actionsPerResource * this.requiredIterations
   }
