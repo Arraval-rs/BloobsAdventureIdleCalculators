@@ -1,7 +1,9 @@
 {
-	"baseActionTime": 1.495,
+	"baseActionTime": 1.5,
 
-	"levelSpeedIncrease": 0.01,
+	"levelSpeedIncrease": 0.005,
+
+	"minimumActionTime": 1,
 
 	"invocations": [
 		{
