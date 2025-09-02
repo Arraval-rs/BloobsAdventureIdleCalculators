@@ -63,12 +63,15 @@ export default class calculatorResult {
 
   generateEffectString(invocation, potion, equipment)  {
     var effectString = ""
-    for (const arg of arguments) {
-      if (arg != null && arg.label != null && arg.label != "None"){
+    for(var index = 0; index < arguments.length; index++) {
+      if (arguments[index] != null && arguments[index].label != null && arguments[index].label != "None") {
         if (effectString.length == 0) {
-          effectString += arg.label
+          effectString += arguments[index].label
         } else {
-          effectString += ", " + arg.label
+          effectString += ", " + arguments[index].label
+        }
+        if (index == 2) {
+          effectString += " Equipment"
         }
       }
     }
