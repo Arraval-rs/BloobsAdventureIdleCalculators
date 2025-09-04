@@ -29,7 +29,11 @@ export default class calculatorResult {
     this.requiredIterations = Math.ceil(this.experienceRequired / this.experiencePerIteration)
     this.estimatedTime = this.calculateTotalTime(skill)
     this.requiredMaterials = this.generateMaterialString()
-    this.effects = this.generateEffectString(this.invocation, this.potion, this.equipment)
+    if (skill.skillName === "thieving" || skill.skillName === "tracking") {
+      this.effects = this.generateEffectString(this.invocation, this.potion, null)
+    } else {
+      this.effects = this.generateEffectString(this.invocation, this.potion, this.equipment)
+    }
   }
 
   calculateIterationExperince(skill) {
@@ -105,9 +109,12 @@ export default class calculatorResult {
   }
 
   calculateGatheringTime(skill) {
+    if(skill.skillName === "thieving" || skill.skillName === "tracking") {
+      return skill.baseActionTime * this.requiredIterations
+    }
     const potionProgress = this.potion.bonusProgress ?? 0
 
-    const timePerAction = Math.max(skill.baseActionTime - skill.levelSpeedIncrease * this.startLevel, skill.minimumActionTime)
+    var timePerAction = Math.max(skill.baseActionTime - skill.levelSpeedIncrease * this.startLevel, skill.minimumActionTime)
     const actionsPerResource = 100 / (this.equipment.progress + potionProgress)
     return timePerAction * actionsPerResource * this.requiredIterations
   }

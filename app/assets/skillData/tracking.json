@@ -3,6 +3,8 @@
 
 	"levelSpeedIncrease": 0,
 
+		"minimumActionTime": 2,
+
 	"invocations": [
 		{
 			"label": "Warden's Insight",

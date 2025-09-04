@@ -3,6 +3,8 @@
 
 	"levelSpeedIncrease": 0,
 
+	"minimumActionTime": 2,
+
 	"invocations": [
 		{
 			"label": "Thief's Luck",
@@ -202,6 +204,56 @@
 				}
 			],
 			"baseExperience": 750
+		},
+		{
+			"label": "Villager",
+			"level": 5,
+			"baseExperience": 18
+		},
+		{
+			"label": "Dock Worker",
+			"level": 28,
+			"baseExperience": 65
+		},
+		{
+			"label": "Herbalist",
+			"level": 48,
+			"baseExperience": 105
+		},
+		{
+			"label": "Fisher",
+			"level": 68,
+			"baseExperience": 155
+		},
+		{
+			"label": "Gem Prospector",
+			"level": 88,
+			"baseExperience": 268
+		},
+		{
+			"label": "Traveling Merchant",
+			"level": 108,
+			"baseExperience": 580
+		},
+		{
+			"label": "Explorer",
+			"level": 128,
+			"baseExperience": 620
+		},
+		{
+			"label": "Lost Merchant",
+			"level": 148,
+			"baseExperience": 675
+		},
+		{
+			"label": "Mountaineer",
+			"level": 168,
+			"baseExperience": 720
+		},
+		{
+			"label": "Rock Climber",
+			"level": 188,
+			"baseExperience": 765
 		}
 	]
 }
