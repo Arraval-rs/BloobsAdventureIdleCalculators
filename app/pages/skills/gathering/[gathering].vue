@@ -18,7 +18,7 @@
 <template>
   <skillCalculatorInput :skillClass="skillClass" :equipmentTier="equipmentTier" :includeBaseMaterials="includeBaseMaterials" :calculatorOutput="calculatorOutput">
     <UFormField label="Equipment Tier">
-      <USelectMenu v-model="equipmentTier" :items="skillClass.equipmentTiers" class="w-48" />
+      <USelectMenu v-if="route.params.gathering !== 'thieving' && route.params.gathering !== 'tracking'" v-model="equipmentTier" :items="skillClass.equipmentTiers" class="w-48" />
     </UFormField>
   </skillCalculatorInput>
 
