@@ -16,11 +16,19 @@
 </script>
 
 <template>
-  <skillCalculatorInput :skillClass="skillClass" :equipmentTier="equipmentTier" :includeBaseMaterials="includeBaseMaterials" :calculatorOutput="calculatorOutput">
-    <UFormField label="Equipment Tier">
-      <USelectMenu v-if="route.params.gathering !== 'thieving' && route.params.gathering !== 'tracking'" v-model="equipmentTier" :items="skillClass.equipmentTiers" class="w-48" />
-    </UFormField>
-  </skillCalculatorInput>
+  <div class="calculatorInputRow">
+    <div class="calculatorInputColumn">
+      <skillCalculatorInput :skillClass="skillClass" :equipmentTier="equipmentTier" :includeBaseMaterials="includeBaseMaterials" :calculatorOutput="calculatorOutput">
+        <UFormField label="Equipment Tier">
+          <USelectMenu v-if="route.params.gathering !== 'thieving' && route.params.gathering !== 'tracking'" v-model="equipmentTier" :items="skillClass.equipmentTiers" class="w-48" />
+        </UFormField>
+      </skillCalculatorInput>
+    </div>
+    <div class="calculatorInputColumn">
+      <equipmentGrid />
+    </div>
+  </div>
+  
 
   <skillCalculatorOutput :skillClass="skillClass" :calculatorOutput="calculatorOutput" />
 </template>

@@ -1,0 +1,38 @@
+{
+	"cape":[],
+
+	"head": [],
+
+	"ammunition": [],
+
+	"mainHand": [],
+
+	"neck": [
+		{
+			"label": "Fisherman's Charm Necklace",
+			"fishingBonusExperience": 10
+		},
+		{
+			"label": "Forager's Charm Necklace",
+			"foragingBonusExperience": 10
+		},
+		{
+			"label": "Miner's Charm Necklace",
+			"miningBonusExperience": 10
+		},
+		{
+			"label": "Woodcutter's Charm Necklace",
+			"woodcuttingBonusExperience": 10
+		}
+	],
+
+	"offHand": [],
+
+	"ring": [],
+
+	"body": [],
+
+	"hands": [],
+
+	"feet": []
+}
