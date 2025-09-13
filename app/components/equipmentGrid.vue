@@ -1,7 +1,13 @@
 <script setup>
+  const emit = defineEmits(["updateEquipment"])
+
   const equipmentObject = new equipmentData()
   await equipmentObject.readEquipmentJson()
   const equipmentClass = ref(equipmentObject)
+
+  const equipmentRefs = ref({
+    "neck": {"label": "Neck"}
+  })
 
   const capeImage = new URL("../assets/images/cape.png", import.meta.url).href
   const headImage = new URL("../assets/images/head.png", import.meta.url).href
@@ -15,6 +21,11 @@
   const potionImage = new URL("../assets/images/potion.png", import.meta.url).href
   const feetImage = new URL("../assets/images/feet.png", import.meta.url).href
   const foodImage = new URL("../assets/images/food.png", import.meta.url).href
+
+  function changedEquipment(event) {
+    console.log(JSON.stringify(equipmentRefs.value))
+    emit("update", equipmentRefs.value)
+  }
 </script>
 
 <template>
@@ -22,7 +33,7 @@
     <tbody>
       <tr class="equipmentGridRow">
         <td class="equipmentGridCell">
-          <USelectMenu :items="equipmentClass.cape" placeholder="Cape" disabled />
+          <USelectMenu v-model="equipmentRefs.cape" :items="equipmentClass.cape" placeholder="Cape" disabled />
           <NuxtImg :src="capeImage"/>
         </td>
         <td class="equipmentGridCell">
@@ -40,7 +51,7 @@
           <NuxtImg :src="mainHandImage"/>
         </td>
         <td class="equipmentGridCell">
-          <USelectMenu :items="equipmentClass.neck" placeholder="Neck" />
+          <USelectMenu v-model="equipmentRefs.neck" :items="equipmentClass.neck" @change="changedEquipment"/>
           <NuxtImg :src="neckImage"/>
         </td>
         <td class="equipmentGridCell">
