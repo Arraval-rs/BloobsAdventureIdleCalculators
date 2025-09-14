@@ -87,10 +87,10 @@ export default class calculatorResult {
 
   calculateTotalTime(skill) {
     var calculatedTime = 0
-    if (skill.skillType == "Artisan") {
+    if (skill.skillType == "artisan") {
       calculatedTime = this.calculateCraftingTime(skill)
     }
-    if (skill.skillType == "Gathering") {
+    if (skill.skillType == "gathering") {
       calculatedTime = this.calculateGatheringTime(skill)
     }
     return this.generateTimeString(calculatedTime)
