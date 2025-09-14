@@ -10,19 +10,19 @@
 	"neck": [
 		{
 			"label": "Fisherman's Charm Necklace",
-			"fishingBonusExperience": 10
+			"fishingBonusExperience": 0.10
 		},
 		{
 			"label": "Forager's Charm Necklace",
-			"foragingBonusExperience": 10
+			"foragingBonusExperience": 0.10
 		},
 		{
 			"label": "Miner's Charm Necklace",
-			"miningBonusExperience": 10
+			"miningBonusExperience": 0.10
 		},
 		{
 			"label": "Woodcutter's Charm Necklace",
-			"woodcuttingBonusExperience": 10
+			"woodcuttingBonusExperience": 0.10
 		}
 	],
 

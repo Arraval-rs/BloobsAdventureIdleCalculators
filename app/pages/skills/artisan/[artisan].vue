@@ -2,5 +2,5 @@
 </script>
 
 <template>
-  <skillCalculator skillType="artisan" :initialEquipment="null" :includeSubCrafts="false" />
+  <skillCalculator skillType="artisan" :initialTool="null" :includeSubCrafts="false" />
 </template>

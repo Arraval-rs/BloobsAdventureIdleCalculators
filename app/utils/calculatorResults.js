@@ -18,30 +18,36 @@ export default class calculatorResult {
   effects;
   invocation;
   potion;
-  equipment;
+  toolTier;
   includeBaseMaterials;
 
-  calculateResults(skill) {
+  calculateResults(skill, equipment) {
     this.startLevel = skill.getLevelFromExperience(this.startExperience)
     this.endExperience = skill.getExperienceFromLevel(this.endLevel)
     this.experienceRequired = this.endExperience - this.startExperience
-    this.experiencePerIteration = this.calculateIterationExperince(skill)
+    this.experiencePerIteration = this.calculateIterationExperince(skill, equipment)
     this.requiredIterations = Math.ceil(this.experienceRequired / this.experiencePerIteration)
     this.estimatedTime = this.calculateTotalTime(skill)
     this.requiredMaterials = this.generateMaterialString()
     if (skill.skillName === "thieving" || skill.skillName === "tracking") {
       this.effects = this.generateEffectString(this.invocation, this.potion, null)
     } else {
-      this.effects = this.generateEffectString(this.invocation, this.potion, this.equipment)
+      this.effects = this.generateEffectString(this.invocation, this.potion, this.toolTier)
     }
   }
 
-  calculateIterationExperince(skill) {
+  calculateIterationExperince(skill, equipmentSet) {
     const invocationBonus = this.invocation.bonusExperience ?? 0
     const potionBonus = this.potion.bonusExperience ?? 0
+
     var prestigeBonus = this.currentPrestige + 1
     if (this.currentPrestige == 10) {
       prestigeBonus = 15
+    }
+
+    var equipmentBonus = 0
+    for (const equipment in equipmentSet) {
+      equipmentBonus += equipmentSet[equipment][skill.skillName + "BonusExperience"] ?? 0
     }
 
     var subCraftExperience = 0
@@ -51,7 +57,7 @@ export default class calculatorResult {
         subCraftExperience = baseMaterial.baseExperience * this.experienceSource.input[0].inputAmount ?? 0
       }
     }
-    return (this.experienceSource["baseExperience"] + subCraftExperience) * prestigeBonus * (invocationBonus + potionBonus + 1)
+    return (this.experienceSource["baseExperience"] + subCraftExperience) * prestigeBonus * (invocationBonus + potionBonus + equipmentBonus + 1)
   }
 
   generateMaterialString() {
@@ -65,7 +71,7 @@ export default class calculatorResult {
     return materialString
   }
 
-  generateEffectString(invocation, potion, equipment)  {
+  generateEffectString(invocation, potion, toolTier)  {
     var effectString = ""
     for(var index = 0; index < arguments.length; index++) {
       if (arguments[index] != null && arguments[index].label != null && arguments[index].label != "None") {
@@ -115,7 +121,7 @@ export default class calculatorResult {
     const potionProgress = this.potion.bonusProgress ?? 0
 
     var timePerAction = Math.max(skill.baseActionTime - skill.levelSpeedIncrease * this.startLevel, skill.minimumActionTime)
-    const actionsPerResource = 100 / (this.equipment.progress + potionProgress)
+    const actionsPerResource = 100 / (this.toolTier.progress + potionProgress)
     return timePerAction * actionsPerResource * this.requiredIterations
   }
 

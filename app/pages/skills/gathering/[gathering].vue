@@ -1,10 +1,10 @@
 <script setup>
-  const initialEquipment = ref({
+  const initialTool = ref({
     "label": "Bronze",
     "progress": 15
   })
 </script>
 
 <template>
-  <skillCalculator skillType="gathering" :initialEquipment="initialEquipment" :includeSubCrafts="null" />
+  <skillCalculator skillType="gathering" :initialTool="initialTool" :includeSubCrafts="null" />
 </template>

@@ -1,5 +1,6 @@
 <script setup>
 	const props = defineProps(['skillClass', 'includeBaseMaterials', 'equipmentTier', 'calculatorOutput'])
+  const emit = defineEmits(["submitResult"])
 
   const currentPrestige = ref(0)
   const currentExperience = ref(0)
@@ -30,12 +31,10 @@
     calculatedData.endLevel = goalLevel.value
     calculatedData.invocation = activeInvocation.value
     calculatedData.potion = activePotion.value
-    calculatedData.equipment = props.equipmentTier
+    calculatedData.toolTier = props.equipmentTier
     calculatedData.includeBaseMaterials = props.includeBaseMaterials
 
-
-    calculatedData.calculateResults(props.skillClass)
-    props.calculatorOutput.push(calculatedData)
+    emit("submitResult", calculatedData)
   }
 </script>
 

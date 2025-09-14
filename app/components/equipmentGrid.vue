@@ -23,8 +23,7 @@
   const foodImage = new URL("../assets/images/food.png", import.meta.url).href
 
   function changedEquipment(event) {
-    console.log(JSON.stringify(equipmentRefs.value))
-    emit("update", equipmentRefs.value)
+    emit("updateEquipment", equipmentRefs.value)
   }
 </script>
 
