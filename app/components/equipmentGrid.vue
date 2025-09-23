@@ -6,7 +6,8 @@
   const equipmentClass = ref(equipmentObject)
 
   const equipmentRefs = ref({
-    "neck": {"label": "Neck"}
+    "neck": {"label": "Neck"},
+    "potion": {"label": "Potion"}
   })
 
   const capeImage = new URL("../assets/images/cape.png", import.meta.url).href
@@ -32,7 +33,7 @@
     <tbody>
       <tr class="equipmentGridRow">
         <td class="equipmentGridCell">
-          <USelectMenu v-model="equipmentRefs.cape" :items="equipmentClass.cape" placeholder="Cape" disabled />
+          <USelectMenu :items="equipmentClass.cape" placeholder="Cape" disabled />
           <NuxtImg :src="capeImage"/>
         </td>
         <td class="equipmentGridCell">
@@ -74,7 +75,7 @@
       </tr>
       <tr class="equipmentGridRow">
         <td class="equipmentGridCell">
-          <USelectMenu :items="equipmentClass.potion" placeholder="Potion" disabled />
+          <USelectMenu v-model="equipmentRefs.potion" :items="equipmentClass.potion" @change="changedEquipment" />
           <NuxtImg :src="potionImage"/>
         </td>
         <td class="equipmentGridCell">

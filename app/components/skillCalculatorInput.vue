@@ -14,10 +14,6 @@
     "label": "None"
   })
 
-  const activePotion = ref({
-    "label": "None"
-  })
-
   const toast = useToast()
 
   function addCalculatorResult(event) {
@@ -30,7 +26,6 @@
     calculatedData.startExperience = currentExperience.value
     calculatedData.endLevel = goalLevel.value
     calculatedData.invocation = activeInvocation.value
-    calculatedData.potion = activePotion.value
     calculatedData.toolTier = props.equipmentTier
     calculatedData.includeBaseMaterials = props.includeBaseMaterials
 
@@ -53,10 +48,6 @@
 
   <UFormField label="Active Invocation">
     <USelectMenu v-model="activeInvocation" :items="props.skillClass.invocations" class="w-48" />
-  </UFormField>
-
-  <UFormField label="Active Potion">
-    <USelectMenu v-model="activePotion" :items="props.skillClass.potions" class="w-48" />
   </UFormField>
 
   <UFormField label="Goal Level">

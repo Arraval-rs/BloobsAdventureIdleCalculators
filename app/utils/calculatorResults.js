@@ -17,28 +17,26 @@ export default class calculatorResult {
 
   effects;
   invocation;
-  potion;
   toolTier;
   includeBaseMaterials;
 
-  calculateResults(skill, equipment) {
+  calculateResults(skill, equipmentSet) {
     this.startLevel = skill.getLevelFromExperience(this.startExperience)
     this.endExperience = skill.getExperienceFromLevel(this.endLevel)
     this.experienceRequired = this.endExperience - this.startExperience
-    this.experiencePerIteration = this.calculateIterationExperince(skill, equipment)
+    this.experiencePerIteration = this.calculateIterationExperince(skill, equipmentSet)
     this.requiredIterations = Math.ceil(this.experienceRequired / this.experiencePerIteration)
-    this.estimatedTime = this.calculateTotalTime(skill)
+    this.estimatedTime = this.calculateTotalTime(skill, equipmentSet)
     this.requiredMaterials = this.generateMaterialString()
     if (skill.skillName === "thieving" || skill.skillName === "tracking") {
-      this.effects = this.generateEffectString(this.invocation, this.potion, null)
+      this.effects = this.generateEffectString(this.invocation, null)
     } else {
-      this.effects = this.generateEffectString(this.invocation, this.potion, this.toolTier)
+      this.effects = this.generateEffectString(this.invocation, this.toolTier)
     }
   }
 
   calculateIterationExperince(skill, equipmentSet) {
     const invocationBonus = this.invocation.bonusExperience ?? 0
-    const potionBonus = this.potion.bonusExperience ?? 0
 
     var prestigeBonus = this.currentPrestige + 1
     if (this.currentPrestige == 10) {
@@ -57,7 +55,7 @@ export default class calculatorResult {
         subCraftExperience = baseMaterial.baseExperience * this.experienceSource.input[0].inputAmount ?? 0
       }
     }
-    return (this.experienceSource["baseExperience"] + subCraftExperience) * prestigeBonus * (invocationBonus + potionBonus + equipmentBonus + 1)
+    return (this.experienceSource["baseExperience"] + subCraftExperience) * prestigeBonus * (invocationBonus + equipmentBonus + 1)
   }
 
   generateMaterialString() {
@@ -71,7 +69,7 @@ export default class calculatorResult {
     return materialString
   }
 
-  generateEffectString(invocation, potion, toolTier)  {
+  generateEffectString(invocation, toolTier)  {
     var effectString = ""
     for(var index = 0; index < arguments.length; index++) {
       if (arguments[index] != null && arguments[index].label != null && arguments[index].label != "None") {
@@ -80,7 +78,7 @@ export default class calculatorResult {
         } else {
           effectString += ", " + arguments[index].label
         }
-        if (index == 2) {
+        if (index == 1) {
           effectString += " Equipment"
         }
       }
@@ -91,37 +89,44 @@ export default class calculatorResult {
     return "None"
   }
 
-  calculateTotalTime(skill) {
+  calculateTotalTime(skill, equipmentSet) {
     var calculatedTime = 0
     if (skill.skillType == "artisan") {
-      calculatedTime = this.calculateCraftingTime(skill)
+      calculatedTime = this.calculateCraftingTime(skill, equipmentSet)
     }
     if (skill.skillType == "gathering") {
-      calculatedTime = this.calculateGatheringTime(skill)
+      calculatedTime = this.calculateGatheringTime(skill, equipmentSet)
     }
     return this.generateTimeString(calculatedTime)
   }
 
-  calculateCraftingTime(skill) {
-    const potionTimeReduction = this.potion.timeReduction ?? 0
+  calculateCraftingTime(skill, equipmentSet) {
+    var equipmentBonus = 0
+    for (const equipment in equipmentSet) {
+      equipmentBonus += equipmentSet[equipment][skill.skillName + "TimeReduction"] ?? 0
+    }
 
-    var duration = this.requiredIterations * (this.experienceSource.baseCraftingTime - potionTimeReduction)
+    var duration = this.requiredIterations * (this.experienceSource.baseCraftingTime - equipmentBonus)
     const baseMaterial = skill.findSubCraft(this.experienceSource.input[0].name)
     if (this.includeBaseMaterials && baseMaterial != null) {
-      const subCraftDuration = this.requiredIterations * this.experienceSource.input[0].inputAmount * (baseMaterial.baseCraftingTime - potionTimeReduction)
+      const subCraftDuration = this.requiredIterations * this.experienceSource.input[0].inputAmount * (baseMaterial.baseCraftingTime - equipmentBonus)
       duration += subCraftDuration
     }
     return duration
   }
 
-  calculateGatheringTime(skill) {
+  calculateGatheringTime(skill, equipmentSet) {
     if(skill.skillName === "thieving" || skill.skillName === "tracking") {
       return skill.baseActionTime * this.requiredIterations
     }
-    const potionProgress = this.potion.bonusProgress ?? 0
+
+    var equipmentBonus = 0
+    for (const equipment in equipmentSet) {
+      equipmentBonus += equipmentSet[equipment][skill.skillName + "BonusProgress"] ?? 0
+    }
 
     var timePerAction = Math.max(skill.baseActionTime - skill.levelSpeedIncrease * this.startLevel, skill.minimumActionTime)
-    const actionsPerResource = 100 / (this.toolTier.progress + potionProgress)
+    const actionsPerResource = 100 / (this.toolTier.progress + equipmentBonus)
     return timePerAction * actionsPerResource * this.requiredIterations
   }
 

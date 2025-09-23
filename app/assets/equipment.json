@@ -34,5 +34,110 @@
 
 	"hands": [],
 
-	"feet": []
+	"potion": [
+		{
+			"label": "Fletcher Potion",
+			"bowcraftingTimeReduction": 0.25
+		},
+		{
+			"label": "Vaning Potion",
+			"bowcraftingTimeReduction": 0.50
+		},
+		{
+			"label": "Chef's Potion",
+			"cookingTimeReduction": 0.25
+		},
+		{
+			"label": "Grilling Potion",
+			"cookingTimeReduction": 0.50
+		},
+		{
+			"label": "Artisan Potion",
+			"craftingTimeReduction": 0.25
+		},
+		{
+			"label": "Blaze Potion",
+			"firemakingTimeReduction": 0.25
+		},
+		{
+			"label": "Firemaker's Potion",
+			"firemakingTimeReduction": 0.35
+		},
+		{
+			"label": "Super Firemaker's Potion",
+			"firemakingTimeReduction": 0.65
+		},
+		{
+			"label": "Angling Potion",
+			"fishingBonusProgress": 10
+		},
+		{
+			"label": "Tidecaller Potion",
+			"fishingBonusProgress": 20
+		},
+		{
+			"label": "Gatherer Potion",
+			"foragingBonusProgress": 10
+		},
+		{
+			"label": "Mossfoot Potion",
+			"foragingBonusProgress": 20
+		},
+		{
+			"label": "Botanist Potion",
+			"herbologyBonusExperience": 0.10
+		},
+		{
+			"label": "Flourishing Potion",
+			"herbologyBonusExperience": 0.15
+		},
+		{
+			"label": "Super Botanist Potion",
+			"herbologyBonusExperience": 0.25
+		},
+		{
+			"label": "Saturation Potion",
+			"imbuingTimeReduction": 0.25
+		},
+		{
+			"label": "Infusion Potion",
+			"imbuingTimeReduction": 0.50
+		},
+		{
+			"label": "Excavation Potion",
+			"miningBonusProgress": 10
+		},
+		{
+			"label": "Oreheart Potion",
+			"miningBonusProgress": 20
+		},
+		{
+			"label": "Forge Potion",
+			"smithingTimeReduction": 0.25
+		},
+		{
+			"label": "Super Forge Potion",
+			"smithingTimeReduction": 0.50
+		},
+		{
+			"label": "Rogue Potion",
+			"thievingBonusSuccessChance": 0.05
+		},
+		{
+			"label": "Huntsman's Potion",
+			"trackingBonusSuccessChance": 0.05
+		},
+		{
+			"label": "Timber Potion",
+			"woodcuttingBonusProgress": 10
+		},
+		{
+			"label": "Lumberjack's Potion",
+			"woodcuttingBonusProgress": 20
+		}
+	],
+
+	"feet": [],
+
+	"food": []
 }
