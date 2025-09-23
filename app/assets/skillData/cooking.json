@@ -15,17 +15,6 @@
 		}
 	],
 
-	"potions": [
-		{
-			"label": "Chef's Potion",
-			"timeReduction": 0.25
-		},
-		{
-			"label": "Grilling Potion",
-			"timeReduction": 0.50
-		}
-	],
-
 	"experienceSources": [
 		{
 			"label": "Chicken",

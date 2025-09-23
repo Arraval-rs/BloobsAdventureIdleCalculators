@@ -15,13 +15,6 @@
 		}
 	],
 
-	"potions": [
-		{
-			"label": "Artisan Potion",
-			"timeReduction": 0.25
-		}
-	],
-
 	"experienceSources": [
 		{
 			"label": "Soft Clay",

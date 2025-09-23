@@ -20,17 +20,6 @@
 			"bonusProduct": 0.25
 		}
 	],
-
-	"potions": [
-		{
-			"label": "Angling Potion",
-			"bonusProgress": 10
-		},
-		{
-			"label": "Tidecaller Potion",
-			"bonusProgress": 20
-		}
-	],
 	
 	"experienceSources": [
 		{

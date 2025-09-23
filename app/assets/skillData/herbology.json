@@ -14,21 +14,6 @@
 			"bonusProduct": 0.25
 		}
 	],
-
-	"potions": [
-		{
-			"label": "Botanist Potion",
-			"bonusExperience": 0.10
-		},
-		{
-			"label": "Flourishing Potion",
-			"bonusExperience": 0.15
-		},
-		{
-			"label": "Super Botanist Potion",
-			"bonusExperience": 0.25
-		}
-	],
 	
 	"experienceSources": [
 		{

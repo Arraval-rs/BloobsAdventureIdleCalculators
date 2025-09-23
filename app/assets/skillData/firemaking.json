@@ -15,21 +15,6 @@
 		}
 	],
 
-	"potions": [
-		{
-			"label": "Blaze Potion",
-			"timeReduction": 0.25
-		},
-		{
-			"label": "Firemaker's Potion",
-			"timeReduction": 0.35
-		},
-		{
-			"label": "Super Firemaker's Potion",
-			"timeReduction": 0.65
-		}
-	],
-
 	"experienceSources": [
 		{
 			"label": "Regular Logs",

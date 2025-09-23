@@ -21,17 +21,6 @@
 		}
 	],
 
-	"potions": [
-		{
-			"label": "Excavation Potion",
-			"bonusProgress": 10
-		},
-		{
-			"label": "Oreheart Potion",
-			"bonusProgress": 20
-		}
-	],
-
 	"experienceSources": [
 		{
 			"label": "Copper Ore",
