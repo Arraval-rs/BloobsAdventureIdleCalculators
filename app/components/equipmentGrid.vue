@@ -1,6 +1,9 @@
 <script setup>
   const emit = defineEmits(["updateEquipment"])
 
+  const imageWidth = 50
+  const imageHeight = 50
+
   const equipmentObject = new equipmentData()
   await equipmentObject.readEquipmentJson()
   const equipmentClass = ref(equipmentObject)
@@ -33,58 +36,58 @@
     <tbody>
       <tr class="equipmentGridRow">
         <td class="equipmentGridCell">
-          <USelectMenu :items="equipmentClass.cape" placeholder="Cape" disabled />
-          <NuxtImg :src="capeImage"/>
+          <USelectMenu :items="equipmentClass.cape" placeholder="Cape" disabled class="w-32" />
+          <NuxtImg :width="imageWidth" :height="imageHeight" :src="capeImage"/>
         </td>
         <td class="equipmentGridCell">
-          <USelectMenu :items="equipmentClass.head" placeholder="Head" disabled />
-          <NuxtImg :src="headImage"/>
+          <USelectMenu :items="equipmentClass.head" placeholder="Head" disabled class="w-32" />
+          <NuxtImg :width="imageWidth" :height="imageHeight" :src="headImage"/>
         </td>
         <td class="equipmentGridCell">
-          <USelectMenu :items="equipmentClass.ammunition" placeholder="Ammunition" disabled />
-          <NuxtImg :src="ammunitionImage"/>
-        </td>
-      </tr>
-      <tr class="equipmentGridRow">
-        <td class="equipmentGridCell">
-          <USelectMenu :items="equipmentClass.mainHand" placeholder="Main Hand" disabled />
-          <NuxtImg :src="mainHandImage"/>
-        </td>
-        <td class="equipmentGridCell">
-          <USelectMenu v-model="equipmentRefs.neck" :items="equipmentClass.neck" @change="changedEquipment"/>
-          <NuxtImg :src="neckImage"/>
-        </td>
-        <td class="equipmentGridCell">
-          <USelectMenu :items="equipmentClass.offHand" placeholder="Off Hand" disabled />
-          <NuxtImg :src="offHandImage"/>
+          <USelectMenu :items="equipmentClass.ammunition" placeholder="Ammunition" disabled class="w-32" />
+          <NuxtImg :width="imageWidth" :height="imageHeight" :src="ammunitionImage"/>
         </td>
       </tr>
       <tr class="equipmentGridRow">
         <td class="equipmentGridCell">
-          <USelectMenu :items="equipmentClass.ring" placeholder="Ring" disabled />
-          <NuxtImg :src="ringImage"/>
+          <USelectMenu :items="equipmentClass.mainHand" placeholder="Main Hand" disabled class="w-32" />
+          <NuxtImg :width="imageWidth" :height="imageHeight" :src="mainHandImage"/>
         </td>
         <td class="equipmentGridCell">
-          <USelectMenu :items="equipmentClass.body" placeholder="Body" disabled />
-          <NuxtImg :src="bodyImage"/>
+          <USelectMenu v-model="equipmentRefs.neck" :items="equipmentClass.neck" @change="changedEquipment"class="w-32" />
+          <NuxtImg :width="imageWidth" :height="imageHeight" :src="neckImage"/>
         </td>
         <td class="equipmentGridCell">
-          <USelectMenu :items="equipmentClass.hands" placeholder="Hands" disabled />
-          <NuxtImg :src="handsImage"/>
+          <USelectMenu :items="equipmentClass.offHand" placeholder="Off Hand" disabled class="w-32" />
+          <NuxtImg :width="imageWidth" :height="imageHeight" :src="offHandImage"/>
         </td>
       </tr>
       <tr class="equipmentGridRow">
         <td class="equipmentGridCell">
-          <USelectMenu v-model="equipmentRefs.potion" :items="equipmentClass.potion" @change="changedEquipment" />
-          <NuxtImg :src="potionImage"/>
+          <USelectMenu :items="equipmentClass.ring" placeholder="Ring" disabled class="w-32" />
+          <NuxtImg :width="imageWidth" :height="imageHeight" :src="ringImage"/>
         </td>
         <td class="equipmentGridCell">
-          <USelectMenu :items="equipmentClass.feet" placeholder="Feet" disabled />
-          <NuxtImg :src="feetImage"/>
+          <USelectMenu :items="equipmentClass.body" placeholder="Body" disabled class="w-32" />
+          <NuxtImg :width="imageWidth" :height="imageHeight" :src="bodyImage"/>
         </td>
         <td class="equipmentGridCell">
-          <USelectMenu :items="equipmentClass.food" placeholder="Food" disabled />
-          <NuxtImg :src="foodImage"/>
+          <USelectMenu :items="equipmentClass.hands" placeholder="Hands" disabled class="w-32" />
+          <NuxtImg :width="imageWidth" :height="imageHeight" :src="handsImage"/>
+        </td>
+      </tr>
+      <tr class="equipmentGridRow">
+        <td class="equipmentGridCell">
+          <USelectMenu v-model="equipmentRefs.potion" :items="equipmentClass.potion" @change="changedEquipment" class="w-32" />
+          <NuxtImg :width="imageWidth" :height="imageHeight" :src="potionImage"/>
+        </td>
+        <td class="equipmentGridCell">
+          <USelectMenu :items="equipmentClass.feet" placeholder="Feet" disabled class="w-32" />
+          <NuxtImg :width="imageWidth" :height="imageHeight" :src="feetImage"/>
+        </td>
+        <td class="equipmentGridCell">
+          <USelectMenu :items="equipmentClass.food" placeholder="Food" disabled class="w-32" />
+          <NuxtImg :width="imageWidth" :height="imageHeight" :src="foodImage"/>
         </td>
       </tr>
     </tbody>
