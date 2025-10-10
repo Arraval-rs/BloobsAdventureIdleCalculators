@@ -36,88 +36,52 @@
 
 	"potion": [
 		{
-			"label": "Fletcher Potion",
-			"bowcraftingTimeReduction": 0.25
-		},
-		{
-			"label": "Vaning Potion",
-			"bowcraftingTimeReduction": 0.50
-		},
-		{
-			"label": "Chef's Potion",
-			"cookingTimeReduction": 0.25
-		},
-		{
-			"label": "Grilling Potion",
-			"cookingTimeReduction": 0.50
-		},
-		{
-			"label": "Artisan Potion",
-			"craftingTimeReduction": 0.25
-		},
-		{
-			"label": "Blaze Potion",
-			"firemakingTimeReduction": 0.25
-		},
-		{
-			"label": "Firemaker's Potion",
-			"firemakingTimeReduction": 0.35
-		},
-		{
-			"label": "Super Firemaker's Potion",
-			"firemakingTimeReduction": 0.65
-		},
-		{
-			"label": "Angling Potion",
-			"fishingBonusProgress": 10
-		},
-		{
-			"label": "Tidecaller Potion",
-			"fishingBonusProgress": 20
-		},
-		{
-			"label": "Gatherer Potion",
-			"foragingBonusProgress": 10
-		},
-		{
-			"label": "Mossfoot Potion",
-			"foragingBonusProgress": 20
-		},
-		{
-			"label": "Botanist Potion",
-			"herbologyBonusExperience": 0.10
-		},
-		{
-			"label": "Flourishing Potion",
-			"herbologyBonusExperience": 0.15
-		},
-		{
-			"label": "Super Botanist Potion",
-			"herbologyBonusExperience": 0.25
-		},
-		{
-			"label": "Saturation Potion",
-			"imbuingTimeReduction": 0.25
-		},
-		{
-			"label": "Infusion Potion",
-			"imbuingTimeReduction": 0.50
+			"label": "Timber Potion",
+			"woodcuttingBonusProgress": 10
 		},
 		{
 			"label": "Excavation Potion",
 			"miningBonusProgress": 10
 		},
 		{
-			"label": "Oreheart Potion",
-			"miningBonusProgress": 20
+			"label": "Angling Potion",
+			"fishingBonusProgress": 10
 		},
 		{
 			"label": "Forge Potion",
 			"smithingTimeReduction": 0.25
 		},
 		{
-			"label": "Super Forge Potion",
-			"smithingTimeReduction": 0.50
+			"label": "Blaze Potion",
+			"firemakingTimeReduction": 0.25
+		},
+		{
+			"label": "Chef's Potion",
+			"cookingTimeReduction": 0.25
+		},
+		{
+			"label": "Artisan Potion",
+			"craftingTimeReduction": 0.25
+		},
+		{
+			"label": "Vanquisher Potion",
+			"beastmasteryBonusExperience": 0.05
+		},
+		{
+			"label": "Fletcher Potion",
+			"bowcraftingTimeReduction": 0.25
+		},
+		{
+			"label": "Saturation Potion",
+			"imbuingTimeReduction": 0.25
+		},
+		{
+			"label": "Precision Potion",
+			"attackBonusAccuracy": 0.03
+		},
+		{
+			"label": "Vigor Potion",
+			"strengthBonusDamage": 3
 		},
 		{
 			"label": "Rogue Potion",
@@ -128,16 +92,298 @@
 			"trackingBonusSuccessChance": 0.05
 		},
 		{
-			"label": "Timber Potion",
-			"woodcuttingBonusProgress": 10
+			"label": "Acuity Potion",
+			"rangeBonusAccuracy": 0.03
+		},
+		{
+			"label": "Ranger Potion",
+			"rangeBonusDamage": 3
+		},
+		{
+			"label": "Gatherer Potion",
+			"foragingBonusProgress": 10
+		},
+		{
+			"label": "Botanist Potion",
+			"herbologyBonusExperience": 0.10
+		},
+		{
+			"label": "Seer Potion",
+			"magicBonusAccuracy": 0.03
+		},
+		{
+			"label": "Spellbinding Potion",
+			"magicBonusDamage": 3
+		},
+		{
+			"label": "Charge Potion",
+			"imbuingDoubleResourceChance": 0.1
+		},
+		{
+			"label": "Faith Potion",
+			"devotionDrainReduction": 5
+		},
+		{
+			"label": "Swiftness Potion",
+			"bonusMovementSpeed": 0.5
+		},
+		{
+			"label": "Fortitude Potion",
+			"bonusDamageReduction": 0.04
+		},
+		{
+			"label": "Firemaker's Potion",
+			"firemakingTimeReduction": 0.35
+		},
+		{
+			"label": "Beastmaster's Potion",
+			"beastmasteryBonusExperience": 0.1
+		},
+		{
+			"label": "Flourishing Potion",
+			"herbologyBonusExperience": 0.15
+		},
+		{
+			"label": "Imbuer's Potion",
+			"imbuingDoubleResourceChance": 0.2
+		},
+		{
+			"label": "Sanctified Grace Potion",
+			"devotionDrainReduction": 10
+		},
+		{
+			"label": "Savage Power Potion",
+			"attackBonusAccuracy": 0.06,
+			"strengthBonusDamage": 64
+		},
+		{
+			"label": "Marksman's Might Potion",
+			"rangeBonusAccuracy": 0.06,
+			"rangeBonusDamage": 6
+		},
+		{
+			"label": "Wizard's Wisdom Potion",
+			"magicBonusAccuracy": 0.06,
+			"magicBonusDamage": 6
+		},
+		{
+			"label": "Super Firemaker's Potion",
+			"firemakingTimeReduction": 0.65
+		},
+		{
+			"label": "Super Swiftness Potion",
+			"bonusMovementSpeed": 1
+		},
+		{
+			"label": "Super Botanist Potion",
+			"herbologyBonusExperience": 0.25
+		},
+		{
+			"label": "Super Beastmaster's Potion",
+			"beastmasteryBonusExperience": 0.15
+		},
+		{
+			"label": "Super Forge Potion",
+			"smithingTimeReduction": 0.50
+		},
+		{
+			"label": "Super Imbuer's Potion",
+			"imbuingDoubleResourceChance": 0.3
+		},
+		{
+			"label": "Super Sanctified Grace Potion",
+			"devotionDrainReduction": 15
+		},
+		{
+			"label": "Super Fortitude Potion",
+			"bonusDamageReduction": 0.12
 		},
 		{
 			"label": "Lumberjack's Potion",
 			"woodcuttingBonusProgress": 20
+		},
+		{
+			"label": "Oreheart Potion",
+			"miningBonusProgress": 20
+		},
+		{
+			"label": "Tidecaller Potion",
+			"fishingBonusProgress": 20
+		},
+		{
+			"label": "Mossfoot Potion",
+			"foragingBonusProgress": 20
+		},
+		{
+			"label": "Vaning Potion",
+			"bowcraftingTimeReduction": 0.50
+		},
+		{
+			"label": "Grilling Potion",
+			"cookingTimeReduction": 0.50
+		},		
+		{
+			"label": "Infusion Potion",
+			"imbuingTimeReduction": 0.50
+		},
+		{
+			"label": "Quickness Potion",
+			"bonusMovementSpeed": 1.5
+		},
+		{
+			"label": "Common Swiftness Potion"
+		},
+		{
+			"label": "Uncommon Swiftness Potion"
 		}
 	],
 
 	"feet": [],
 
-	"food": []
+	"food": [
+		{
+			"label": "Fried Egg",
+			"healing": 1
+		},
+		{
+			"label": "Chicken",
+			"healing": 1
+		},
+		{
+			"label": "Bird Meat",
+			"healing": 1
+		},
+		{
+			"label": "Beef",
+			"healing": 3
+		},
+		{
+			"label": "Chevon",
+			"healing": 5
+		},
+		{
+			"label": "Wolf Meat",
+			"healing": 6
+		},
+		{
+			"label": "Pig Meat",
+			"healing": 6
+		},
+		{
+			"label": "Boar Meat",
+			"healing": 9
+		},
+		{
+			"label": "Bear Meat",
+			"healing": 11
+		},
+		{
+			"label": "Buffalo Meat",
+			"healing": 13
+		},
+		{
+			"label": "Barkhor",
+			"healing": 16
+		},
+		{
+			"label": "Crayfish",
+			"healing": 2
+		},
+		{
+			"label": "Shrimp",
+			"healing": 3
+		},
+		{
+			"label": "Herring",
+			"healing": 5
+		},
+		{
+			"label": "Mackerel",
+			"healing": 7
+		},
+		{
+			"label": "Trout",
+			"healing": 10
+		},
+		{
+			"label": "Salmon",
+			"healing": 12
+		},
+		{
+			"label": "Clownfish",
+			"healing": 13
+		},
+		{
+			"label": "Lobster",
+			"healing": 14
+		},
+		{
+			"label": "Catfish",
+			"healing": 15
+		},
+		{
+			"label": "Stingray",
+			"healing": 16
+		},
+		{
+			"label": "Sunfish",
+			"healing": 17
+		},
+		{
+			"label": "Shark",
+			"healing": 18
+		},
+		{
+			"label": "Blue Marlin",
+			"healing": 19
+		},
+		{
+			"label": "Arctic Bass",
+			"healing": 20
+		},
+		{
+			"label": "Frost Tuna",
+			"healing": 21
+		},
+		{
+			"label": "Croissant",
+			"healing": 1
+		},
+		{
+			"label": "Cookie",
+			"healing": 1
+		},
+		{
+			"label": "Donut",
+			"healing": 3
+		},
+		{
+			"label": "Bread Roll",
+			"healing": 1
+		},
+		{
+			"label": "Onion",
+			"healing": 1
+		},
+		{
+			"label": "Potato",
+			"healing": 1
+		},
+		{
+			"label": "Carrot",
+			"healing": 2
+		},
+		{
+			"label": "Apple",
+			"healing": 2
+		},
+		{
+			"label": "Mushroom",
+			"healing": 2
+		},
+		{
+			"label": "Pretzel",
+			"healing": 1
+		}
+	]
 }
