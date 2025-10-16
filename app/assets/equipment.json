@@ -129,7 +129,7 @@
 		},
 		{
 			"label": "Fortitude Potion",
-			"bonusDamageReduction": 0.04
+			"bonusDamageReduction": 4
 		},
 		{
 			"label": "Firemaker's Potion",
@@ -180,7 +180,7 @@
 		},
 		{
 			"label": "Super Beastmaster's Potion",
-			"beastmasteryBonusExperience": 0.15
+			"beastmasteryBonusExperience": 0.25
 		},
 		{
 			"label": "Super Forge Potion",
@@ -188,15 +188,15 @@
 		},
 		{
 			"label": "Super Imbuer's Potion",
-			"imbuingDoubleResourceChance": 0.3
+			"imbuingDoubleResourceChance": 0.25
 		},
 		{
 			"label": "Super Sanctified Grace Potion",
-			"devotionDrainReduction": 15
+			"devotionDrainReduction": 20
 		},
 		{
 			"label": "Super Fortitude Potion",
-			"bonusDamageReduction": 0.12
+			"bonusDamageReduction": 6
 		},
 		{
 			"label": "Lumberjack's Potion",
@@ -231,10 +231,12 @@
 			"bonusMovementSpeed": 1.5
 		},
 		{
-			"label": "Common Swiftness Potion"
+			"label": "Common Swiftness Potion",
+			"bonusMovementSpeed": 0.25
 		},
 		{
-			"label": "Uncommon Swiftness Potion"
+			"label": "Uncommon Swiftness Potion",
+			"bonusMovementSpeed": 0.5
 		}
 	],
 
