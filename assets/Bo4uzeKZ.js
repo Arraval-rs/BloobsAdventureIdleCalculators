@@ -1,1 +1,0 @@
-import{_ as a}from"./BXHlpBZ8.js";import{_ as t,f as n,o as r}from"./D88YjKaL.js";import"./sQIa5Dqd.js";const s={};function c(e,_){const o=a;return r(),n(o,{skillType:"artisan",initialTool:null,includeSubCrafts:!1})}const m=t(s,[["render",c]]);export{m as default};

@@ -1,0 +1,1 @@
+import{_ as r}from"./BnEXGQ0R.js";import{r as a,f as n,g as t,o as e}from"./CCFElrAt.js";import"./Cmk5ZAZ2.js";const f={__name:"[gathering]",setup(i){const o=a({label:"Bronze",progress:15});return(s,c)=>{const l=r;return e(),n(l,{skillType:"gathering",initialTool:t(o),includeSubCrafts:null},null,8,["initialTool"])}}};export{f as default};
