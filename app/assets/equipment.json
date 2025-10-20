@@ -1,5 +1,94 @@
 {
-	"cape":[],
+	"cape":[
+		{
+			"label": "Leather Cape",
+			"bonusDamageReduction": 0.1
+		},
+		{
+			"label": "Iron Cape",
+			"bonusDamageReduction": 0.2
+		},
+		{
+			"label": "Steel Cape",
+			"bonusDamageReduction": 0.35
+		},
+		{
+			"label": "Mithril Cape",
+			"bonusDamageReduction": 0.5
+		},
+		{
+			"label": "Adamantite Cape",
+			"bonusDamageReduction": 0.7
+		},
+		{
+			"label": "Cerulium Cape",
+			"bonusDamageReduction": 0.85
+		},
+		{
+			"label": "Sanguinite Cape",
+			"bonusDamageReduction": 1
+		},
+		{
+			"label": "Cape of Hearts",
+			"attackBonusAccuracy": 0.02,
+			"strengthBonusDamage": 2,
+			"bonusDamageReduction": 1
+		},
+		{
+			"label": "Cape of Eternity",
+			"magicBonusAccuracy": 0.02,
+			"magicBonusDamage": 2,
+			"bonusDamageReduction": 1
+		},
+		{
+			"label": "Cape of Shroud",
+			"rangeBonusAccuracy": 0.02,
+			"rangeBonusDamage": 2,
+			"bonusDamageReduction": 1
+		},
+		{
+			"label": "Aeronite Cape",
+			"bonusDamageReduction": 1.2
+		},
+		{
+			"label": "Necrosis Cape",
+			"bonusDamageReduction": 1.4
+		},
+		{
+			"label": "Phantom Cape",
+			"bonusDamageReduction": 1.5
+		},
+		{
+			"label": "Karinite Cape",
+			"bonusDamageReduction": 1.7
+		},
+		{
+			"label": "Taigite Cape",
+			"bonusDamageReduction": 2.1
+		},
+		{
+			"label": "Cryxcite Cape",
+			"bonusDamageReduction": 3
+		},
+		{
+			"label": "Cape of Ironfang",
+			"attackBonusAccuracy": 0.04,
+			"strengthBonusDamage": 6,
+			"bonusDamageReduction": 4
+		},
+		{
+			"label": "Cape of Windmark",
+			"rangeBonusAccuracy": 0.04,
+			"rangeBonusDamage": 6,
+			"bonusDamageReduction": 4
+		},
+		{
+			"label": "Cape of Mistborn",
+			"magicBonusAccuracy": 0.04,
+			"magicBonusDamage": 6,
+			"bonusDamageReduction": 4
+		}
+	],
 
 	"head": [],
 
@@ -8,6 +97,67 @@
 	"mainHand": [],
 
 	"neck": [
+		{
+			"label": "Opal Necklace",
+			"magicBonusAccuracy": 0.005
+		},
+		{
+			"label": "Jade Necklace",
+			"rangeBonusAccuracy": 0.01
+		},
+		{
+			"label": "Topaz Necklace",
+			"attackBonusAccuracy": 0.01
+		},
+		{
+			"label": "Sapphire Necklace",
+			"bonusDamageReduction": 0.2
+		},
+		{
+			"label": "Emerald Necklace",
+			"attackBonusAccuracy": 0.02,
+			"magicBonusAccuracy": 0.02,
+			"rangeBonusAccuracy": 0.02
+		},
+		{
+			"label": "Ruby Necklace",
+			"strengthBonusDamage": 2,
+			"magicBonusDamage": 2,
+			"rangeBonusDamage": 2
+		},
+		{
+			"label": "Diamond Necklace",
+			"attackBonusAccuracy": 0.03,
+			"magicBonusAccuracy": 0.03,
+			"rangeBonusAccuracy": 0.03
+		},
+		{
+			"label": "Black Diamond Necklace",
+			"attackBonusAccuracy": 0.035,
+			"magicBonusAccuracy": 0.035,
+			"rangeBonusAccuracy": 0.035
+		},
+		{
+			"label": "Blood Diamond Necklace",
+			"attackBonusAccuracy": 0.036,
+			"magicBonusAccuracy": 0.036,
+			"rangeBonusAccuracy": 0.036
+		},
+		{
+			"label": "Pendant of Vengeful Blood Necklace",
+			"strengthBonusDamage": 2,
+			"magicBonusDamage": 2,
+			"rangeBonusDamage": 2,
+			"attackBonusAccuracy": 0.04,
+			"magicBonusAccuracy": 0.04,
+			"rangeBonusAccuracy": 0.04
+		},
+		{
+			"label": "Honey Topaz Necklace",
+			"attackBonusAccuracy": 0.037,
+			"magicBonusAccuracy": 0.037,
+			"rangeBonusAccuracy": 0.037
+		},
 		{
 			"label": "Fisherman's Charm Necklace",
 			"fishingBonusExperience": 0.10
@@ -28,7 +178,72 @@
 
 	"offHand": [],
 
-	"ring": [],
+	"ring": [
+		{
+			"label": "Opal Ring",
+			"rangeBonusAccuracy": 0.005
+		},
+		{
+			"label": "Jade Ring",
+			"magicBonusAccuracy": 0.01
+		},
+		{
+			"label": "Topaz Ring",
+			"attackBonusAccuracy": 0.01
+		},
+		{
+			"label": "Sapphire Ring",
+			"bonusDamageReduction": 0.1
+		},
+		{
+			"label": "Emerald Ring",
+			"attackBonusAccuracy": 0.015,
+			"rangeBonusAccuracy": 0.015,
+			"magicBonusAccuracy": 0.015
+		},
+		{
+			"label": "Ruby Ring",
+			"strengthBonusDamage": 1,
+			"rangeBonusDamage": 1,
+			"magicBonusDamage": 1
+		},
+		{
+			"label": "Diamond Ring",
+			"strengthBonusDamage": 3,
+			"rangeBonusDamage": 3,
+			"magicBonusDamage": 3
+		},
+		{
+			"label": "Black Diamond Ring",
+			"strengthBonusDamage": 4,
+			"rangeBonusDamage": 4,
+			"magicBonusDamage": 4
+		},
+		{
+			"label": "Blood Diamond Ring",
+			"strengthBonusDamage": 5,
+			"rangeBonusDamage": 5,
+			"magicBonusDamage": 5
+		},
+		{
+			"label": "Creeping Shadow Ring",
+			"strengthBonusDamage": 6
+		},
+		{
+			"label": "Veil of the Abyss Ring",
+			"magicBonusDamage": 6
+		},
+		{
+			"label": "Whispering Dusk Ring",
+			"rangeBonusDamage": 6
+		},
+		{
+			"label": "Honey Topaz Ring",
+			"strengthBonusDamage": 6,
+			"rangeBonusDamage": 6,
+			"magicBonusDamage": 6
+		}
+	],
 
 	"body": [],
 

@@ -9,7 +9,9 @@
   const equipmentClass = ref(equipmentObject)
 
   const equipmentRefs = ref({
+    "cape": {"label": "Cape"},
     "neck": {"label": "Neck"},
+    "ring": {"label": "Ring"},
     "potion": {"label": "Potion"},
     "food": {"label": "Food"}
   })
@@ -37,7 +39,7 @@
     <tbody>
       <tr class="equipmentGridRow">
         <td class="equipmentGridCell">
-          <USelectMenu :items="equipmentClass.cape" placeholder="Cape" disabled class="w-32" />
+          <USelectMenu v-model="equipmentRefs.cape" :items="equipmentClass.cape" class="w-32" />
           <NuxtImg :width="imageWidth" :height="imageHeight" :src="capeImage"/>
         </td>
         <td class="equipmentGridCell">
@@ -65,7 +67,7 @@
       </tr>
       <tr class="equipmentGridRow">
         <td class="equipmentGridCell">
-          <USelectMenu :items="equipmentClass.ring" placeholder="Ring" disabled class="w-32" />
+          <USelectMenu v-model="equipmentRefs.ring" :items="equipmentClass.ring" class="w-32" />
           <NuxtImg :width="imageWidth" :height="imageHeight" :src="ringImage"/>
         </td>
         <td class="equipmentGridCell">
