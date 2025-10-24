@@ -1,0 +1,606 @@
+{
+	"cape":[
+		{
+			"label": "Leather Cape",
+			"bonusDamageReduction": 0.1
+		},
+		{
+			"label": "Iron Cape",
+			"bonusDamageReduction": 0.2
+		},
+		{
+			"label": "Steel Cape",
+			"bonusDamageReduction": 0.35
+		},
+		{
+			"label": "Mithril Cape",
+			"bonusDamageReduction": 0.5
+		},
+		{
+			"label": "Adamantite Cape",
+			"bonusDamageReduction": 0.7
+		},
+		{
+			"label": "Cerulium Cape",
+			"bonusDamageReduction": 0.85
+		},
+		{
+			"label": "Sanguinite Cape",
+			"bonusDamageReduction": 1
+		},
+		{
+			"label": "Cape of Hearts",
+			"attackBonusAccuracy": 0.02,
+			"strengthBonusDamage": 2,
+			"bonusDamageReduction": 1
+		},
+		{
+			"label": "Cape of Eternity",
+			"magicBonusAccuracy": 0.02,
+			"magicBonusDamage": 2,
+			"bonusDamageReduction": 1
+		},
+		{
+			"label": "Cape of Shroud",
+			"rangeBonusAccuracy": 0.02,
+			"rangeBonusDamage": 2,
+			"bonusDamageReduction": 1
+		},
+		{
+			"label": "Aeronite Cape",
+			"bonusDamageReduction": 1.2
+		},
+		{
+			"label": "Necrosis Cape",
+			"bonusDamageReduction": 1.4
+		},
+		{
+			"label": "Phantom Cape",
+			"bonusDamageReduction": 1.5
+		},
+		{
+			"label": "Karinite Cape",
+			"bonusDamageReduction": 1.7
+		},
+		{
+			"label": "Taigite Cape",
+			"bonusDamageReduction": 2.1
+		},
+		{
+			"label": "Cryxcite Cape",
+			"bonusDamageReduction": 3
+		},
+		{
+			"label": "Cape of Ironfang",
+			"attackBonusAccuracy": 0.04,
+			"strengthBonusDamage": 6,
+			"bonusDamageReduction": 4
+		},
+		{
+			"label": "Cape of Windmark",
+			"rangeBonusAccuracy": 0.04,
+			"rangeBonusDamage": 6,
+			"bonusDamageReduction": 4
+		},
+		{
+			"label": "Cape of Mistborn",
+			"magicBonusAccuracy": 0.04,
+			"magicBonusDamage": 6,
+			"bonusDamageReduction": 4
+		}
+	],
+
+	"head": [],
+
+	"ammunition": [],
+
+	"mainHand": [],
+
+	"neck": [
+		{
+			"label": "Opal Necklace",
+			"magicBonusAccuracy": 0.005
+		},
+		{
+			"label": "Jade Necklace",
+			"rangeBonusAccuracy": 0.01
+		},
+		{
+			"label": "Topaz Necklace",
+			"attackBonusAccuracy": 0.01
+		},
+		{
+			"label": "Sapphire Necklace",
+			"bonusDamageReduction": 0.2
+		},
+		{
+			"label": "Emerald Necklace",
+			"attackBonusAccuracy": 0.02,
+			"magicBonusAccuracy": 0.02,
+			"rangeBonusAccuracy": 0.02
+		},
+		{
+			"label": "Ruby Necklace",
+			"strengthBonusDamage": 2,
+			"magicBonusDamage": 2,
+			"rangeBonusDamage": 2
+		},
+		{
+			"label": "Diamond Necklace",
+			"attackBonusAccuracy": 0.03,
+			"magicBonusAccuracy": 0.03,
+			"rangeBonusAccuracy": 0.03
+		},
+		{
+			"label": "Black Diamond Necklace",
+			"attackBonusAccuracy": 0.035,
+			"magicBonusAccuracy": 0.035,
+			"rangeBonusAccuracy": 0.035
+		},
+		{
+			"label": "Blood Diamond Necklace",
+			"attackBonusAccuracy": 0.036,
+			"magicBonusAccuracy": 0.036,
+			"rangeBonusAccuracy": 0.036
+		},
+		{
+			"label": "Pendant of Vengeful Blood Necklace",
+			"strengthBonusDamage": 2,
+			"magicBonusDamage": 2,
+			"rangeBonusDamage": 2,
+			"attackBonusAccuracy": 0.04,
+			"magicBonusAccuracy": 0.04,
+			"rangeBonusAccuracy": 0.04
+		},
+		{
+			"label": "Honey Topaz Necklace",
+			"attackBonusAccuracy": 0.037,
+			"magicBonusAccuracy": 0.037,
+			"rangeBonusAccuracy": 0.037
+		},
+		{
+			"label": "Fisherman's Charm Necklace",
+			"fishingBonusExperience": 0.10
+		},
+		{
+			"label": "Forager's Charm Necklace",
+			"foragingBonusExperience": 0.10
+		},
+		{
+			"label": "Miner's Charm Necklace",
+			"miningBonusExperience": 0.10
+		},
+		{
+			"label": "Woodcutter's Charm Necklace",
+			"woodcuttingBonusExperience": 0.10
+		}
+	],
+
+	"offHand": [],
+
+	"ring": [
+		{
+			"label": "Opal Ring",
+			"rangeBonusAccuracy": 0.005
+		},
+		{
+			"label": "Jade Ring",
+			"magicBonusAccuracy": 0.01
+		},
+		{
+			"label": "Topaz Ring",
+			"attackBonusAccuracy": 0.01
+		},
+		{
+			"label": "Sapphire Ring",
+			"bonusDamageReduction": 0.1
+		},
+		{
+			"label": "Emerald Ring",
+			"attackBonusAccuracy": 0.015,
+			"rangeBonusAccuracy": 0.015,
+			"magicBonusAccuracy": 0.015
+		},
+		{
+			"label": "Ruby Ring",
+			"strengthBonusDamage": 1,
+			"rangeBonusDamage": 1,
+			"magicBonusDamage": 1
+		},
+		{
+			"label": "Diamond Ring",
+			"strengthBonusDamage": 3,
+			"rangeBonusDamage": 3,
+			"magicBonusDamage": 3
+		},
+		{
+			"label": "Black Diamond Ring",
+			"strengthBonusDamage": 4,
+			"rangeBonusDamage": 4,
+			"magicBonusDamage": 4
+		},
+		{
+			"label": "Blood Diamond Ring",
+			"strengthBonusDamage": 5,
+			"rangeBonusDamage": 5,
+			"magicBonusDamage": 5
+		},
+		{
+			"label": "Creeping Shadow Ring",
+			"strengthBonusDamage": 6
+		},
+		{
+			"label": "Veil of the Abyss Ring",
+			"magicBonusDamage": 6
+		},
+		{
+			"label": "Whispering Dusk Ring",
+			"rangeBonusDamage": 6
+		},
+		{
+			"label": "Honey Topaz Ring",
+			"strengthBonusDamage": 6,
+			"rangeBonusDamage": 6,
+			"magicBonusDamage": 6
+		}
+	],
+
+	"body": [],
+
+	"hands": [],
+
+	"potion": [
+		{
+			"label": "Timber Potion",
+			"woodcuttingBonusProgress": 10
+		},
+		{
+			"label": "Excavation Potion",
+			"miningBonusProgress": 10
+		},
+		{
+			"label": "Angling Potion",
+			"fishingBonusProgress": 10
+		},
+		{
+			"label": "Forge Potion",
+			"smithingTimeReduction": 0.25
+		},
+		{
+			"label": "Blaze Potion",
+			"firemakingTimeReduction": 0.25
+		},
+		{
+			"label": "Chef's Potion",
+			"cookingTimeReduction": 0.25
+		},
+		{
+			"label": "Artisan Potion",
+			"craftingTimeReduction": 0.25
+		},
+		{
+			"label": "Vanquisher Potion",
+			"beastmasteryBonusExperience": 0.05
+		},
+		{
+			"label": "Fletcher Potion",
+			"bowcraftingTimeReduction": 0.25
+		},
+		{
+			"label": "Saturation Potion",
+			"imbuingTimeReduction": 0.25
+		},
+		{
+			"label": "Precision Potion",
+			"attackBonusAccuracy": 0.03
+		},
+		{
+			"label": "Vigor Potion",
+			"strengthBonusDamage": 3
+		},
+		{
+			"label": "Rogue Potion",
+			"thievingBonusSuccessChance": 0.05
+		},
+		{
+			"label": "Huntsman's Potion",
+			"trackingBonusSuccessChance": 0.05
+		},
+		{
+			"label": "Acuity Potion",
+			"rangeBonusAccuracy": 0.03
+		},
+		{
+			"label": "Ranger Potion",
+			"rangeBonusDamage": 3
+		},
+		{
+			"label": "Gatherer Potion",
+			"foragingBonusProgress": 10
+		},
+		{
+			"label": "Botanist Potion",
+			"herbologyBonusExperience": 0.10
+		},
+		{
+			"label": "Seer Potion",
+			"magicBonusAccuracy": 0.03
+		},
+		{
+			"label": "Spellbinding Potion",
+			"magicBonusDamage": 3
+		},
+		{
+			"label": "Charge Potion",
+			"imbuingDoubleResourceChance": 0.1
+		},
+		{
+			"label": "Faith Potion",
+			"devotionDrainReduction": 5
+		},
+		{
+			"label": "Swiftness Potion",
+			"bonusMovementSpeed": 0.5
+		},
+		{
+			"label": "Fortitude Potion",
+			"bonusDamageReduction": 4
+		},
+		{
+			"label": "Firemaker's Potion",
+			"firemakingTimeReduction": 0.35
+		},
+		{
+			"label": "Beastmaster's Potion",
+			"beastmasteryBonusExperience": 0.1
+		},
+		{
+			"label": "Flourishing Potion",
+			"herbologyBonusExperience": 0.15
+		},
+		{
+			"label": "Imbuer's Potion",
+			"imbuingDoubleResourceChance": 0.2
+		},
+		{
+			"label": "Sanctified Grace Potion",
+			"devotionDrainReduction": 10
+		},
+		{
+			"label": "Savage Power Potion",
+			"attackBonusAccuracy": 0.06,
+			"strengthBonusDamage": 64
+		},
+		{
+			"label": "Marksman's Might Potion",
+			"rangeBonusAccuracy": 0.06,
+			"rangeBonusDamage": 6
+		},
+		{
+			"label": "Wizard's Wisdom Potion",
+			"magicBonusAccuracy": 0.06,
+			"magicBonusDamage": 6
+		},
+		{
+			"label": "Super Firemaker's Potion",
+			"firemakingTimeReduction": 0.65
+		},
+		{
+			"label": "Super Swiftness Potion",
+			"bonusMovementSpeed": 1
+		},
+		{
+			"label": "Super Botanist Potion",
+			"herbologyBonusExperience": 0.25
+		},
+		{
+			"label": "Super Beastmaster's Potion",
+			"beastmasteryBonusExperience": 0.25
+		},
+		{
+			"label": "Super Forge Potion",
+			"smithingTimeReduction": 0.50
+		},
+		{
+			"label": "Super Imbuer's Potion",
+			"imbuingDoubleResourceChance": 0.25
+		},
+		{
+			"label": "Super Sanctified Grace Potion",
+			"devotionDrainReduction": 20
+		},
+		{
+			"label": "Super Fortitude Potion",
+			"bonusDamageReduction": 6
+		},
+		{
+			"label": "Lumberjack's Potion",
+			"woodcuttingBonusProgress": 20
+		},
+		{
+			"label": "Oreheart Potion",
+			"miningBonusProgress": 20
+		},
+		{
+			"label": "Tidecaller Potion",
+			"fishingBonusProgress": 20
+		},
+		{
+			"label": "Mossfoot Potion",
+			"foragingBonusProgress": 20
+		},
+		{
+			"label": "Vaning Potion",
+			"bowcraftingTimeReduction": 0.50
+		},
+		{
+			"label": "Grilling Potion",
+			"cookingTimeReduction": 0.50
+		},		
+		{
+			"label": "Infusion Potion",
+			"imbuingTimeReduction": 0.50
+		},
+		{
+			"label": "Quickness Potion",
+			"bonusMovementSpeed": 1.5
+		},
+		{
+			"label": "Common Swiftness Potion",
+			"bonusMovementSpeed": 0.25
+		},
+		{
+			"label": "Uncommon Swiftness Potion",
+			"bonusMovementSpeed": 0.5
+		}
+	],
+
+	"feet": [],
+
+	"food": [
+		{
+			"label": "Fried Egg",
+			"healing": 1
+		},
+		{
+			"label": "Chicken",
+			"healing": 1
+		},
+		{
+			"label": "Bird Meat",
+			"healing": 1
+		},
+		{
+			"label": "Beef",
+			"healing": 3
+		},
+		{
+			"label": "Chevon",
+			"healing": 5
+		},
+		{
+			"label": "Wolf Meat",
+			"healing": 6
+		},
+		{
+			"label": "Pig Meat",
+			"healing": 6
+		},
+		{
+			"label": "Boar Meat",
+			"healing": 9
+		},
+		{
+			"label": "Bear Meat",
+			"healing": 11
+		},
+		{
+			"label": "Buffalo Meat",
+			"healing": 13
+		},
+		{
+			"label": "Barkhor",
+			"healing": 16
+		},
+		{
+			"label": "Crayfish",
+			"healing": 2
+		},
+		{
+			"label": "Shrimp",
+			"healing": 3
+		},
+		{
+			"label": "Herring",
+			"healing": 5
+		},
+		{
+			"label": "Mackerel",
+			"healing": 7
+		},
+		{
+			"label": "Trout",
+			"healing": 10
+		},
+		{
+			"label": "Salmon",
+			"healing": 12
+		},
+		{
+			"label": "Clownfish",
+			"healing": 13
+		},
+		{
+			"label": "Lobster",
+			"healing": 14
+		},
+		{
+			"label": "Catfish",
+			"healing": 15
+		},
+		{
+			"label": "Stingray",
+			"healing": 16
+		},
+		{
+			"label": "Sunfish",
+			"healing": 17
+		},
+		{
+			"label": "Shark",
+			"healing": 18
+		},
+		{
+			"label": "Blue Marlin",
+			"healing": 19
+		},
+		{
+			"label": "Arctic Bass",
+			"healing": 20
+		},
+		{
+			"label": "Frost Tuna",
+			"healing": 21
+		},
+		{
+			"label": "Croissant",
+			"healing": 1
+		},
+		{
+			"label": "Cookie",
+			"healing": 1
+		},
+		{
+			"label": "Donut",
+			"healing": 3
+		},
+		{
+			"label": "Bread Roll",
+			"healing": 1
+		},
+		{
+			"label": "Onion",
+			"healing": 1
+		},
+		{
+			"label": "Potato",
+			"healing": 1
+		},
+		{
+			"label": "Carrot",
+			"healing": 2
+		},
+		{
+			"label": "Apple",
+			"healing": 2
+		},
+		{
+			"label": "Mushroom",
+			"healing": 2
+		},
+		{
+			"label": "Pretzel",
+			"healing": 1
+		}
+	]
+}

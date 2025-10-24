@@ -15,17 +15,6 @@
 		}
 	],
 
-	"potions": [
-		{
-			"label": "Fletcher Potion",
-			"timeReduction": 0.25
-		},
-		{
-			"label": "Vaning Potion",
-			"timeReduction": 0.50
-		}
-	],
-
 	"experienceSources": [
 		{
 			"label": "Shortbow",

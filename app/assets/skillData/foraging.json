@@ -21,17 +21,6 @@
 		}
 	],
 
-	"potions": [
-		{
-			"label": "Gatherer Potion",
-			"bonusProgress": 10
-		},
-		{
-			"label": "Mossfoot Potion",
-			"bonusProgress": 20
-		}
-	],
-
 	"experienceSources": [
 		{
 			"label": "Bloobberry Bush",

@@ -14,17 +14,6 @@
 			"bonusProduct": 0.25
 		}
 	],
-
-	"potions": [
-		{
-			"label": "Forge Potion",
-			"timeReduction": 0.25
-		},
-		{
-			"label": "Super Forge Potion",
-			"timeReduction": 0.50
-		}
-	],
 	
 	"experienceSources": [
 		{

@@ -1,5 +1,6 @@
 <script setup>
 	const props = defineProps(['skillClass', 'includeBaseMaterials', 'equipmentTier', 'calculatorOutput'])
+  const emit = defineEmits(["submitResult"])
 
   const currentPrestige = ref(0)
   const currentExperience = ref(0)
@@ -10,10 +11,6 @@
   })
 
   const activeInvocation = ref({
-    "label": "None"
-  })
-
-  const activePotion = ref({
     "label": "None"
   })
 
@@ -29,13 +26,10 @@
     calculatedData.startExperience = currentExperience.value
     calculatedData.endLevel = goalLevel.value
     calculatedData.invocation = activeInvocation.value
-    calculatedData.potion = activePotion.value
-    calculatedData.equipment = props.equipmentTier
+    calculatedData.toolTier = props.equipmentTier
     calculatedData.includeBaseMaterials = props.includeBaseMaterials
 
-
-    calculatedData.calculateResults(props.skillClass)
-    props.calculatorOutput.push(calculatedData)
+    emit("submitResult", calculatedData)
   }
 </script>
 
@@ -54,10 +48,6 @@
 
   <UFormField label="Active Invocation">
     <USelectMenu v-model="activeInvocation" :items="props.skillClass.invocations" class="w-48" />
-  </UFormField>
-
-  <UFormField label="Active Potion">
-    <USelectMenu v-model="activePotion" :items="props.skillClass.potions" class="w-48" />
   </UFormField>
 
   <UFormField label="Goal Level">

@@ -21,17 +21,6 @@
 		}
 	],
 
-	"potions": [
-		{
-			"label": "Timber Potion",
-			"bonusProgress": 10
-		},
-		{
-			"label": "Lumberjack's Potion",
-			"bonusProgress": 20
-		}
-	],
-
 	"experienceSources": [
 		{
 			"label": "Regular Tree",

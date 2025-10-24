@@ -1,17 +1,6 @@
 {
 	"invocations": [],
 
-	"potions": [
-		{
-			"label": "Saturation Potion",
-			"timeReduction": 0.25
-		},
-		{
-			"label": "Infusion Potion",
-			"timeReduction": 0.50
-		}
-	],
-
 	"experienceSources": [
 		{
 			"label": "Imbued Slates",

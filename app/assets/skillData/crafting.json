@@ -15,13 +15,6 @@
 		}
 	],
 
-	"potions": [
-		{
-			"label": "Artisan Potion",
-			"timeReduction": 0.25
-		}
-	],
-
 	"experienceSources": [
 		{
 			"label": "Soft Clay",
@@ -137,7 +130,7 @@
 				}
 			],
 			"outputAmount": 1,
-			"baseExperience": 68,
+			"baseExperience": 3000,
 			"baseCraftingTime": 2
 		},
 		{
@@ -150,7 +143,7 @@
 				}
 			],
 			"outputAmount": 1,
-			"baseExperience": 95,
+			"baseExperience": 6000,
 			"baseCraftingTime": 2
 		},
 		{
@@ -163,7 +156,7 @@
 				}
 			],
 			"outputAmount": 1,
-			"baseExperience": 135,
+			"baseExperience": 9350,
 			"baseCraftingTime": 2
 		},
 		{
@@ -176,7 +169,7 @@
 				}
 			],
 			"outputAmount": 1,
-			"baseExperience": 285,
+			"baseExperience": 12500,
 			"baseCraftingTime": 2
 		},
 		{
@@ -453,19 +446,6 @@
 			"baseCraftingTime": 2
 		},
 		{
-			"label": "Bowl",
-			"level": 8,
-			"input": [
-				{
-					"name": "Soft Clay",
-					"inputAmount": 1
-				}
-			],
-			"outputAmount": 1,
-			"baseExperience": 16,
-			"baseCraftingTime": 2
-		},
-		{
 			"label": "Blessed Azure Pot",
 			"level": 8,
 			"input": [
@@ -497,19 +477,6 @@
 			],
 			"outputAmount": 1,
 			"baseExperience": 20,
-			"baseCraftingTime": 2
-		},
-		{
-			"label": "Vase",
-			"level": 14,
-			"input": [
-				{
-					"name": "Soft Clay",
-					"inputAmount": 1
-				}
-			],
-			"outputAmount": 1,
-			"baseExperience": 22,
 			"baseCraftingTime": 2
 		},
 		{

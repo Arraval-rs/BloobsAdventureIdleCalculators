@@ -25,13 +25,11 @@ export default class skill {
 		const data = await import(`@/assets/skillData/${this.skillName}.json`)
 		this.experienceSources = data.experienceSources
 		this.invocations = data.invocations
-		this.potions = data.potions
 		this.baseActionTime = data.baseActionTime
 		this.levelSpeedIncrease = data.levelSpeedIncrease
 		this.minimumActionTime = data.minimumActionTime
 		if (this.invocations.length == 0 || this.invocations[this.invocations.length - 1].label != "None") {
 			this.invocations.push({"label": "None"})
-			this.potions.push({"label": "None"})
 		}
 	}
 

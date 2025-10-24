@@ -20,13 +20,6 @@
 			"bonusProduct": 0.25
 		}
 	],
-
-	"potions": [
-		{
-			"label": "Huntsman's Potion",
-			"bonusSuccessChance": 0.05
-		}
-	],
 	
 	"experienceSources": [
 		{
