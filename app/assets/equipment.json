@@ -90,7 +90,242 @@
 		}
 	],
 
-	"head": [],
+	"head": [
+		{
+			"label": "Bronze Helm",
+			"bonusDamageReduction": 0.063,
+			"rangeBonusAccuracy": -0.10,
+			"magicBonusAccuracy": -0.10
+		},
+		{
+			"label": "Iron Helm",
+			"bonusDamageReduction": 0.25,
+			"rangeBonusAccuracy": -0.10,
+			"magicBonusAccuracy": -0.10
+		},
+		{
+			"label": "Steel Helm",
+			"bonusDamageReduction": 0.438,
+			"rangeBonusAccuracy": -0.10,
+			"magicBonusAccuracy": -0.10
+		},
+		{
+			"label": "Mithril Helm",
+			"bonusDamageReduction": 0.625,
+			"rangeBonusAccuracy": -0.10,
+			"magicBonusAccuracy": -0.10
+		},
+		{
+			"label": "Adamantite Helm",
+			"bonusDamageReduction": 0.875,
+			"rangeBonusAccuracy": -0.10,
+			"magicBonusAccuracy": -0.10
+		},
+		{
+			"label": "Cerulium Helm",
+			"bonusDamageReduction": 1.063,
+			"rangeBonusAccuracy": -0.10,
+			"magicBonusAccuracy": -0.10
+		},
+		{
+			"label": "Sanguinite Helm",
+			"bonusDamageReduction": 1.25,
+			"rangeBonusAccuracy": -0.10,
+			"magicBonusAccuracy": -0.10
+		},
+		{
+			"label": "Aeronite Helm",
+			"bonusDamageReduction": 1.5,
+			"rangeBonusAccuracy": -0.10,
+			"magicBonusAccuracy": -0.10
+		},
+		{
+			"label": "Necrosis Helm",
+			"bonusDamageReduction": 1.688,
+			"rangeBonusAccuracy": -0.10,
+			"magicBonusAccuracy": -0.10
+		},
+		{
+			"label": "Phantom Helm",
+			"bonusDamageReduction": 1.875,
+			"rangeBonusAccuracy": -0.10,
+			"magicBonusAccuracy": -0.10
+		},
+		{
+			"label": "Karinite Helm",
+			"bonusDamageReduction": 2.125,
+			"rangeBonusAccuracy": -0.10,
+			"magicBonusAccuracy": -0.10
+		},
+		{
+			"label": "Taigite Helm",
+			"bonusDamageReduction": 2.625,
+			"rangeBonusAccuracy": -0.10,
+			"magicBonusAccuracy": -0.10
+		},
+		{
+			"label": "Cryxcite Helm",
+			"bonusDamageReduction": 3.688,
+			"rangeBonusAccuracy": -0.10,
+			"magicBonusAccuracy": -0.10
+		},
+		{
+			"label": "Blue Wizard Hat",
+			"bonusDamageReduction": 0.055,
+			"attackBonusAccuracy": -0.1,
+			"rangeBonusAccuracy": -0.1
+		},
+		{
+			"label": "Red Wizard Hat",
+			"bonusDamageReduction": 0.221,
+			"attackBonusAccuracy": -0.1,
+			"rangeBonusAccuracy": -0.1
+		},
+		{
+			"label": "Silk Hat",
+			"bonusDamageReduction": 0.385,
+			"attackBonusAccuracy": -0.1,
+			"rangeBonusAccuracy": -0.1
+		},
+		{
+			"label": "Elderglow Hat",
+			"bonusDamageReduction": 0.55,
+			"attackBonusAccuracy": -0.1,
+			"rangeBonusAccuracy": -0.1
+		},
+		{
+			"label": "Fireweave Hat",
+			"bonusDamageReduction": 0.77,
+			"attackBonusAccuracy": -0.1,
+			"rangeBonusAccuracy": -0.1
+		},
+		{
+			"label": "Void Hat",
+			"bonusDamageReduction": 0.935,
+			"attackBonusAccuracy": -0.1,
+			"rangeBonusAccuracy": -0.1
+		},
+		{
+			"label": "Shadowweave Hat",
+			"bonusDamageReduction": 1.1,
+			"attackBonusAccuracy": -0.1,
+			"rangeBonusAccuracy": -0.1
+		},
+		{
+			"label": "Ashen Hat",
+			"bonusDamageReduction": 1.32,
+			"attackBonusAccuracy": -0.1,
+			"rangeBonusAccuracy": -0.1
+		},
+		{
+			"label": "Azureweave Hat",
+			"bonusDamageReduction": 1.485,
+			"attackBonusAccuracy": -0.1,
+			"rangeBonusAccuracy": -0.1
+		},
+		{
+			"label": "Solar Hat",
+			"bonusDamageReduction": 1.65,
+			"attackBonusAccuracy": -0.1,
+			"rangeBonusAccuracy": -0.1
+		},
+		{
+			"label": "Cera Hat",
+			"bonusDamageReduction": 1.87,
+			"attackBonusAccuracy": -0.1,
+			"rangeBonusAccuracy": -0.1
+		},
+		{
+			"label": "Polar Hat",
+			"bonusDamageReduction": 2.31,
+			"attackBonusAccuracy": -0.1,
+			"rangeBonusAccuracy": -0.1
+		},
+		{
+			"label": "Boreal Hat",
+			"bonusDamageReduction": 3.245,
+			"attackBonusAccuracy": -0.1,
+			"rangeBonusAccuracy": -0.1
+		},
+		{
+			"label": "Paper Coif",
+			"bonusDamageReduction": 0.055,
+			"attackBonusAccuracy": -0.1,
+			"magicBonusAccuracy": -0.1
+		},
+		{
+			"label": "Leather Coif",
+			"bonusDamageReduction": 0.221,
+			"attackBonusAccuracy": -0.1,
+			"magicBonusAccuracy": -0.1
+		},
+		{
+			"label": "Hard Leather Coif",
+			"bonusDamageReduction": 0.385,
+			"attackBonusAccuracy": -0.1,
+			"magicBonusAccuracy": -0.1
+		},
+		{
+			"label": "Emerald Leather Coif",
+			"bonusDamageReduction": 0.55,
+			"attackBonusAccuracy": -0.1,
+			"magicBonusAccuracy": -0.1
+		},
+		{
+			"label": "Iridescent Coif",
+			"bonusDamageReduction": 0.77,
+			"attackBonusAccuracy": -0.1,
+			"magicBonusAccuracy": -0.1
+		},
+		{
+			"label": "Entropic Coif",
+			"bonusDamageReduction": 0.935,
+			"attackBonusAccuracy": -0.1,
+			"magicBonusAccuracy": -0.1
+		},
+		{
+			"label": "Corrupted Coif",
+			"bonusDamageReduction": 1.1,
+			"attackBonusAccuracy": -0.1,
+			"magicBonusAccuracy": -0.1
+		},
+		{
+			"label": "Ebonhide Coif",
+			"bonusDamageReduction": 1.32,
+			"attackBonusAccuracy": -0.1,
+			"magicBonusAccuracy": -0.1
+		},
+		{
+			"label": "Bloodweave Coif",
+			"bonusDamageReduction": 1.485,
+			"attackBonusAccuracy": -0.1,
+			"magicBonusAccuracy": -0.1
+		},
+		{
+			"label": "Bloom Leather Coif",
+			"bonusDamageReduction": 1.65,
+			"attackBonusAccuracy": -0.1,
+			"magicBonusAccuracy": -0.1
+		},
+		{
+			"label": "Viridian Coif",
+			"bonusDamageReduction": 1.87,
+			"attackBonusAccuracy": -0.1,
+			"magicBonusAccuracy": -0.1
+		},
+		{
+			"label": "Palescale Coif",
+			"bonusDamageReduction": 2.31,
+			"attackBonusAccuracy": -0.1,
+			"magicBonusAccuracy": -0.1
+		},
+		{
+			"label": "Brumal Coif",
+			"bonusDamageReduction": 3.245,
+			"attackBonusAccuracy": -0.1,
+			"magicBonusAccuracy": -0.1
+		}
+	],
 
 	"ammunition": [],
 
