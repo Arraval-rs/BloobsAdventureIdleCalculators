@@ -1,0 +1,9 @@
+{
+	"baseAttackTime": 3,
+	"baseDamage": 1,
+	"damagePerLevel": 0.15,
+	"baseAccuracy": 0.35,
+	"accuracyPerLevel": 0.001,
+
+	"invocations": []
+}

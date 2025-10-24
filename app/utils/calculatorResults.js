@@ -94,8 +94,11 @@ export default class calculatorResult {
     if (skill.skillType == "artisan") {
       calculatedTime = this.calculateCraftingTime(skill, equipmentSet)
     }
-    if (skill.skillType == "gathering") {
+    else if (skill.skillType == "gathering") {
       calculatedTime = this.calculateGatheringTime(skill, equipmentSet)
+    }
+    else if(skill.skillType == "combat") {
+      calculatedTime = this.calculateCombatTime(skill, equipmentSet)
     }
     return this.generateTimeString(calculatedTime)
   }
@@ -128,6 +131,11 @@ export default class calculatorResult {
     var timePerAction = Math.max(skill.baseActionTime - skill.levelSpeedIncrease * this.startLevel, skill.minimumActionTime)
     const actionsPerResource = 100 / (this.toolTier.progress + equipmentBonus)
     return timePerAction * actionsPerResource * this.requiredIterations
+  }
+
+  calculateCombatTime(skill, equipmentSet) {
+    const baseDamage = 1 + skill.level * 0.15
+    return 0
   }
 
   generateTimeString(durationInSeconds) {
